@@ -1,0 +1,510 @@
+15.1%,"Control Name",Media/Label,Asset(s),Answer,Notes
+100%,"Acceptable Use Policy",,,,0
+,"Acceptable Use Policy","Backup Media",NewAsset,Yes,
+,"Acceptable Use Policy","Desktop or Laptop",NewAsset,Yes,
+,"Acceptable Use Policy","Disk Array",NewAsset,Yes,
+,"Acceptable Use Policy",Laptop,NewAsset,Yes,
+100%,"Access Logging",,,,0
+,"Access Logging","Desktop or Laptop",NewAsset,Yes,
+,"Access Logging","Disk Array",NewAsset,Yes,
+,"Access Logging",Laptop,NewAsset,Yes,
+100%,"Accounts Lock After Too Many Failed Logins",,,,0
+,"Accounts Lock After Too Many Failed Logins","Desktop or Laptop",NewAsset,Yes,
+,"Accounts Lock After Too Many Failed Logins","Disk Array",NewAsset,In_progress,
+,"Accounts Lock After Too Many Failed Logins",Laptop,NewAsset,In_progress,
+100%,"Activity Logging",,,,0
+,"Activity Logging","Desktop or Laptop",NewAsset,No,
+,"Activity Logging",Laptop,NewAsset,No,
+100%,"Anti-Malware Software",,,,0
+,"Anti-Malware Software","Desktop or Laptop",NewAsset,Na,
+,"Anti-Malware Software","Disk Array",NewAsset,Na,
+,"Anti-Malware Software",Laptop,NewAsset,Na,
+100%,"Anti-virus Policy and Procedures",,,,1
+,"Anti-virus Policy and Procedures","Desktop or Laptop",NewAsset,In_progress,
+,"Anti-virus Policy and Procedures","Disk Array",NewAsset,In_progress,
+,"Anti-virus Policy and Procedures",Laptop,NewAsset,In_progress,
+100%,"Application Code Review",,,,0
+,"Application Code Review","Desktop or Laptop",NewAsset,No,
+,"Application Code Review","Disk Array",NewAsset,No,
+,"Application Code Review",Laptop,NewAsset,No,
+100%,"Application or Data Partitioning",,,,0
+,"Application or Data Partitioning","Desktop or Laptop",NewAsset,Yes,
+,"Application or Data Partitioning","Disk Array",NewAsset,Yes,
+,"Application or Data Partitioning",Laptop,NewAsset,Yes,
+100%,"Application Patching",,,,0
+,"Application Patching","Desktop or Laptop",NewAsset,In_progress,
+,"Application Patching",Laptop,NewAsset,In_progress,
+100%,"Application Penetration and Vulnerability Testing",,,,0
+,"Application Penetration and Vulnerability Testing","Desktop or Laptop",NewAsset,No,
+,"Application Penetration and Vulnerability Testing","Disk Array",NewAsset,No,
+,"Application Penetration and Vulnerability Testing",Laptop,NewAsset,No,
+0%,"Application, Network, or System Penetration Testing",,,,0
+,"Application, Network, or System Penetration Testing","Desktop or Laptop",NewAsset,,
+,"Application, Network, or System Penetration Testing",Laptop,NewAsset,,
+0%,"Application, Network, or System Vulnerability Testing",,,,0
+,"Application, Network, or System Vulnerability Testing","Desktop or Laptop",NewAsset,,
+,"Application, Network, or System Vulnerability Testing",Laptop,NewAsset,,
+0%,"Authentication of Network Sessions (as Distinct From Users)",,,,0
+,"Authentication of Network Sessions (as Distinct From Users)","Disk Array",NewAsset,,
+0%,"Auto Logoff or Auto Screen Locking",,,,0
+,"Auto Logoff or Auto Screen Locking","Desktop or Laptop",NewAsset,,
+,"Auto Logoff or Auto Screen Locking","Disk Array",NewAsset,,
+100%,"Backup Media Handling Policy and Procedures",,,,0
+,"Backup Media Handling Policy and Procedures","Backup Media",NewAsset,Yes,
+0%,"Backup Media Testing and Validation Policy and Procedures",,,,0
+,"Backup Media Testing and Validation Policy and Procedures","Desktop or Laptop",NewAsset,,
+,"Backup Media Testing and Validation Policy and Procedures",Laptop,NewAsset,,
+0%,"Capacity Planning",,,,0
+,"Capacity Planning","Desktop or Laptop",NewAsset,,
+,"Capacity Planning","Disk Array",NewAsset,,
+,"Capacity Planning",Laptop,NewAsset,,
+0%,"Central Monitoring of Endpoint Protection Software",,,,0
+,"Central Monitoring of Endpoint Protection Software","Desktop or Laptop",NewAsset,,
+,"Central Monitoring of Endpoint Protection Software","Disk Array",NewAsset,,
+,"Central Monitoring of Endpoint Protection Software",Laptop,NewAsset,,
+0%,"Centralized Patch Management",,,,0
+,"Centralized Patch Management","Desktop or Laptop",NewAsset,,
+,"Centralized Patch Management",Laptop,NewAsset,,
+0%,"Change Control Processes",,,,0
+,"Change Control Processes","Desktop or Laptop",NewAsset,,
+,"Change Control Processes","Disk Array",NewAsset,,
+,"Change Control Processes",Laptop,NewAsset,,
+,"Change Control Processes",Pager,NewAsset,,
+100%,"Contingency Plans",,,,0
+,"Contingency Plans","Desktop or Laptop",NewAsset,Yes,
+,"Contingency Plans","Disk Array",NewAsset,Yes,
+,"Contingency Plans",Laptop,NewAsset,Yes,
+100%,"Contractual Agreements",,,,0
+,"Contractual Agreements","Contractors / Consultants",NewAsset,In_progress,
+0%,"Controlled Access to Areas with Mobile Devices",,,,0
+,"Controlled Access to Areas with Mobile Devices","Desktop or Laptop",NewAsset,,
+,"Controlled Access to Areas with Mobile Devices",Laptop,NewAsset,,
+0%,"Controls Around User-installed Software",,,,0
+,"Controls Around User-installed Software","Desktop or Laptop",NewAsset,,
+,"Controls Around User-installed Software",Laptop,NewAsset,,
+100%,"Cross-functional Training",,,,0
+,"Cross-functional Training","Desktop or Laptop",NewAsset,No,
+,"Cross-functional Training",Laptop,NewAsset,No,
+0%,"Data Backup",,,,0
+,"Data Backup","Desktop or Laptop",NewAsset,,
+,"Data Backup","Disk Array",NewAsset,,
+,"Data Backup",Laptop,NewAsset,,
+0%,"Data Input Validation",,,,0
+,"Data Input Validation","Contractors / Consultants",NewAsset,,
+,"Data Input Validation","Desktop or Laptop",NewAsset,,
+,"Data Input Validation","Disk Array",NewAsset,,
+,"Data Input Validation",Laptop,NewAsset,,
+0%,"Data Loss Prevention Tools",,,,0
+,"Data Loss Prevention Tools","Desktop or Laptop",NewAsset,,
+,"Data Loss Prevention Tools","Disk Array",NewAsset,,
+,"Data Loss Prevention Tools",Laptop,NewAsset,,
+100%,"Data Retention Policy and Procedures",,,,0
+,"Data Retention Policy and Procedures","Desktop or Laptop",NewAsset,Yes,
+,"Data Retention Policy and Procedures",Laptop,NewAsset,Yes,
+100%,"Device Handling Policy and Procedures",,,,0
+,"Device Handling Policy and Procedures",Laptop,NewAsset,In_progress,
+,"Device Handling Policy and Procedures",Pager,NewAsset,In_progress,
+,"Device Handling Policy and Procedures","USB key or flash drive",NewAsset,In_progress,
+0%,"Device Testing and Validation Policy and Procedures",,,,0
+,"Device Testing and Validation Policy and Procedures",Pager,NewAsset,,
+,"Device Testing and Validation Policy and Procedures","USB key or flash drive",NewAsset,,
+0%,"Distributed Processing or Storage",,,,0
+,"Distributed Processing or Storage","Disk Array",NewAsset,,
+0%,"Documented Security Roles in the System Development Life Cycle",,,,0
+,"Documented Security Roles in the System Development Life Cycle","Desktop or Laptop",NewAsset,,
+,"Documented Security Roles in the System Development Life Cycle","Disk Array",NewAsset,,
+,"Documented Security Roles in the System Development Life Cycle",Laptop,NewAsset,,
+0%,"Documented System Development Life Cycle",,,,0
+,"Documented System Development Life Cycle","Desktop or Laptop",NewAsset,,
+,"Documented System Development Life Cycle","Disk Array",NewAsset,,
+,"Documented System Development Life Cycle",Laptop,NewAsset,,
+0%,"Domain/Device Authentication",,,,0
+,"Domain/Device Authentication","Desktop or Laptop",NewAsset,,
+,"Domain/Device Authentication",Laptop,NewAsset,,
+,"Domain/Device Authentication",Pager,NewAsset,,
+,"Domain/Device Authentication","USB key or flash drive",NewAsset,,
+0%,"Employee Supervision",,,,0
+,"Employee Supervision","Desktop or Laptop",NewAsset,,
+,"Employee Supervision","Disk Array",NewAsset,,
+,"Employee Supervision",Laptop,NewAsset,,
+100%,"Encryption of Backup Media",,,,0
+,"Encryption of Backup Media","Backup Media",NewAsset,No,
+0%,"Encryption of Device",,,,0
+,"Encryption of Device",Laptop,NewAsset,,
+,"Encryption of Device",Pager,NewAsset,,
+,"Encryption of Device","USB key or flash drive",NewAsset,,
+0%,"Encryption of Disks (Full Disk, File Based, etc.)",,,,0
+,"Encryption of Disks (Full Disk, File Based, etc.)","Desktop or Laptop",NewAsset,,
+,"Encryption of Disks (Full Disk, File Based, etc.)","Disk Array",NewAsset,,
+,"Encryption of Disks (Full Disk, File Based, etc.)",Laptop,NewAsset,,
+0%,"Encryption of Network Traffic",,,,0
+,"Encryption of Network Traffic","Desktop or Laptop",NewAsset,,
+,"Encryption of Network Traffic","Disk Array",NewAsset,,
+,"Encryption of Network Traffic",Laptop,NewAsset,,
+0%,"Endpoint Firewalls Enabled",,,,0
+,"Endpoint Firewalls Enabled","Desktop or Laptop",NewAsset,,
+,"Endpoint Firewalls Enabled","Disk Array",NewAsset,,
+,"Endpoint Firewalls Enabled",Laptop,NewAsset,,
+0%,"Environmental Controls",,,,0
+,"Environmental Controls","Desktop or Laptop",NewAsset,,
+,"Environmental Controls",Laptop,NewAsset,,
+0%,"Error Message Sanitization",,,,0
+,"Error Message Sanitization","Desktop or Laptop",NewAsset,,
+,"Error Message Sanitization",Laptop,NewAsset,,
+0%,"Event Correlation",,,,0
+,"Event Correlation","Desktop or Laptop",NewAsset,,
+,"Event Correlation",Laptop,NewAsset,,
+0%,"Fake Data to Attract Misuse (Honeypot Records)",,,,0
+,"Fake Data to Attract Misuse (Honeypot Records)","Desktop or Laptop",NewAsset,,
+,"Fake Data to Attract Misuse (Honeypot Records)","Disk Array",NewAsset,,
+,"Fake Data to Attract Misuse (Honeypot Records)",Laptop,NewAsset,,
+0%,"Fire Detection/Suppression Systems",,,,0
+,"Fire Detection/Suppression Systems","Desktop or Laptop",NewAsset,,
+,"Fire Detection/Suppression Systems","Disk Array",NewAsset,,
+,"Fire Detection/Suppression Systems",Laptop,NewAsset,,
+,"Fire Detection/Suppression Systems","USB key or flash drive",NewAsset,,
+0%,"Firmware Patching",,,,0
+,"Firmware Patching","Desktop or Laptop",NewAsset,,
+,"Firmware Patching",Laptop,NewAsset,,
+0%,"Identification and Authentication Policy and Procedures",,,,0
+,"Identification and Authentication Policy and Procedures","Desktop or Laptop",NewAsset,,
+,"Identification and Authentication Policy and Procedures","Disk Array",NewAsset,,
+,"Identification and Authentication Policy and Procedures",Laptop,NewAsset,,
+0%,"Identified Security Roles",,,,0
+,"Identified Security Roles","Desktop or Laptop",NewAsset,,
+,"Identified Security Roles","Disk Array",NewAsset,,
+,"Identified Security Roles",Laptop,NewAsset,,
+0%,"Information Access Control Policy and Procedures",,,,0
+,"Information Access Control Policy and Procedures","Desktop or Laptop",NewAsset,,
+,"Information Access Control Policy and Procedures","Disk Array",NewAsset,,
+,"Information Access Control Policy and Procedures",Laptop,NewAsset,,
+0%,"Information Disclosure Procedures",,,,0
+,"Information Disclosure Procedures","Desktop or Laptop",NewAsset,,
+,"Information Disclosure Procedures","Disk Array",NewAsset,,
+,"Information Disclosure Procedures",Laptop,NewAsset,,
+0%,"Internal IT Audit Program",,,,0
+,"Internal IT Audit Program","Desktop or Laptop",NewAsset,,
+,"Internal IT Audit Program","Disk Array",NewAsset,,
+,"Internal IT Audit Program",Laptop,NewAsset,,
+17%,"Inventory Control Process",,,,0
+,"Inventory Control Process","Backup Media",NewAsset,In_progress,
+,"Inventory Control Process","Desktop or Laptop",NewAsset,,
+,"Inventory Control Process","Disk Array",NewAsset,,
+,"Inventory Control Process",Laptop,NewAsset,,
+,"Inventory Control Process",Pager,NewAsset,,
+,"Inventory Control Process","USB key or flash drive",NewAsset,,
+0%,"Lights-out/Hands-off Management",,,,0
+,"Lights-out/Hands-off Management","Desktop or Laptop",NewAsset,,
+,"Lights-out/Hands-off Management","Disk Array",NewAsset,,
+,"Lights-out/Hands-off Management",Laptop,NewAsset,,
+0%,"Limitations on the Use of Live Data",,,,0
+,"Limitations on the Use of Live Data","Desktop or Laptop",NewAsset,,
+,"Limitations on the Use of Live Data",Laptop,NewAsset,,
+0%,"Limited Access to Network Cabling and Devices",,,,0
+,"Limited Access to Network Cabling and Devices","Desktop or Laptop",NewAsset,,
+,"Limited Access to Network Cabling and Devices","Disk Array",NewAsset,,
+,"Limited Access to Network Cabling and Devices",Laptop,NewAsset,,
+0%,"Limited Access to Output Devices (Printers, etc.)",,,,0
+,"Limited Access to Output Devices (Printers, etc.)","Desktop or Laptop",NewAsset,,
+,"Limited Access to Output Devices (Printers, etc.)",Laptop,NewAsset,,
+0%,"Limited User Accessibility (By Time of Day, By Location, etc.)",,,,0
+,"Limited User Accessibility (By Time of Day, By Location, etc.)","Desktop or Laptop",NewAsset,,
+,"Limited User Accessibility (By Time of Day, By Location, etc.)","Disk Array",NewAsset,,
+,"Limited User Accessibility (By Time of Day, By Location, etc.)",Laptop,NewAsset,,
+0%,"Locally-stored Backups of Third-party Hosted Data",,,,0
+,"Locally-stored Backups of Third-party Hosted Data","Contractors / Consultants",NewAsset,,
+0%,"Locked Down External Ports (USB, CD, DVD, Firewire, etc.)",,,,0
+,"Locked Down External Ports (USB, CD, DVD, Firewire, etc.)","Desktop or Laptop",NewAsset,,
+,"Locked Down External Ports (USB, CD, DVD, Firewire, etc.)","Disk Array",NewAsset,,
+,"Locked Down External Ports (USB, CD, DVD, Firewire, etc.)",Laptop,NewAsset,,
+0%,"Log Aggregation and Analysis",,,,0
+,"Log Aggregation and Analysis","Desktop or Laptop",NewAsset,,
+,"Log Aggregation and Analysis","Disk Array",NewAsset,,
+,"Log Aggregation and Analysis",Laptop,NewAsset,,
+17%,"Media/Device Re-use and Disposal Policy and Procedures",,,,0
+,"Media/Device Re-use and Disposal Policy and Procedures","Backup Media",NewAsset,Yes,
+,"Media/Device Re-use and Disposal Policy and Procedures","Desktop or Laptop",NewAsset,,
+,"Media/Device Re-use and Disposal Policy and Procedures","Disk Array",NewAsset,,
+,"Media/Device Re-use and Disposal Policy and Procedures",Laptop,NewAsset,,
+,"Media/Device Re-use and Disposal Policy and Procedures",Pager,NewAsset,,
+,"Media/Device Re-use and Disposal Policy and Procedures","USB key or flash drive",NewAsset,,
+0%,"Multi-factor Authentication",,,,0
+,"Multi-factor Authentication","Desktop or Laptop",NewAsset,,
+,"Multi-factor Authentication",Laptop,NewAsset,,
+0%,"Network and System Penetration and Vulnerability Testing",,,,0
+,"Network and System Penetration and Vulnerability Testing","Disk Array",NewAsset,,
+0%,"Network Disconnect of Idle Connections",,,,0
+,"Network Disconnect of Idle Connections","Desktop or Laptop",NewAsset,,
+,"Network Disconnect of Idle Connections","Disk Array",NewAsset,,
+,"Network Disconnect of Idle Connections",Laptop,NewAsset,,
+0%,"Network Firewalls",,,,0
+,"Network Firewalls","Desktop or Laptop",NewAsset,,
+,"Network Firewalls","Disk Array",NewAsset,,
+,"Network Firewalls",Laptop,NewAsset,,
+0%,"Network Intrusion Detection System",,,,0
+,"Network Intrusion Detection System","Desktop or Laptop",NewAsset,,
+,"Network Intrusion Detection System",Laptop,NewAsset,,
+0%,"Network Segmentation",,,,0
+,"Network Segmentation","Desktop or Laptop",NewAsset,,
+,"Network Segmentation","Disk Array",NewAsset,,
+,"Network Segmentation",Laptop,NewAsset,,
+0%,"Network Traffic Throttling",,,,0
+,"Network Traffic Throttling","Desktop or Laptop",NewAsset,,
+,"Network Traffic Throttling","Disk Array",NewAsset,,
+,"Network Traffic Throttling",Laptop,NewAsset,,
+100%,"Offsite Backup Media Storage",,,,0
+,"Offsite Backup Media Storage","Backup Media",NewAsset,In_progress,
+0%,"On-call Technical Resources",,,,0
+,"On-call Technical Resources","Desktop or Laptop",NewAsset,,
+,"On-call Technical Resources","Disk Array",NewAsset,,
+,"On-call Technical Resources",Laptop,NewAsset,,
+0%,"On-site Generator",,,,0
+,"On-site Generator","Desktop or Laptop",NewAsset,,
+,"On-site Generator","Disk Array",NewAsset,,
+,"On-site Generator",Laptop,NewAsset,,
+0%,"Operating System Patching",,,,0
+,"Operating System Patching","Desktop or Laptop",NewAsset,,
+,"Operating System Patching",Laptop,NewAsset,,
+0%,"OS/Application Patching Policy and Procedures",,,,0
+,"OS/Application Patching Policy and Procedures","Desktop or Laptop",NewAsset,,
+,"OS/Application Patching Policy and Procedures","Disk Array",NewAsset,,
+,"OS/Application Patching Policy and Procedures",Laptop,NewAsset,,
+0%,"Password Change Required on 1st Login",,,,0
+,"Password Change Required on 1st Login","Desktop or Laptop",NewAsset,,
+,"Password Change Required on 1st Login",Laptop,NewAsset,,
+0%,"Password Strength Requirements",,,,0
+,"Password Strength Requirements","Desktop or Laptop",NewAsset,,
+,"Password Strength Requirements","Disk Array",NewAsset,,
+,"Password Strength Requirements",Laptop,NewAsset,,
+0%,"Password/Token Management Policy and Procedures",,,,0
+,"Password/Token Management Policy and Procedures","Desktop or Laptop",NewAsset,,
+,"Password/Token Management Policy and Procedures","Disk Array",NewAsset,,
+,"Password/Token Management Policy and Procedures",Laptop,NewAsset,,
+100%,"Physical Access Authorization",,,,1
+,"Physical Access Authorization","Backup Media",NewAsset,Yes,
+,"Physical Access Authorization","Desktop or Laptop",NewAsset,Yes,
+,"Physical Access Authorization","Disk Array",NewAsset,Yes,
+,"Physical Access Authorization",Laptop,NewAsset,Yes,
+25%,"Physical Access Control",,,,0
+,"Physical Access Control","Backup Media",NewAsset,No,
+,"Physical Access Control","Desktop or Laptop",NewAsset,,
+,"Physical Access Control","Disk Array",NewAsset,,
+,"Physical Access Control",Laptop,NewAsset,,
+25%,"Physical Access Monitoring",,,,0
+,"Physical Access Monitoring","Backup Media",NewAsset,Yes,
+,"Physical Access Monitoring","Desktop or Laptop",NewAsset,,
+,"Physical Access Monitoring","Disk Array",NewAsset,,
+,"Physical Access Monitoring",Laptop,NewAsset,,
+0%,"Physical Security Policy and Procedures",,,,0
+,"Physical Security Policy and Procedures","Desktop or Laptop",NewAsset,,
+,"Physical Security Policy and Procedures","Disk Array",NewAsset,,
+,"Physical Security Policy and Procedures",Laptop,NewAsset,,
+0%,"Physically Hardened Or Ruggedized Systems",,,,0
+,"Physically Hardened Or Ruggedized Systems","Desktop or Laptop",NewAsset,,
+,"Physically Hardened Or Ruggedized Systems","Disk Array",NewAsset,,
+,"Physically Hardened Or Ruggedized Systems",Laptop,NewAsset,,
+0%,"Physically Secured Demarcation Points",,,,0
+,"Physically Secured Demarcation Points","Disk Array",NewAsset,,
+0%,"Physically Securing Devices or Systems When Not in Use",,,,0
+,"Physically Securing Devices or Systems When Not in Use","Desktop or Laptop",NewAsset,,
+,"Physically Securing Devices or Systems When Not in Use",Laptop,NewAsset,,
+,"Physically Securing Devices or Systems When Not in Use",Pager,NewAsset,,
+,"Physically Securing Devices or Systems When Not in Use","USB key or flash drive",NewAsset,,
+0%,"Prevention of Simultaneous User Logins",,,,0
+,"Prevention of Simultaneous User Logins","Desktop or Laptop",NewAsset,,
+,"Prevention of Simultaneous User Logins","Disk Array",NewAsset,,
+,"Prevention of Simultaneous User Logins",Laptop,NewAsset,,
+0%,"Prevention of User Storing Data Locally (Terminals, VDI, etc.)",,,,0
+,"Prevention of User Storing Data Locally (Terminals, VDI, etc.)","Contractors / Consultants",NewAsset,,
+,"Prevention of User Storing Data Locally (Terminals, VDI, etc.)","Desktop or Laptop",NewAsset,,
+,"Prevention of User Storing Data Locally (Terminals, VDI, etc.)","Disk Array",NewAsset,,
+,"Prevention of User Storing Data Locally (Terminals, VDI, etc.)",Laptop,NewAsset,,
+0%,"Principle of Least Privilege",,,,0
+,"Principle of Least Privilege","Desktop or Laptop",NewAsset,,
+,"Principle of Least Privilege","Disk Array",NewAsset,,
+,"Principle of Least Privilege",Laptop,NewAsset,,
+0%,"Privileged Account Management",,,,0
+,"Privileged Account Management","Desktop or Laptop",NewAsset,,
+,"Privileged Account Management",Laptop,NewAsset,,
+0%,"Process Documentation",,,,0
+,"Process Documentation","Desktop or Laptop",NewAsset,,
+,"Process Documentation","Disk Array",NewAsset,,
+,"Process Documentation",Laptop,NewAsset,,
+0%,"Prompt Account Termination",,,,0
+,"Prompt Account Termination","Desktop or Laptop",NewAsset,,
+,"Prompt Account Termination","Disk Array",NewAsset,,
+,"Prompt Account Termination",Laptop,NewAsset,,
+0%,"Record View Logging",,,,0
+,"Record View Logging","Desktop or Laptop",NewAsset,,
+,"Record View Logging","Disk Array",NewAsset,,
+,"Record View Logging",Laptop,NewAsset,,
+0%,"Redundant HVAC Equipment",,,,0
+,"Redundant HVAC Equipment","Desktop or Laptop",NewAsset,,
+,"Redundant HVAC Equipment","Disk Array",NewAsset,,
+,"Redundant HVAC Equipment",Laptop,NewAsset,,
+0%,"Redundant Internet Connections",,,,0
+,"Redundant Internet Connections","Desktop or Laptop",NewAsset,,
+,"Redundant Internet Connections","Disk Array",NewAsset,,
+,"Redundant Internet Connections",Laptop,NewAsset,,
+0%,"Redundant or Spare Equipment",,,,0
+,"Redundant or Spare Equipment","Desktop or Laptop",NewAsset,,
+,"Redundant or Spare Equipment","Disk Array",NewAsset,,
+,"Redundant or Spare Equipment",Laptop,NewAsset,,
+,"Redundant or Spare Equipment",Pager,NewAsset,,
+,"Redundant or Spare Equipment","USB key or flash drive",NewAsset,,
+0%,"Redundant Service Providers",,,,0
+,"Redundant Service Providers","Contractors / Consultants",NewAsset,,
+0%,"Redundant Telecommunications Providers",,,,0
+,"Redundant Telecommunications Providers","Desktop or Laptop",NewAsset,,
+,"Redundant Telecommunications Providers","Disk Array",NewAsset,,
+,"Redundant Telecommunications Providers",Laptop,NewAsset,,
+0%,"Remote Access Controls",,,,0
+,"Remote Access Controls","Desktop or Laptop",NewAsset,,
+,"Remote Access Controls","Disk Array",NewAsset,,
+,"Remote Access Controls",Laptop,NewAsset,,
+0%,"Remote Administrative Access",,,,0
+,"Remote Administrative Access","Desktop or Laptop",NewAsset,,
+,"Remote Administrative Access","Disk Array",NewAsset,,
+,"Remote Administrative Access",Laptop,NewAsset,,
+0%,"Remote Wipe/Remote Lock",,,,0
+,"Remote Wipe/Remote Lock",Laptop,NewAsset,,
+,"Remote Wipe/Remote Lock",Pager,NewAsset,,
+,"Remote Wipe/Remote Lock","USB key or flash drive",NewAsset,,
+0%,"Restrictions on Media Use",,,,0
+,"Restrictions on Media Use","Desktop or Laptop",NewAsset,,
+,"Restrictions on Media Use",Laptop,NewAsset,,
+0%,"Restrictions on the Use of Internet File Storage",,,,0
+,"Restrictions on the Use of Internet File Storage","Desktop or Laptop",NewAsset,,
+,"Restrictions on the Use of Internet File Storage",Laptop,NewAsset,,
+0%,"Review of Service Providers",,,,0
+,"Review of Service Providers","Contractors / Consultants",NewAsset,,
+0%,"Role-based Access Control",,,,0
+,"Role-based Access Control","Desktop or Laptop",NewAsset,,
+,"Role-based Access Control","Disk Array",NewAsset,,
+,"Role-based Access Control",Laptop,NewAsset,,
+0%,"Sanitize Device/Disks/Media",,,,0
+,"Sanitize Device/Disks/Media","Desktop or Laptop",NewAsset,,
+,"Sanitize Device/Disks/Media","Disk Array",NewAsset,,
+,"Sanitize Device/Disks/Media",Laptop,NewAsset,,
+0%,"Secure Password Storage",,,,0
+,"Secure Password Storage","Desktop or Laptop",NewAsset,,
+,"Secure Password Storage",Laptop,NewAsset,,
+0%,"Secure Software Development Processes",,,,0
+,"Secure Software Development Processes","Desktop or Laptop",NewAsset,,
+,"Secure Software Development Processes","Disk Array",NewAsset,,
+,"Secure Software Development Processes",Laptop,NewAsset,,
+0%,"Secure Software Development Training and Awareness",,,,0
+,"Secure Software Development Training and Awareness","Desktop or Laptop",NewAsset,,
+,"Secure Software Development Training and Awareness","Disk Array",NewAsset,,
+,"Secure Software Development Training and Awareness",Laptop,NewAsset,,
+100%,"Secure Storage of Backup Media When Not in Use",,,,0
+,"Secure Storage of Backup Media When Not in Use","Backup Media",NewAsset,No,
+0%,"Security During Systems Acquisition",,,,0
+,"Security During Systems Acquisition","Contractors / Consultants",NewAsset,,
+,"Security During Systems Acquisition","Desktop or Laptop",NewAsset,,
+,"Security During Systems Acquisition",Laptop,NewAsset,,
+0%,"Security Standards for Software Development",,,,0
+,"Security Standards for Software Development","Desktop or Laptop",NewAsset,,
+,"Security Standards for Software Development","Disk Array",NewAsset,,
+,"Security Standards for Software Development",Laptop,NewAsset,,
+0%,"Security/Privacy Awareness and Training",,,,0
+,"Security/Privacy Awareness and Training","Desktop or Laptop",NewAsset,,
+,"Security/Privacy Awareness and Training","Disk Array",NewAsset,,
+,"Security/Privacy Awareness and Training",Laptop,NewAsset,,
+0%,"Segregation of Duties",,,,0
+,"Segregation of Duties","Desktop or Laptop",NewAsset,,
+,"Segregation of Duties","Disk Array",NewAsset,,
+,"Segregation of Duties",Laptop,NewAsset,,
+0%,"Service-level Agreements",,,,0
+,"Service-level Agreements","Contractors / Consultants",NewAsset,,
+0%,"Single Sign-on",,,,0
+,"Single Sign-on","Desktop or Laptop",NewAsset,,
+,"Single Sign-on","Disk Array",NewAsset,,
+,"Single Sign-on",Laptop,NewAsset,,
+0%,"Snooping Detective Software",,,,0
+,"Snooping Detective Software","Desktop or Laptop",NewAsset,,
+,"Snooping Detective Software","Disk Array",NewAsset,,
+,"Snooping Detective Software",Laptop,NewAsset,,
+0%,"Social Engineering Testing",,,,0
+,"Social Engineering Testing","Desktop or Laptop",NewAsset,,
+,"Social Engineering Testing","Disk Array",NewAsset,,
+,"Social Engineering Testing",Laptop,NewAsset,,
+0%,"Standardized System Configurations",,,,0
+,"Standardized System Configurations","Desktop or Laptop",NewAsset,,
+,"Standardized System Configurations","Disk Array",NewAsset,,
+,"Standardized System Configurations",Laptop,NewAsset,,
+0%,"Surge Protectors",,,,0
+,"Surge Protectors","Desktop or Laptop",NewAsset,,
+,"Surge Protectors","Disk Array",NewAsset,,
+,"Surge Protectors",Laptop,NewAsset,,
+0%,"System and Lifecycle Maintenance",,,,0
+,"System and Lifecycle Maintenance","Desktop or Laptop",NewAsset,,
+,"System and Lifecycle Maintenance",Laptop,NewAsset,,
+0%,"System Configuration Management",,,,0
+,"System Configuration Management","Desktop or Laptop",NewAsset,,
+,"System Configuration Management",Laptop,NewAsset,,
+0%,"System Isolation",,,,0
+,"System Isolation","Desktop or Laptop",NewAsset,,
+,"System Isolation",Laptop,NewAsset,,
+25%,"Tamper-proof Mechanisms",,,,0
+,"Tamper-proof Mechanisms","Backup Media",NewAsset,Yes,
+,"Tamper-proof Mechanisms","Desktop or Laptop",NewAsset,,
+,"Tamper-proof Mechanisms","Disk Array",NewAsset,,
+,"Tamper-proof Mechanisms",Laptop,NewAsset,,
+100%,TestControls,,,,1
+,TestControls,"Backup Media",NewAsset,Yes,
+0%,"Testing of Password Strengths",,,,0
+,"Testing of Password Strengths","Desktop or Laptop",NewAsset,,
+,"Testing of Password Strengths","Disk Array",NewAsset,,
+,"Testing of Password Strengths",Laptop,NewAsset,,
+100%,"Tracking of Backup Media",,,,0
+,"Tracking of Backup Media","Backup Media",NewAsset,Yes,
+0%,"Tracking of Device",,,,0
+,"Tracking of Device",Laptop,NewAsset,,
+,"Tracking of Device",Pager,NewAsset,,
+,"Tracking of Device","USB key or flash drive",NewAsset,,
+0%,"Training for the Security Workforce",,,,0
+,"Training for the Security Workforce","Desktop or Laptop",NewAsset,,
+,"Training for the Security Workforce","Disk Array",NewAsset,,
+,"Training for the Security Workforce",Laptop,NewAsset,,
+0%,"Two-man Rule",,,,0
+,"Two-man Rule","Desktop or Laptop",NewAsset,,
+,"Two-man Rule","Disk Array",NewAsset,,
+,"Two-man Rule",Laptop,NewAsset,,
+0%,"Uninterruptible Power Supply (UPS)",,,,0
+,"Uninterruptible Power Supply (UPS)","Desktop or Laptop",NewAsset,,
+,"Uninterruptible Power Supply (UPS)","Disk Array",NewAsset,,
+,"Uninterruptible Power Supply (UPS)",Laptop,NewAsset,,
+0%,"User Account Management",,,,0
+,"User Account Management","Desktop or Laptop",NewAsset,,
+,"User Account Management","Disk Array",NewAsset,,
+,"User Account Management",Laptop,NewAsset,,
+0%,"User Activity Review",,,,0
+,"User Activity Review","Desktop or Laptop",NewAsset,,
+,"User Activity Review","Disk Array",NewAsset,,
+,"User Activity Review",Laptop,NewAsset,,
+0%,"User Permissions Reviews",,,,0
+,"User Permissions Reviews","Desktop or Laptop",NewAsset,,
+,"User Permissions Reviews","Disk Array",NewAsset,,
+,"User Permissions Reviews",Laptop,NewAsset,,
+25%,"Visitor Access Control",,,,0
+,"Visitor Access Control","Backup Media",NewAsset,In_progress,
+,"Visitor Access Control","Desktop or Laptop",NewAsset,,
+,"Visitor Access Control","Disk Array",NewAsset,,
+,"Visitor Access Control",Laptop,NewAsset,,
+0%,"Wireless Access Restrictions",,,,0
+,"Wireless Access Restrictions","Desktop or Laptop",NewAsset,,
+,"Wireless Access Restrictions","Disk Array",NewAsset,,
+,"Wireless Access Restrictions",Laptop,NewAsset,,
+0%,"Wireless Encryption",,,,0
+,"Wireless Encryption","Desktop or Laptop",NewAsset,,
+,"Wireless Encryption","Disk Array",NewAsset,,
+,"Wireless Encryption",Laptop,NewAsset,,
+0%,"Wireless Link Protection",,,,0
+,"Wireless Link Protection","Desktop or Laptop",NewAsset,,
+,"Wireless Link Protection","Disk Array",NewAsset,,
+,"Wireless Link Protection",Laptop,NewAsset,,
+0%,"Wireless Security Policy and Procedures",,,,0
+,"Wireless Security Policy and Procedures","Desktop or Laptop",NewAsset,,
+,"Wireless Security Policy and Procedures","Disk Array",NewAsset,,
+,"Wireless Security Policy and Procedures",Laptop,NewAsset,,

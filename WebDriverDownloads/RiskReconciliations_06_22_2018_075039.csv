@@ -1,0 +1,2 @@
+Media/Label,"Asset Name(s)","Threat Source","Threat Event",Vulnerability,"Prior Risk Rating","Risk Rating","Residual Risk Rating Likelihood","Residual Risk Rating Impact","Residual Risk Rating","Reconciled Risk Rating Likelihood","Reconciled Risk Rating Impact","Reconciled Risk Rating","Reconciliation Status","Date Reconciled","Risk Owner"
+"Backup Media",TestingAsset,"Careless IT Personnel","Improper Destruction, Disposal or Reuse of Storage Media","Destruction/Disposal Deficiencies",12,12,3,4,12,3,4,12,Reconciled,"06/22/2018 07:36:25","Uma M"

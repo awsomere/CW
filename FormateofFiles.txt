@@ -1,0 +1,53 @@
+      
+       <class name="com.test.AddAssetTestcases"/>     
+       <class name="com.test.RiskDeterminationTestcase"/>      
+       <class name="com.test.ControlsGlobalMediaTestcases"/>     
+       <class name="com.test.ControlReviewTestcases"/> 
+       <class name="com.test.RatingReviewTestcases"/> 
+       <class name="com.test.RiskResponseListTestcase"/>       
+       <class name="com.test.ControlsResponseReviewTestcases"/>     
+       <class name="com.test.ResidualRatingReviewTestcases"/> 
+       <class name="com.test.RiskActionPlanTestcases"/> 
+       <class name="com.test.RiskReconciliationListTestcases"/>   
+        <class name="com.test.DocumentsTestcase"/>
+        <class name="com.test.Activities"/>  
+        <class name="com.test.ReportsTestcases"/> 
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <class name="com.test.Login"/>
+      <class name="com.test.EntityManagement"/>
+      <class name="com.test.AddAsset"/>
+      <class name="com.test.RiskDetermination"/>
+      <class name="com.test.RiskResponse"/>
+      <class name="com.test.ControlsResponseReview"/>
+      <class name="com.test.Documents"/>
+      <class name="com.test.Reports"/>
+      <class name="com.test.ManageAccount"/> 
+
+
+ <class name="com.test.LoginStage"/> 
+      <class name="com.test.AddAssetStage"/>    
+      <class name="com.test.RiskDeterminationStage"/>    
+      <class name="com.test.RiskResponse"/>    
+      <class name="com.test.ControlsResponseReview"/>   
+      <class name="com.test.DocumentsStage"/> 
+      <class name="com.test.ReportsStage"/> 
+        
+              
+      

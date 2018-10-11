@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="7" total="40" passed="33">
+  <reporter-output>
+    <line>
+      <![CDATA[Broser Launched successfully | ]]>
+    </line>
+    <line>
+      <![CDATA[Enter EmailID successfully | ]]>
+    </line>
+    <line>
+      <![CDATA[Enter Password successfully | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on SignIN button successfully | ]]>
+    </line>
+    <line>
+      <![CDATA[Selected the Asset module at sidebar-left | ]]>
+    </line>
+    <line>
+      <![CDATA[Selected Asset Inventory List Sub-module | ]]>
+    </line>
+    <line>
+      <![CDATA[Selected Continue button for the Asset Inventory List Page | ]]>
+    </line>
+    <line>
+      <![CDATA[Create Form Page is displayed and started filling datas for Asset | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for Description | ]]>
+    </line>
+    <line>
+      <![CDATA[Select data from Type of Sensitive Data | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Context ? Icon | ]]>
+    </line>
+    <line>
+      <![CDATA[Select data from Type of Sensitive Data | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Previous Button | ]]>
+    </line>
+    <line>
+      <![CDATA[Select data from Type of Sensitive Data | ]]>
+    </line>
+    <line>
+      <![CDATA[Clic on Expand all categories button ]]>
+    </line>
+    <line>
+      <![CDATA[Backup Media Devices | ]]>
+    </line>
+    <line>
+      <![CDATA[USB Devices | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Context ? Icon | ]]>
+    </line>
+    <line>
+      <![CDATA[Backup Media Devices | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Context ? Icon | ]]>
+    </line>
+    <line>
+      <![CDATA[Backup Media Devices | ]]>
+    </line>
+    <line>
+      <![CDATA[Backup Media Devices | ]]>
+    </line>
+    <line>
+      <![CDATA[Backup Media Devices | ]]>
+    </line>
+    <line>
+      <![CDATA[Backup Media Devices | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Context ? Icon | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Context ? Icon | ]]>
+    </line>
+    <line>
+      <![CDATA[Select data from Type of Sensitive Data | ]]>
+    </line>
+    <line>
+      <![CDATA[Select data from Type of Sensitive Data | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for Number of user | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for Source | ]]>
+    </line>
+    <line>
+      <![CDATA[Select data from Type of Sensitive Data | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for FirstName | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for LastName | ]]>
+    </line>
+    <line>
+      <![CDATA[Add another asset after saving | ]]>
+    </line>
+    <line>
+      <![CDATA[Add another asset after saving | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on 'Change/Add Groups' links in Component Groups Tab]]>
+    </line>
+    <line>
+      <![CDATA[Click on Another Groups Button in Component Groups Tab]]>
+    </line>
+    <line>
+      <![CDATA[Click on New Group Name in Component Groups Tab]]>
+    </line>
+    <line>
+      <![CDATA[Click on New Group Desc in Component Groups Tab]]>
+    </line>
+    <line>
+      <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+    </line>
+    <line>
+      <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+    </line>
+    <line>
+      <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+    </line>
+    <line>
+      <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+    </line>
+    <line>
+      <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+    </line>
+    <line>
+      <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+    </line>
+    <line>
+      <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+    </line>
+    <line>
+      <![CDATA[Successfully Asset created | ]]>
+    </line>
+    <line>
+      <![CDATA[Selected Asset Inventory List Sub-module | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Page header Icon | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Page header Title | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Page breadcrumb | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on PageHelp button Icon | ]]>
+    </line>
+    <line>
+      <![CDATA[Click OK Button in PageHelp pop-up window | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Risk Management Map | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on New Button | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Page header Icon | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Page breadcrumb | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on PageHelp button Icon | ]]>
+    </line>
+    <line>
+      <![CDATA[Click OK Button in PageHelp pop-up window | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Risk Management Map | ]]>
+    </line>
+    <line>
+      <![CDATA[Click ? Button | ]]>
+    </line>
+    <line>
+      <![CDATA[Click ? Button | ]]>
+    </line>
+    <line>
+      <![CDATA[Click ? Button | ]]>
+    </line>
+    <line>
+      <![CDATA[Click ? Button | ]]>
+    </line>
+    <line>
+      <![CDATA[Click ? Button | ]]>
+    </line>
+    <line>
+      <![CDATA[Click ? Button | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Close button | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Close button | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on New Button | ]]>
+    </line>
+    <line>
+      <![CDATA[Create Form Page is displayed and started filling datas for Asset | ]]>
+    </line>
+    <line>
+      <![CDATA[Successfully Asset created | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on New Button | ]]>
+    </line>
+    <line>
+      <![CDATA[Create Form Page is displayed and started filling datas for Asset | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for Description | ]]>
+    </line>
+    <line>
+      <![CDATA[Select data from Type of Sensitive Data | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for Number of user | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for Media Devices | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for FirstName | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for LastName | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for Media Devices | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for Media Devices | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for Media Devices | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for Media Devices | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for Media Devices | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for Media Devices | ]]>
+    </line>
+    <line>
+      <![CDATA[Filled data for Media Devices | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on New Group Name in Component Groups Tab]]>
+    </line>
+    <line>
+      <![CDATA[Click on New Group Desc in Component Groups Tab]]>
+    </line>
+    <line>
+      <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+    </line>
+    <line>
+      <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+    </line>
+    <line>
+      <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+    </line>
+    <line>
+      <![CDATA[Successfully Asset created | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on New Button | ]]>
+    </line>
+    <line>
+      <![CDATA[Create Form Page is displayed and started filling datas for Asset | ]]>
+    </line>
+    <line>
+      <![CDATA[Successfully Asset created | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on New Button | ]]>
+    </line>
+    <line>
+      <![CDATA[Create Form Page is displayed and started filling datas for Asset | ]]>
+    </line>
+    <line>
+      <![CDATA[Successfully Asset created | ]]>
+    </line>
+    <line>
+      <![CDATA[Select one of the added Asset in Asset Inventory List | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Edit button for listed Asset | ]]>
+    </line>
+    <line>
+      <![CDATA[Successfully Asset created | ]]>
+    </line>
+    <line>
+      <![CDATA[Select one of the added Asset in Asset Inventory List | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Delete button for listed Asset | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Cancel button | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Export Button | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on CSV file to download | ]]>
+    </line>
+    <line>
+      <![CDATA[Enter some text in Search Text-box | ]]>
+    </line>
+    <line>
+      <![CDATA[Clear the Enter some text in Search Text-box | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Asset Name column Header to sort for Ascending order  | ]]>
+    </line>
+    <line>
+      <![CDATA[Column Header is sorted in Ascending order successfully  | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Asset Name column Header to sort for Descending order  | ]]>
+    </line>
+    <line>
+      <![CDATA[Column Header is sorted in descending order successfully  | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Asset Description column Header to sort for Ascending order  | ]]>
+    </line>
+    <line>
+      <![CDATA[Column Header is sorted in Ascending order successfully  | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Asset Description column Header to sort for Descending order  | ]]>
+    </line>
+    <line>
+      <![CDATA[Column Header is sorted in descending order successfully  | ]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Asset Inventory Import sub-modules | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Page header Icon | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Page breadcrumb | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on PageHelp button Icon | ]]>
+    </line>
+    <line>
+      <![CDATA[Click OK Button in PageHelp pop-up window | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Risk Management Map | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Download Asset Inventory Import Templates | ]]>
+    </line>
+    <line>
+      <![CDATA[Select the Media/Asset Groups sub-modules listed in Asset Inventory List | ]]>
+    </line>
+    <line>
+      <![CDATA[Select the Edit button of BackUp Media in Media/Asset Groups page | ]]>
+    </line>
+    <line>
+      <![CDATA[Enter label in Edit Media/Asset Groups | ]]>
+    </line>
+    <line>
+      <![CDATA[Select the Risk Analysis for Edit Media/Asset Groups | ]]>
+    </line>
+    <line>
+      <![CDATA[Select the added calendar for Edit Media/Asset Groups | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Save Button | ]]>
+    </line>
+    <line>
+      <![CDATA[Delete the Asset in Media/Asset Groups | ]]>
+    </line>
+    <line>
+      <![CDATA[warning pop-up get appears and click on cancel button | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Page header Icon | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Page header Title | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Page breadcrumb | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on PageHelp button Icon | ]]>
+    </line>
+    <line>
+      <![CDATA[Click OK Button in PageHelp pop-up window | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Risk Management Map | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Account drop-down  | ]]>
+    </line>
+    <line>
+      <![CDATA[Click on Logout button  | ]]>
+    </line>
+    <line>
+      <![CDATA[Browser Quit | ]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1618399" started-at="2018-10-10T13:31:00Z" finished-at="2018-10-10T13:57:58Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="1618399" started-at="2018-10-10T13:31:00Z" finished-at="2018-10-10T13:57:58Z">
+      <class name="com.test.AddAssetTestcases">
+        <test-method status="PASS" signature="NavigatePage_AssetInventoryList()[pri:1, instance:com.test.AddAssetTestcases@53b32d7]" name="NavigatePage_AssetInventoryList" duration-ms="72040" started-at="2018-10-10T19:01:00Z" finished-at="2018-10-10T19:02:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Selected the Asset module at sidebar-left | ]]>
+            </line>
+            <line>
+              <![CDATA[Selected Asset Inventory List Sub-module | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- NavigatePage_AssetInventoryList -->
+        <test-method status="PASS" signature="AssetWizard_AssetInventoryList()[pri:2, instance:com.test.AddAssetTestcases@53b32d7]" name="AssetWizard_AssetInventoryList" duration-ms="449521" started-at="2018-10-10T19:02:12Z" finished-at="2018-10-10T19:09:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Selected Continue button for the Asset Inventory List Page | ]]>
+            </line>
+            <line>
+              <![CDATA[Create Form Page is displayed and started filling datas for Asset | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for Description | ]]>
+            </line>
+            <line>
+              <![CDATA[Select data from Type of Sensitive Data | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Context ? Icon | ]]>
+            </line>
+            <line>
+              <![CDATA[Select data from Type of Sensitive Data | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Previous Button | ]]>
+            </line>
+            <line>
+              <![CDATA[Select data from Type of Sensitive Data | ]]>
+            </line>
+            <line>
+              <![CDATA[Clic on Expand all categories button ]]>
+            </line>
+            <line>
+              <![CDATA[Backup Media Devices | ]]>
+            </line>
+            <line>
+              <![CDATA[USB Devices | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Context ? Icon | ]]>
+            </line>
+            <line>
+              <![CDATA[Backup Media Devices | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Context ? Icon | ]]>
+            </line>
+            <line>
+              <![CDATA[Backup Media Devices | ]]>
+            </line>
+            <line>
+              <![CDATA[Backup Media Devices | ]]>
+            </line>
+            <line>
+              <![CDATA[Backup Media Devices | ]]>
+            </line>
+            <line>
+              <![CDATA[Backup Media Devices | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Context ? Icon | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Context ? Icon | ]]>
+            </line>
+            <line>
+              <![CDATA[Select data from Type of Sensitive Data | ]]>
+            </line>
+            <line>
+              <![CDATA[Select data from Type of Sensitive Data | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for Number of user | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for Source | ]]>
+            </line>
+            <line>
+              <![CDATA[Select data from Type of Sensitive Data | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for FirstName | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for LastName | ]]>
+            </line>
+            <line>
+              <![CDATA[Add another asset after saving | ]]>
+            </line>
+            <line>
+              <![CDATA[Add another asset after saving | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on 'Change/Add Groups' links in Component Groups Tab]]>
+            </line>
+            <line>
+              <![CDATA[Click on Another Groups Button in Component Groups Tab]]>
+            </line>
+            <line>
+              <![CDATA[Click on New Group Name in Component Groups Tab]]>
+            </line>
+            <line>
+              <![CDATA[Click on New Group Desc in Component Groups Tab]]>
+            </line>
+            <line>
+              <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+            </line>
+            <line>
+              <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+            </line>
+            <line>
+              <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+            </line>
+            <line>
+              <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+            </line>
+            <line>
+              <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+            </line>
+            <line>
+              <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+            </line>
+            <line>
+              <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+            </line>
+            <line>
+              <![CDATA[Successfully Asset created | ]]>
+            </line>
+            <line>
+              <![CDATA[Selected Asset Inventory List Sub-module | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AssetWizard_AssetInventoryList -->
+        <test-method status="PASS" signature="PageHearder_AssetInventoryList()[pri:3, instance:com.test.AddAssetTestcases@53b32d7]" name="PageHearder_AssetInventoryList" duration-ms="9449" started-at="2018-10-10T19:09:41Z" finished-at="2018-10-10T19:09:51Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on Page header Icon | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Page header Title | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PageHearder_AssetInventoryList -->
+        <test-method status="PASS" signature="PanelBar_AssetInventoryList()[pri:4, instance:com.test.AddAssetTestcases@53b32d7]" name="PanelBar_AssetInventoryList" duration-ms="9250" started-at="2018-10-10T19:09:51Z" finished-at="2018-10-10T19:10:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on Page breadcrumb | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PanelBar_AssetInventoryList -->
+        <test-method status="PASS" signature="PageLevelHelp_AssetInventoryList()[pri:5, instance:com.test.AddAssetTestcases@53b32d7]" name="PageLevelHelp_AssetInventoryList" duration-ms="19467" started-at="2018-10-10T19:10:00Z" finished-at="2018-10-10T19:10:19Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on PageHelp button Icon | ]]>
+            </line>
+            <line>
+              <![CDATA[Click OK Button in PageHelp pop-up window | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PageLevelHelp_AssetInventoryList -->
+        <test-method status="PASS" signature="RiskManagementMap_AssetInventoryList()[pri:6, instance:com.test.AddAssetTestcases@53b32d7]" name="RiskManagementMap_AssetInventoryList" duration-ms="18465" started-at="2018-10-10T19:10:19Z" finished-at="2018-10-10T19:10:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on Risk Management Map | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RiskManagementMap_AssetInventoryList -->
+        <test-method status="PASS" signature="PageHearder_CreateAsset()[pri:7, instance:com.test.AddAssetTestcases@53b32d7]" name="PageHearder_CreateAsset" duration-ms="24502" started-at="2018-10-10T19:10:38Z" finished-at="2018-10-10T19:11:02Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on New Button | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Page header Icon | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PageHearder_CreateAsset -->
+        <test-method status="PASS" signature="PanelBar_CreateAsset()[pri:8, instance:com.test.AddAssetTestcases@53b32d7]" name="PanelBar_CreateAsset" duration-ms="8150" started-at="2018-10-10T19:11:02Z" finished-at="2018-10-10T19:11:10Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on Page breadcrumb | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PanelBar_CreateAsset -->
+        <test-method status="PASS" signature="PageLevelHelp_CreateAsset()[pri:9, instance:com.test.AddAssetTestcases@53b32d7]" name="PageLevelHelp_CreateAsset" duration-ms="13513" started-at="2018-10-10T19:11:10Z" finished-at="2018-10-10T19:11:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on PageHelp button Icon | ]]>
+            </line>
+            <line>
+              <![CDATA[Click OK Button in PageHelp pop-up window | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PageLevelHelp_CreateAsset -->
+        <test-method status="PASS" signature="RiskManagementMap_CreateAsset()[pri:10, instance:com.test.AddAssetTestcases@53b32d7]" name="RiskManagementMap_CreateAsset" duration-ms="13446" started-at="2018-10-10T19:11:24Z" finished-at="2018-10-10T19:11:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on Risk Management Map | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RiskManagementMap_CreateAsset -->
+        <test-method status="PASS" signature="ContextHelp_CreateAsset()[pri:11, instance:com.test.AddAssetTestcases@53b32d7]" name="ContextHelp_CreateAsset" duration-ms="72183" started-at="2018-10-10T19:11:37Z" finished-at="2018-10-10T19:12:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click ? Button | ]]>
+            </line>
+            <line>
+              <![CDATA[Click ? Button | ]]>
+            </line>
+            <line>
+              <![CDATA[Click ? Button | ]]>
+            </line>
+            <line>
+              <![CDATA[Click ? Button | ]]>
+            </line>
+            <line>
+              <![CDATA[Click ? Button | ]]>
+            </line>
+            <line>
+              <![CDATA[Click ? Button | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Close button | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Close button | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ContextHelp_CreateAsset -->
+        <test-method status="PASS" signature="AssetNameOnly_CreateAsset()[pri:12, instance:com.test.AddAssetTestcases@53b32d7]" name="AssetNameOnly_CreateAsset" duration-ms="69521" started-at="2018-10-10T19:12:50Z" finished-at="2018-10-10T19:13:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on New Button | ]]>
+            </line>
+            <line>
+              <![CDATA[Create Form Page is displayed and started filling datas for Asset | ]]>
+            </line>
+            <line>
+              <![CDATA[Successfully Asset created | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AssetNameOnly_CreateAsset -->
+        <test-method status="PASS" signature="Testing_AllFields_CreateAsset()[pri:13, instance:com.test.AddAssetTestcases@53b32d7]" name="Testing_AllFields_CreateAsset" duration-ms="300836" started-at="2018-10-10T19:13:59Z" finished-at="2018-10-10T19:19:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on New Button | ]]>
+            </line>
+            <line>
+              <![CDATA[Create Form Page is displayed and started filling datas for Asset | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for Description | ]]>
+            </line>
+            <line>
+              <![CDATA[Select data from Type of Sensitive Data | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for Number of user | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for Media Devices | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for FirstName | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for LastName | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for Media Devices | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for Media Devices | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for Media Devices | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for Media Devices | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for Media Devices | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for Media Devices | ]]>
+            </line>
+            <line>
+              <![CDATA[Filled data for Media Devices | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on New Group Name in Component Groups Tab]]>
+            </line>
+            <line>
+              <![CDATA[Click on New Group Desc in Component Groups Tab]]>
+            </line>
+            <line>
+              <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+            </line>
+            <line>
+              <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+            </line>
+            <line>
+              <![CDATA[Click on Create & Select Button in Component Groups Tab]]>
+            </line>
+            <line>
+              <![CDATA[Successfully Asset created | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Testing_AllFields_CreateAsset -->
+        <test-method status="PASS" signature="Disable_sunset_Status_CreateAsset()[pri:14, instance:com.test.AddAssetTestcases@53b32d7]" name="Disable_sunset_Status_CreateAsset" duration-ms="65751" started-at="2018-10-10T19:19:00Z" finished-at="2018-10-10T19:20:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on New Button | ]]>
+            </line>
+            <line>
+              <![CDATA[Create Form Page is displayed and started filling datas for Asset | ]]>
+            </line>
+            <line>
+              <![CDATA[Successfully Asset created | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Disable_sunset_Status_CreateAsset -->
+        <test-method status="PASS" signature="Prepoduction_Staus_CreateAsset()[pri:15, instance:com.test.AddAssetTestcases@53b32d7]" name="Prepoduction_Staus_CreateAsset" duration-ms="63702" started-at="2018-10-10T19:20:06Z" finished-at="2018-10-10T19:21:09Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on New Button | ]]>
+            </line>
+            <line>
+              <![CDATA[Create Form Page is displayed and started filling datas for Asset | ]]>
+            </line>
+            <line>
+              <![CDATA[Successfully Asset created | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Prepoduction_Staus_CreateAsset -->
+        <test-method status="PASS" signature="EditBtn_AssetInventoryList()[pri:16, instance:com.test.AddAssetTestcases@53b32d7]" name="EditBtn_AssetInventoryList" duration-ms="59428" started-at="2018-10-10T19:21:09Z" finished-at="2018-10-10T19:22:09Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Select one of the added Asset in Asset Inventory List | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Edit button for listed Asset | ]]>
+            </line>
+            <line>
+              <![CDATA[Successfully Asset created | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- EditBtn_AssetInventoryList -->
+        <test-method status="PASS" signature="DeleteBtn_AssetInventoryList()[pri:17, instance:com.test.AddAssetTestcases@53b32d7]" name="DeleteBtn_AssetInventoryList" duration-ms="22780" started-at="2018-10-10T19:22:09Z" finished-at="2018-10-10T19:22:32Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Select one of the added Asset in Asset Inventory List | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Delete button for listed Asset | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Cancel button | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DeleteBtn_AssetInventoryList -->
+        <test-method status="PASS" signature="ExportBtn_AssetInventoryList()[pri:19, instance:com.test.AddAssetTestcases@53b32d7]" name="ExportBtn_AssetInventoryList" duration-ms="28750" started-at="2018-10-10T19:22:32Z" finished-at="2018-10-10T19:23:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on Export Button | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on CSV file to download | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ExportBtn_AssetInventoryList -->
+        <test-method status="PASS" signature="Search_AssetInventoryList()[pri:20, instance:com.test.AddAssetTestcases@53b32d7]" name="Search_AssetInventoryList" duration-ms="24514" started-at="2018-10-10T19:23:00Z" finished-at="2018-10-10T19:23:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Enter some text in Search Text-box | ]]>
+            </line>
+            <line>
+              <![CDATA[Clear the Enter some text in Search Text-box | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Search_AssetInventoryList -->
+        <test-method status="PASS" signature="Sorting_AssetInventoryList()[pri:21, instance:com.test.AddAssetTestcases@53b32d7]" name="Sorting_AssetInventoryList" duration-ms="61425" started-at="2018-10-10T19:23:25Z" finished-at="2018-10-10T19:24:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on Asset Name column Header to sort for Ascending order  | ]]>
+            </line>
+            <line>
+              <![CDATA[Column Header is sorted in Ascending order successfully  | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Asset Name column Header to sort for Descending order  | ]]>
+            </line>
+            <line>
+              <![CDATA[Column Header is sorted in descending order successfully  | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Asset Description column Header to sort for Ascending order  | ]]>
+            </line>
+            <line>
+              <![CDATA[Column Header is sorted in Ascending order successfully  | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Asset Description column Header to sort for Descending order  | ]]>
+            </line>
+            <line>
+              <![CDATA[Column Header is sorted in descending order successfully  | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Sorting_AssetInventoryList -->
+        <test-method status="PASS" signature="NavigationPage_AssetInventoryImport()[pri:23, instance:com.test.AddAssetTestcases@53b32d7]" name="NavigationPage_AssetInventoryImport" duration-ms="10139" started-at="2018-10-10T19:24:26Z" finished-at="2018-10-10T19:24:36Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Asset Inventory Import sub-modules | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- NavigationPage_AssetInventoryImport -->
+        <test-method status="PASS" signature="PageHearder_AssetInventoryImport()[pri:24, instance:com.test.AddAssetTestcases@53b32d7]" name="PageHearder_AssetInventoryImport" duration-ms="14223" started-at="2018-10-10T19:24:36Z" finished-at="2018-10-10T19:24:51Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on Page header Icon | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PageHearder_AssetInventoryImport -->
+        <test-method status="PASS" signature="PanelBar_AssetInventoryImport()[pri:25, instance:com.test.AddAssetTestcases@53b32d7]" name="PanelBar_AssetInventoryImport" duration-ms="10237" started-at="2018-10-10T19:24:51Z" finished-at="2018-10-10T19:25:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on Page breadcrumb | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PanelBar_AssetInventoryImport -->
+        <test-method status="PASS" signature="PageLevelHelp_AssetInventoryImport()[pri:26, instance:com.test.AddAssetTestcases@53b32d7]" name="PageLevelHelp_AssetInventoryImport" duration-ms="18435" started-at="2018-10-10T19:25:01Z" finished-at="2018-10-10T19:25:19Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on PageHelp button Icon | ]]>
+            </line>
+            <line>
+              <![CDATA[Click OK Button in PageHelp pop-up window | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PageLevelHelp_AssetInventoryImport -->
+        <test-method status="PASS" signature="RiskManagementMap_AssetInventoryImport()[pri:27, instance:com.test.AddAssetTestcases@53b32d7]" name="RiskManagementMap_AssetInventoryImport" duration-ms="18470" started-at="2018-10-10T19:25:19Z" finished-at="2018-10-10T19:25:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on Risk Management Map | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RiskManagementMap_AssetInventoryImport -->
+        <test-method status="PASS" signature="Download_AssetInventoryImport()[pri:28, instance:com.test.AddAssetTestcases@53b32d7]" name="Download_AssetInventoryImport" duration-ms="7859" started-at="2018-10-10T19:25:38Z" finished-at="2018-10-10T19:25:46Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on Download Asset Inventory Import Templates | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Download_AssetInventoryImport -->
+        <test-method status="PASS" signature="NavigationPage_MediaAssetGroups()[pri:33, instance:com.test.AddAssetTestcases@53b32d7]" name="NavigationPage_MediaAssetGroups" duration-ms="10742" started-at="2018-10-10T19:25:46Z" finished-at="2018-10-10T19:25:56Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Select the Media/Asset Groups sub-modules listed in Asset Inventory List | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- NavigationPage_MediaAssetGroups -->
+        <test-method status="PASS" signature="Edit_MediaAssetGroups()[pri:34, instance:com.test.AddAssetTestcases@53b32d7]" name="Edit_MediaAssetGroups" duration-ms="37494" started-at="2018-10-10T19:25:56Z" finished-at="2018-10-10T19:26:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Select the Edit button of BackUp Media in Media/Asset Groups page | ]]>
+            </line>
+            <line>
+              <![CDATA[Enter label in Edit Media/Asset Groups | ]]>
+            </line>
+            <line>
+              <![CDATA[Select the Risk Analysis for Edit Media/Asset Groups | ]]>
+            </line>
+            <line>
+              <![CDATA[Select the added calendar for Edit Media/Asset Groups | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Save Button | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Edit_MediaAssetGroups -->
+        <test-method status="PASS" signature="Delete_MediaAssetGroups()[pri:35, instance:com.test.AddAssetTestcases@53b32d7]" name="Delete_MediaAssetGroups" duration-ms="14490" started-at="2018-10-10T19:26:34Z" finished-at="2018-10-10T19:26:48Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Delete the Asset in Media/Asset Groups | ]]>
+            </line>
+            <line>
+              <![CDATA[warning pop-up get appears and click on cancel button | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Delete_MediaAssetGroups -->
+        <test-method status="PASS" signature="PageHearder_MediaAsset()[pri:36, instance:com.test.AddAssetTestcases@53b32d7]" name="PageHearder_MediaAsset" duration-ms="22477" started-at="2018-10-10T19:26:48Z" finished-at="2018-10-10T19:27:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on Page header Icon | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Page header Title | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PageHearder_MediaAsset -->
+        <test-method status="PASS" signature="PanelBar_MediaAsset()[pri:37, instance:com.test.AddAssetTestcases@53b32d7]" name="PanelBar_MediaAsset" duration-ms="10228" started-at="2018-10-10T19:27:11Z" finished-at="2018-10-10T19:27:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on Page breadcrumb | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PanelBar_MediaAsset -->
+        <test-method status="PASS" signature="PageLevelHelp_MediaAsset()[pri:38, instance:com.test.AddAssetTestcases@53b32d7]" name="PageLevelHelp_MediaAsset" duration-ms="18452" started-at="2018-10-10T19:27:21Z" finished-at="2018-10-10T19:27:40Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on PageHelp button Icon | ]]>
+            </line>
+            <line>
+              <![CDATA[Click OK Button in PageHelp pop-up window | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PageLevelHelp_MediaAsset -->
+        <test-method status="PASS" signature="RiskManagementMap_MediaAsset()[pri:39, instance:com.test.AddAssetTestcases@53b32d7]" name="RiskManagementMap_MediaAsset" duration-ms="18405" started-at="2018-10-10T19:27:40Z" finished-at="2018-10-10T19:27:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on Risk Management Map | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RiskManagementMap_MediaAsset -->
+      </class> <!-- com.test.AddAssetTestcases -->
+      <class name="com.test.Login">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.test.Login@343f4d3d]" name="login" is-config="true" duration-ms="39126" started-at="2018-10-10T19:00:20Z" finished-at="2018-10-10T19:01:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Broser Launched successfully | ]]>
+            </line>
+            <line>
+              <![CDATA[Enter EmailID successfully | ]]>
+            </line>
+            <line>
+              <![CDATA[Enter Password successfully | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on SignIN button successfully | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="cleanupSuite()[pri:0, instance:com.test.Login@343f4d3d]" name="cleanupSuite" is-config="true" duration-ms="23987" started-at="2018-10-10T19:27:58Z" finished-at="2018-10-10T19:28:22Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on Account drop-down  | ]]>
+            </line>
+            <line>
+              <![CDATA[Click on Logout button  | ]]>
+            </line>
+            <line>
+              <![CDATA[Browser Quit | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- cleanupSuite -->
+      </class> <!-- com.test.Login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

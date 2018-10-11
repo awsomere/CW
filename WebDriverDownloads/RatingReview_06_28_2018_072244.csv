@@ -1,0 +1,5 @@
+Media/Label,"Asset Name(s)","Threat Source","Threat Event",Vulnerability,"Created Date","Updated Date","Risk Likelihood","Risk Impact","Risk Rating"
+"Backup Media",TestingAsset,"Careless IT Personnel","Corruption or Destruction of Important Data","Lack of Data Validation","06/28/2018 06:48","06/28/2018 06:48",2,3,6
+"Backup Media",TestingAsset,"Careless IT Personnel","Improper Destruction, Disposal or Reuse of Storage Media","Destruction/Disposal Deficiencies","06/28/2018 06:48","06/28/2018 06:48",3,4,12
+"Backup Media",TestingAsset,Test,"Theft of Storage Media","Anti-malware Deficiencies","06/28/2018 06:49","06/28/2018 06:49",4,4,16
+"Backup Media",TestingAsset,"Careless User","Physical Damage to Equipment",Accidents,"06/28/2018 06:49","06/28/2018 06:49",3,3,9

@@ -1,0 +1,47 @@
+"Media And Storage Devices",Label,"Asset Name(s)","Threat Source","Threat Event",Vulnerability,Control,"NIST Family","NIST Family ID","Created Date","Updated Date",Global,Media
+Laptop,,TestingAsset,"System Cracker","Theft of Sensitive Data","User Authentication Deficiencies","Accounts Lock After Too Many Failed Logins",,,"06/22/2018 07:13","06/22/2018 07:13",TBD,"In progress"
+Laptop,,TestingAsset,"System Cracker","Theft of Sensitive Data","Physical Security Deficiencies","Physical Access Authorization",,,"06/23/2018 12:05","06/23/2018 12:05",TBD,Yes
+Laptop,,TestingAsset,"System Cracker","Theft of Sensitive Data","Insecure Network Configuration","Auto Logoff or Auto Screen Locking",,,"06/22/2018 07:14","06/22/2018 07:14",No,No
+Laptop,,TestingAsset,"System Cracker","Theft of Sensitive Data","Insecure Network Configuration","Authentication of Network Sessions (as Distinct From Users)",,,"06/22/2018 07:14","06/22/2018 07:14","In progress","In progress"
+Laptop,,TestingAsset,"System Cracker","Theft of Sensitive Data","Custom Application Weaknesses","Application Penetration and Vulnerability Testing",,,"06/22/2018 07:14","06/22/2018 07:14",Yes,Yes
+Laptop,,TestingAsset,"System Cracker","Theft of Sensitive Data","Custom Application Weaknesses","Application Code Review",,,"06/22/2018 07:14","06/22/2018 07:14","In progress","In progress"
+Laptop,,TestingAsset,"System Cracker","Insecure User Management","Dormant Accounts","Access Logging",,,"06/22/2018 07:13","06/22/2018 07:13",Yes,Yes
+Laptop,,TestingAsset,Malware,"Theft of Sensitive Data","Anti-malware Deficiencies","Anti-virus Policy and Procedures",,,"06/23/2018 10:59","06/23/2018 10:59",No,No
+Laptop,,TestingAsset,Malware,"Theft of Sensitive Data","Anti-malware Deficiencies","Anti-Malware Software",,,"06/22/2018 07:14","06/22/2018 07:14",No,No
+Laptop,,TestingAsset,"Malicious User","Malicious Use of Sensitive Data","Endpoint Leakage","Acceptable Use Policy",,,"06/22/2018 07:13","06/22/2018 07:13",Yes,Yes
+Laptop,,TestingAsset,"Careless Software Developer","Insecure Development of Software","Custom Application Weaknesses","Application or Data Partitioning",,,"06/22/2018 07:14","06/22/2018 07:14",No,No
+"Disk Array",,TestingAsset,"System Cracker","Theft of Sensitive Data","User Authentication Deficiencies","Accounts Lock After Too Many Failed Logins",,,"06/22/2018 07:13","06/22/2018 07:13",TBD,"In progress"
+"Disk Array",,TestingAsset,"System Cracker","Theft of Sensitive Data","Insecure Network Configuration","Auto Logoff or Auto Screen Locking",,,"06/22/2018 07:14","06/22/2018 07:14",No,No
+"Disk Array",,TestingAsset,"System Cracker","Theft of Sensitive Data","Insecure Network Configuration","Authentication of Network Sessions (as Distinct From Users)",,,"06/22/2018 07:14","06/22/2018 07:14","In progress","In progress"
+"Disk Array",,TestingAsset,"System Cracker","Theft of Sensitive Data","Custom Application Weaknesses","Application Penetration and Vulnerability Testing",,,"06/22/2018 07:14","06/22/2018 07:14",Yes,Yes
+"Disk Array",,TestingAsset,"System Cracker","Theft of Sensitive Data","Custom Application Weaknesses","Application Code Review",,,"06/22/2018 07:14","06/22/2018 07:14","In progress","In progress"
+"Disk Array",,TestingAsset,"System Cracker","Insecure User Management","Dormant Accounts","Access Logging",,,"06/22/2018 07:13","06/22/2018 07:13",Yes,Yes
+"Disk Array",,TestingAsset,Malware,"Theft of Sensitive Data","Anti-malware Deficiencies","Anti-virus Policy and Procedures",,,"06/23/2018 10:59","06/23/2018 10:59",No,No
+"Disk Array",,TestingAsset,Malware,"Theft of Sensitive Data","Anti-malware Deficiencies","Anti-Malware Software",,,"06/22/2018 07:14","06/22/2018 07:14",No,No
+"Disk Array",,TestingAsset,"Malicious User","Malicious Use of Sensitive Data","Endpoint Leakage","Acceptable Use Policy",,,"06/22/2018 07:13","06/22/2018 07:13",Yes,Yes
+"Disk Array",,TestingAsset,"Careless Software Developer","Insecure Development of Software","Custom Application Weaknesses","Application or Data Partitioning",,,"06/22/2018 07:14","06/22/2018 07:14",No,No
+"Desktop or Laptop",,TestingAsset,"System Cracker","Theft of Sensitive Data","User Authentication Deficiencies","Accounts Lock After Too Many Failed Logins",,,"06/22/2018 07:13","06/22/2018 07:13",TBD,Yes
+"Desktop or Laptop",,TestingAsset,"System Cracker","Theft of Sensitive Data","Insecure Network Configuration","Auto Logoff or Auto Screen Locking",,,"06/22/2018 07:14","06/22/2018 07:14",No,No
+"Desktop or Laptop",,TestingAsset,"System Cracker","Theft of Sensitive Data","Insecure Network Configuration","Authentication of Network Sessions (as Distinct From Users)",,,"06/22/2018 07:14","06/22/2018 07:14","In progress","In progress"
+"Desktop or Laptop",,TestingAsset,"System Cracker","Theft of Sensitive Data","Custom Application Weaknesses","Application Penetration and Vulnerability Testing",,,"06/22/2018 07:14","06/22/2018 07:14",Yes,Yes
+"Desktop or Laptop",,TestingAsset,"System Cracker","Theft of Sensitive Data","Custom Application Weaknesses","Application Code Review",,,"06/22/2018 07:14","06/22/2018 07:14","In progress","In progress"
+"Desktop or Laptop",,TestingAsset,"System Cracker","Theft of Sensitive Data","Anti-malware Deficiencies","Anti-Malware Software",,,"06/22/2018 07:14","06/22/2018 07:14",No,No
+"Desktop or Laptop",,TestingAsset,"System Cracker","Insecure User Management","Dormant Accounts","Access Logging",,,"06/22/2018 07:13","06/22/2018 07:13",Yes,Yes
+"Desktop or Laptop",,TestingAsset,Malware,"Theft of Sensitive Data","Anti-malware Deficiencies","Anti-virus Policy and Procedures",,,"06/23/2018 10:59","06/23/2018 10:59",No,No
+"Desktop or Laptop",,TestingAsset,"Malicious User","Malicious Use of Sensitive Data","Endpoint Leakage","Acceptable Use Policy",,,"06/22/2018 07:13","06/22/2018 07:13",Yes,Yes
+"Desktop or Laptop",,TestingAsset,"Careless Software Developer","Insecure Development of Software","Custom Application Weaknesses","Application or Data Partitioning",,,"06/22/2018 07:14","06/22/2018 07:14",No,No
+"Backup Media",,TestingAsset,"Careless User","Physical Damage to Equipment",Accidents,"Backup Media Handling Policy and Procedures",,,"06/22/2018 07:06","06/22/2018 07:06",TBD,Yes
+"Backup Media",,TestingAsset,"Careless IT Personnel","Loss of Storage Media","Improper Media/Device Handling","Tracking of Backup Media",,,"06/22/2018 07:06","06/22/2018 07:06",TBD,No
+"Backup Media",,TestingAsset,"Careless IT Personnel","Loss of Storage Media","Improper Media/Device Handling","Encryption of Backup Media",,,"06/22/2018 07:01","06/22/2018 07:01",TBD,Yes
+"Backup Media",,TestingAsset,"Careless IT Personnel","Loss of Storage Media","Improper Media/Device Handling","Acceptable Use Policy",,,"06/22/2018 07:05","06/22/2018 07:13",Yes,Yes
+"Backup Media",,TestingAsset,"Careless IT Personnel","Improper Destruction, Disposal or Reuse of Storage Media","Destruction/Disposal Deficiencies","Media/Device Reuse and Disposal Policy and Procedures",,,"06/22/2018 07:05","06/22/2018 07:36",TBD,Yes
+"Backup Media",,TestingAsset,"Careless IT Personnel","Improper Destruction, Disposal or Reuse of Storage Media","Destruction/Disposal Deficiencies","Device Re-use and Disposal Policy and Procedures",,,"06/22/2018 07:05","06/22/2018 07:05",TBD,Yes
+"Backup Media",,TestingAsset,"Careless IT Personnel","Corruption or Destruction of Important Data","Lack of Data Validation","Tamper-proof Mechanisms",,,"06/22/2018 07:03","06/22/2018 07:03",TBD,Yes
+"Backup Media",,TestingAsset,Burglar/Thief,"Theft of Storage Media","Physical Security Deficiencies","Visitor Access Control",,,"06/22/2018 07:02","06/22/2018 07:02",TBD,"In progress"
+"Backup Media",,TestingAsset,Burglar/Thief,"Theft of Storage Media","Physical Security Deficiencies","Secure Storage of Backup Media When Not in Use",,,"06/22/2018 07:01","06/22/2018 07:01",TBD,No
+"Backup Media",,TestingAsset,Burglar/Thief,"Theft of Storage Media","Physical Security Deficiencies","Physical Access Monitoring",,,"06/22/2018 07:02","06/22/2018 07:02",TBD,Yes
+"Backup Media",,TestingAsset,Burglar/Thief,"Theft of Storage Media","Physical Security Deficiencies","Physical Access Control",,,"06/22/2018 07:02","06/22/2018 07:02",TBD,No
+"Backup Media",,TestingAsset,Burglar/Thief,"Theft of Storage Media","Physical Security Deficiencies","Physical Access Authorization",,,"06/22/2018 12:12","06/22/2018 12:12",TBD,N/A
+"Backup Media",,TestingAsset,Burglar/Thief,"Theft of Storage Media","Physical Security Deficiencies","Inventory Control Process",,,"06/22/2018 07:02","06/22/2018 07:02",TBD,"In progress"
+"Backup Media",,TestingAsset,Burglar/Thief,"Theft of Storage Media","Improper Media/Device Handling","Offsite Backup Media Storage",,,"06/22/2018 07:01","06/22/2018 07:01",TBD,"In progress"
+"Backup Media",,TestingAsset,Burglar/Thief,"Theft of Equipment","Physical Security Deficiencies",TestControls,,,"06/22/2018 06:57","06/22/2018 06:57",TBD,Yes

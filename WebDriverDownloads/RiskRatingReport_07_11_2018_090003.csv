@@ -1,0 +1,8 @@
+"Scenario Advisory",Media/Label,"Asset Name(s)","Threat Source","Threat Event",Vulnerability,"Risk Likelihood","Risk Impact","Risk Rating"
+,"Backup Media / sample Backup label",TestingAsset,Burglar/Thief,"Theft of Storage Media","Physical Security Deficiencies",4,4,16
+,"Backup Media / sample Backup label",TestingAsset,"Careless IT Personnel","Improper Destruction, Disposal or Reuse of Storage Media","Destruction/Disposal Deficiencies",3,4,12
+,"Backup Media / sample Backup label",TestingAsset,Burglar/Thief,"Theft of Equipment","Physical Security Deficiencies",3,4,12
+,"Backup Media / sample Backup label",TestingAsset,"Careless IT Personnel","Loss of Storage Media","Improper Media/Device Handling",3,2,6
+Updated,"Backup Media / sample Backup label",TestingAsset,"Careless IT Personnel","Corruption or Destruction of Important Data","Lack of Data Validation",3,2,6
+,"Backup Media / sample Backup label",TestingAsset,"Careless User","Physical Damage to Equipment",Accidents,2,2,4
+,"Backup Media / sample Backup label",TestingAsset,Burglar/Thief,"Theft of Storage Media","Improper Media/Device Handling",1,4,4

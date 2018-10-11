@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.test.AddAssetTestcases">
+        <methods>
+          <include name="ExportBtn_AssetInventoryList"/>
+          <include name="Prepoduction_Staus_CreateAsset"/>
+          <include name="Testing_AllFields_CreateAsset"/>
+          <include name="ContextHelp_CreateAsset"/>
+          <include name="AssetNameOnly_CreateAsset"/>
+          <include name="DeleteBtn_AssetInventoryList"/>
+          <include name="PanelBar_CreateAsset"/>
+          <include name="Search_AssetInventoryList"/>
+          <include name="Sorting_AssetInventoryList"/>
+          <include name="Disable_sunset_Status_CreateAsset"/>
+        </methods>
+      </class> <!-- com.test.AddAssetTestcases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

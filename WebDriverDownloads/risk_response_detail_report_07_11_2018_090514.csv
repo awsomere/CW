@@ -1,0 +1,6 @@
+"Scenario Advisory",Media/Label,"Asset Name(s)","Threat Source/Threat Event",Vulnerability,"Prior Risk Rating","Risk Rating","Residual Risk Rating","Risk Treatment","Evaluation Status","Implementation Planning","Risk Action Plan Status","Reconciliation Status","Risk Owner"
+,"Backup Media / sample Backup label",TestingAsset,"Burglar/Thief|Theft of Storage Media","Physical Security Deficiencies",TBD,16,-,TBD,TBD,TBD,TBD,TBD,N/A
+,"Backup Media / sample Backup label",TestingAsset,"Burglar/Thief|Theft of Equipment","Physical Security Deficiencies",TBD,12,-,TBD,TBD,TBD,TBD,TBD,N/A
+,"Backup Media / sample Backup label",TestingAsset,"Careless IT Personnel|Improper Destruction, Disposal or Reuse of Storage Media","Destruction/Disposal Deficiencies",12,12,12,Transfer,Approved,Planned,Complete,Reconciled,N/A
+,,,,,Control,Action,"Impl Manager",Priority,"Due Date","Completion Date",Status
+,,,,,"Media/Device Reuse and Disposal Policy and Procedures",Enhance,"Uma M",High,01/02/2018,01/02/2018,Implemented

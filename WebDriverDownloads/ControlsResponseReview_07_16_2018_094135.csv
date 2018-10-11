@@ -1,0 +1,4 @@
+Control/Recommendation,Media/Label,"Control Response",Asset(s),Effectiveness,Cost,Feasibility,Global,Action
+"Encryption of Device","Pager / No Label",Yes,"Pager Media",Effective,150,Feasible,Y,Enhance
+"Remote Wipe/Remote Lock","Pager / No Label",Yes,"Pager Media",Effective,100,Feasible,,Enhance
+"Tracking of Device","Pager / No Label",Yes,"Pager Media",,,,,"Not applicable"
