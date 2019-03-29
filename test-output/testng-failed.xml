@@ -5,18 +5,71 @@
     <classes>
       <class name="com.test.AddAssetTestcases">
         <methods>
-          <include name="ExportBtn_AssetInventoryList"/>
-          <include name="Prepoduction_Staus_CreateAsset"/>
-          <include name="Testing_AllFields_CreateAsset"/>
-          <include name="ContextHelp_CreateAsset"/>
-          <include name="AssetNameOnly_CreateAsset"/>
-          <include name="DeleteBtn_AssetInventoryList"/>
-          <include name="PanelBar_CreateAsset"/>
-          <include name="Search_AssetInventoryList"/>
-          <include name="Sorting_AssetInventoryList"/>
-          <include name="Disable_sunset_Status_CreateAsset"/>
+          <include name="EditBtn_AssetInventoryList"/>
+          <include name="Testing_ComponentGrouping_CreateAsset"/>
+          <include name="PanelTab_AssetWizard_CES"/>
+          <include name="BusinessOwnerPopup_AssetWizard_CES"/>
         </methods>
       </class> <!-- com.test.AddAssetTestcases -->
+      <class name="com.test.FramingGovernanceTestcases">
+        <methods>
+          <include name="ChkAllSubModules_FramingGovernance"/>
+        </methods>
+      </class> <!-- com.test.FramingGovernanceTestcases -->
+      <class name="com.test.RiskResponseListNew">
+        <methods>
+          <include name="ChkEachFields_RiskResponseist"/>
+          <include name="Reconcilation_RiskResponseist"/>
+          <include name="Date_RiskResponseist"/>
+          <include name="Export_RiskResponseist"/>
+          <include name="AddedCustomControls_RiskResponseist"/>
+          <include name="MultiSelectCheckBox_ImplementationManager_RiskResponseist"/>
+          <include name="RiskAction_RiskResponseist"/>
+          <include name="QuickFilter_RiskResponseist"/>
+        </methods>
+      </class> <!-- com.test.RiskResponseListNew -->
+      <class name="com.test.DashBoardTestcases">
+        <methods>
+          <include name="Export_RiskRatingTrends"/>
+          <include name="Filter_TopVulnerabilities"/>
+          <include name="Export_RatingDistributionByAsset"/>
+          <include name="Export_TopAssets"/>
+        </methods>
+      </class> <!-- com.test.DashBoardTestcases -->
+      <class name="com.test.ControlReviewTestcases">
+        <methods>
+          <include name="NIST_ControlsReview"/>
+        </methods>
+      </class> <!-- com.test.ControlReviewTestcases -->
+      <class name="com.test.ResidualRatingReviewTestcases">
+        <methods>
+          <include name="PageHearder_ResidualRatingReview"/>
+          <include name="PanelBar_ResidualRatingReview"/>
+          <include name="Functions_ResidualRatingReview"/>
+          <include name="NavigatePage_ResidualRatingReview"/>
+          <include name="Sorting_ResidualRatingReview"/>
+          <include name="PageLevelHelp_ResidualRatingReview"/>
+          <include name="QuickFilter_ResidualRatingReview"/>
+        </methods>
+      </class> <!-- com.test.ResidualRatingReviewTestcases -->
+      <class name="com.test.ReportsTestcases">
+        <methods>
+          <include name="Check_ColumnHeader_RiskRatingDetailReport"/>
+          <include name="ExportButtons_EnterpriseExtracts"/>
+          <include name="Check_Submenu_Reports"/>
+        </methods>
+      </class> <!-- com.test.ReportsTestcases -->
+      <class name="com.test.DocumentsTestcase">
+        <methods>
+          <include name="PageHearder_Documents"/>
+          <include name="PanelBar_Documents"/>
+        </methods>
+      </class> <!-- com.test.DocumentsTestcase -->
+      <class name="com.test.RiskDeterminationTestcase">
+        <methods>
+          <include name="RiskAnalyst_RiskQuestionnaireList"/>
+        </methods>
+      </class> <!-- com.test.RiskDeterminationTestcase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

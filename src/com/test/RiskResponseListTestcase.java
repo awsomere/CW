@@ -16,10 +16,7 @@ public class RiskResponseListTestcase extends WrapperClass{
 		
 			   Thread.sleep(8000);
 			   Thread.sleep(8000);
-			   Thread.sleep(8000);
-			   Thread.sleep(8000);
-			   Thread.sleep(8000);
-			   Thread.sleep(8000);
+			
 			  			  
 			     //Click on Full screen
 		 	    assertTextXpath("//*[@id='fullscreen']/i");
@@ -86,7 +83,7 @@ public class RiskResponseListTestcase extends WrapperClass{
 		   
 	   }
 	   
-	 @Test(priority=110, enabled = true)
+	 @Test(priority=110, enabled = false)
 	 public void PageLevelHelp_RiskResponseList() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(3000);
@@ -107,7 +104,7 @@ public class RiskResponseListTestcase extends WrapperClass{
 		   
 	 }
 		
-	 @Test(priority=111, enabled = true)
+	 @Test(priority=111, enabled = false)
 	 public void RiskManagementMap_RiskResponseList() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(3000); 
@@ -124,6 +121,7 @@ public class RiskResponseListTestcase extends WrapperClass{
 	 @Test(priority=112, enabled =true)
 	  public void TBO_RiskResponseist() throws InterruptedException, IOException {
 		
+		 Thread.sleep(8000);
 		       
        //Click on TBD Button 
        assertTextXpath("//tr[2]/td[9]/div/div/cw-section-change-button-caller/div/span");

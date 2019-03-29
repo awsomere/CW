@@ -1,8 +1,0 @@
-"Media And Storage Devices",Label,"Asset Name(s)","Threat Source","Threat Event",Vulnerability,Control,"NIST Family","NIST Family ID","Created Date","Updated Date",Global,Media
-Laptop,,www,"System Cracker","Theft of Sensitive Data","Commercial Application Weaknesses","Application Patching",,,"09/18/2018 13:00","09/18/2018 13:00","In progress","In progress"
-Laptop,,www,"Malicious User","Malicious Use of Sensitive Data","Excessive User Permissions","Activity Logging",,,"09/18/2018 13:00","09/18/2018 13:00",No,No
-Laptop,,www,"Inclement Weather","Unavailability of Key Personnel","Lack of Key Person Redundancy / Cross-training","Contingency Plans",,,"09/18/2018 13:01","09/18/2018 13:01",Yes,Yes
-"Disk Array",,www,"Inclement Weather","Unavailability of Key Personnel","Lack of Key Person Redundancy / Cross-training","Contingency Plans",,,"09/18/2018 13:01","09/18/2018 13:01",Yes,Yes
-"Desktop or Laptop",,www,"System Cracker","Theft of Sensitive Data","Anti-malware Deficiencies","Application Patching",,,"09/18/2018 13:00","09/18/2018 13:00","In progress","In progress"
-"Desktop or Laptop",,www,"Malicious User","Malicious Use of Sensitive Data","Excessive User Permissions","Activity Logging",,,"09/18/2018 13:00","09/18/2018 13:00",No,No
-"Desktop or Laptop",,www,"Inclement Weather","Unavailability of Key Personnel","Lack of Key Person Redundancy / Cross-training","Contingency Plans",,,"09/18/2018 13:01","09/18/2018 13:01",Yes,Yes

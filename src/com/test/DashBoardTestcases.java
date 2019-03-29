@@ -10,66 +10,70 @@ public class DashBoardTestcases extends WrapperClass{
 	 public WebDriver driver;
 	  String browser=null;
 	  
-	  @Test(priority=33, enabled = true)
+	  @Test(priority=304, enabled = true)
 	  public void ChkAllSubModules_Dashboard() throws InterruptedException {
 		  
 		  Thread.sleep(8000);
 	  		Thread.sleep(8000);
-	  		Thread.sleep(8000);
-	  		Thread.sleep(8000);
-	  		Thread.sleep(8000);
-	  		Thread.sleep(8000);
-	  			  				  	  				  
+	  
+	  		
+	    //Open the dashboard
+	    clickByXpath("//*[@id='sidebar-left']/ul/li[1]/a/span[2]");
+	    Reporter.log("Open the Dashboard");
+	    Thread.sleep(5000);
+	    clickByXpath("//*[@id='sidebar-left']/ul/li[1]/ul/li[2]/a/span[2]");
+	    Thread.sleep(3000);
+	  		  			  				  	  				  
 	  	// Click on Role Name
-	 	   assertEquals("//*[@id='sidebar-left']/ul/li[1]/ul/li/a/span[2]", "Charts & Graphs");
+	 	   assertEquals("//*[@id='sidebar-left']/ul/li[1]/ul/li[2]/a/span[2]", "Charts & Graphs");
 	 	   //Reporter.log("Click on Page header Title | ");
 	 	   Thread.sleep(3000);
 	 	   Thread.sleep(1000);
 	 	   
 	 	// Click on Role Name
-	 	   assertEquals("//*[@id='sidebar-left']/ul/li[1]/ul/li/ul/li[1]/a", "Rating Distribution By Asset");
+	 	   assertEquals("//*[@id='sidebar-left']/ul/li[1]/ul/li[2]/ul/li[1]/a", "Rating Distribution By Asset");
 	 	   //Reporter.log("Click on Page header Title | ");
 	 	   Thread.sleep(3000);
 	 	   Thread.sleep(1000);
 	 	   
 	 	// Click on Role Name
-	 	   assertEquals("//*[@id='sidebar-left']/ul/li[1]/ul/li/ul/li[2]/a", "Risk Rating Trends");
+	 	   assertEquals("//*[@id='sidebar-left']/ul/li[1]/ul/li[2]/ul/li[2]/a", "Risk Rating Trends");
 	 	   //Reporter.log("Click on Page header Title | ");
 	 	   Thread.sleep(3000);
 	 	   Thread.sleep(1000);
 	 	   
 	 	// Click on Role Name
-	 	   assertEquals("//*[@id='sidebar-left']/ul/li[1]/ul/li/ul/li[3]/a", "Risk Rating Averages");
+	 	   assertEquals("//*[@id='sidebar-left']/ul/li[1]/ul/li[2]/ul/li[3]/a", "Risk Rating Averages");
 	 	   //Reporter.log("Click on Page header Title | ");
 	 	   Thread.sleep(3000);
 	 	   Thread.sleep(1000);
 	 	   
 	 	// Click on Role Name
-	 	   assertEquals("//*[@id='sidebar-left']/ul/li[1]/ul/li/ul/li[4]/a", "Top Entities");
+	 	   assertEquals("//*[@id='sidebar-left']/ul/li[1]/ul/li[2]/ul/li[4]/a", "Top Entities");
 	 	   //Reporter.log("Click on Page header Title | ");
 	 	   Thread.sleep(3000);
 	 	   Thread.sleep(1000);
 	 	   
 	 	// Click on Role Name
-	 	   assertEquals("//*[@id='sidebar-left']/ul/li[1]/ul/li/ul/li[5]/a", "Top Vulnerabilities");
+	 	   assertEquals("//*[@id='sidebar-left']/ul/li[1]/ul/li[2]/ul/li[5]/a", "Top Vulnerabilities");
 	 	   //Reporter.log("Click on Page header Title | ");
 	 	   Thread.sleep(3000);
 	 	   Thread.sleep(1000);
 		  
 	 	// Click on Role Name
-	 	   assertEquals("//*[@id='sidebar-left']/ul/li[1]/ul/li/ul/li[6]/a", "Top Assets");
+	 	   assertEquals("//*[@id='sidebar-left']/ul/li[1]/ul/li[2]/ul/li[6]/a", "Top Assets");
 	 	   //Reporter.log("Click on Page header Title | ");
 	 	   Thread.sleep(3000);
 	 	   Thread.sleep(1000);
 	 	   
 	 	// Click on Role Name
-	 	   assertEquals("//*[@id='sidebar-left']/ul/li[1]/ul/li/ul/li[7]/a", "Risk Response");
+	 	   assertEquals("//*[@id='sidebar-left']/ul/li[1]/ul/li[2]/ul/li[7]/a", "Risk Response");
 	 	   //Reporter.log("Click on Page header Title | ");
 	 	   Thread.sleep(3000);
 	 	   Thread.sleep(1000);
 	  }
 	
-	  @Test(priority=34, enabled = true)
+	  @Test(priority=305, enabled = true)
 	  public void Filter_RatingDistributionByAsset() throws InterruptedException {
 		  
 		  		Thread.sleep(5000);
@@ -131,7 +135,7 @@ public class DashBoardTestcases extends WrapperClass{
 		  		
 	  }
 	  
-	  @Test(priority=35, enabled = true)
+	  @Test(priority=306, enabled = true)
 	  public void History_RatingDistributionByAsset() throws InterruptedException {
 		  		
 		  		 //Click on History Drop-down
@@ -141,8 +145,8 @@ public class DashBoardTestcases extends WrapperClass{
 	  			Thread.sleep(3000);
 		  			
 	  			 //Select any of the list form History Drop-down
-	  			assertTextXpath("//*[@id='cw-panelbar']/div/div[3]/ng-transclude/cw-version-selector/div/ul/li[1]/a");
-	  			clickByXpath("//*[@id='cw-panelbar']/div/div[3]/ng-transclude/cw-version-selector/div/ul/li[1]/a");
+	  			assertTextXpath("//*[@id='cw-panelbar']/div/div[4]/ng-transclude/cw-version-selector/div/ul/li[1]/a");
+	  			clickByXpath("//*[@id='cw-panelbar']/div/div[4]/ng-transclude/cw-version-selector/div/ul/li[1]/a");
 	  			Reporter.log("Click on History Drop-down | ");
 	  			Thread.sleep(3000);
 	  			 Thread.sleep(5000);
@@ -150,7 +154,7 @@ public class DashBoardTestcases extends WrapperClass{
 	  }
 	  
 	  
-	  @Test(priority=36, enabled = true)
+	  @Test(priority=307, enabled = true)
 	  public void Export_RatingDistributionByAsset() throws InterruptedException {	
 	  			  			
 			    //Click on Rating Distribution By Asset
@@ -227,7 +231,7 @@ public class DashBoardTestcases extends WrapperClass{
 			     
 	  }
 	  
-	  @Test(priority=37, enabled = true)
+	  @Test(priority=308, enabled = true)
 	  public void Export_RiskRatingTrends() throws InterruptedException {	
 	  
 			   //Click on Risk Rating Trends
@@ -300,7 +304,7 @@ public class DashBoardTestcases extends WrapperClass{
 				     
 	  }
 	  
-	  @Test(priority=38, enabled = true)
+	  @Test(priority=309, enabled = true)
 	  public void Export_RiskRatingAverages() throws InterruptedException {	
 				    
 				    //Click on Risk Rating Averages
@@ -388,7 +392,7 @@ public class DashBoardTestcases extends WrapperClass{
 				     
 	  }
 	  
-	  @Test(priority=39, enabled = true)
+	  @Test(priority=310, enabled = true)
 	  public void Filter_TopEntities() throws InterruptedException {
 			     			     
 		  		//Click on Top Entities Sub-module
@@ -462,7 +466,7 @@ public class DashBoardTestcases extends WrapperClass{
 		  		
 	  }
 	  
-	  @Test(priority=40, enabled = true)
+	  @Test(priority=311, enabled = true)
 	  public void Export_TopEntities() throws InterruptedException { 
 		  		
 		  	    //Click on Top Entities
@@ -498,7 +502,7 @@ public class DashBoardTestcases extends WrapperClass{
 			     
 	  }
 	  
-	  @Test(priority=41, enabled = true)
+	  @Test(priority=312, enabled = true)
 	  public void Filter_TopVulnerabilities() throws InterruptedException {
 		  				  		
 				//Click on  Top Vulnerabilities Sub-module
@@ -571,7 +575,7 @@ public class DashBoardTestcases extends WrapperClass{
 		  		
 	  }
 	  
-	  @Test(priority=42, enabled = true)
+	  @Test(priority=313, enabled = true)
 	  public void Export_TopVulnerabilities() throws InterruptedException {
 		  		
 		  		 //Click on Top Vulnerabilities
@@ -607,7 +611,7 @@ public class DashBoardTestcases extends WrapperClass{
 			     
 	  }
 	  
-	  @Test(priority=43, enabled = true)
+	  @Test(priority=314, enabled = true)
 	  public void Filter_TopAssets() throws InterruptedException {
 		  		
 				//Click on Top Assets Sub-module
@@ -680,7 +684,7 @@ public class DashBoardTestcases extends WrapperClass{
 		  		
 	  }
 	  
-	  @Test(priority=44, enabled = true)
+	  @Test(priority=315, enabled = true)
 	  public void Export_TopAssets() throws InterruptedException {
 		  		
 		  	     //Click on Top Assets

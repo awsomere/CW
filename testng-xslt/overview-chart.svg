@@ -20,22 +20,22 @@
    <svg id="graphzone" preserveAspectRatio="xMidYMid meet" x="0" y="0">
       <rect style="fill:red;stroke-width:1;stroke:black;" x="10" y="86" width="20"
             height="20"/>
-      <text class="legendtext" x="40" y="105">Failed (10%)
+      <text class="legendtext" x="40" y="105">Failed (14%)
                     </text>
       <rect style="fill:green;stroke-width:1;stroke:black;" x="10" y="125" width="20"
             height="20"/>
-      <text class="legendtext" x="40" y="143">Passed (90%)
+      <text class="legendtext" x="40" y="143">Passed (86%)
                     </text>
       <rect style="fill:yellow;stroke-width:1;stroke:black;" x="10" y="163" width="20"
             height="20"/>
       <text class="legendtext" x="40" y="182">Skipped (0%)
                     </text>
       <g style="stroke:black;stroke-width:1" transform="translate(450,150)">
-         <g style="fill:red" transform="rotate(-0) translate(15, -5)">
-            <path d="M 0 0 h 130 A 130,130 0,0,0 105.69730271676151,-75.68408153899524 z"/>
+         <g style="fill:red" transform="rotate(-0) translate(15, -7)">
+            <path d="M 0 0 h 130 A 130,130 0,0,0 83.09172289783304,-99.97882568759111 z"/>
          </g>
-         <g style="fill:green" transform="rotate(-35.604395604395603)">
-            <path d="M 0 0 h 130 A 130,130 0,1,0 105.69720378398484,75.68421970428698 z"/>
+         <g style="fill:green" transform="rotate(-50.27027027027027)">
+            <path d="M 0 0 h 130 A 130,130 0,1,0 83.09159220748205,99.97893430330966 z"/>
          </g>
       </g>
    </svg>

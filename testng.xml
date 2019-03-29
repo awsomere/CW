@@ -2,9 +2,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Test">
-    <classes>
-      <class name="com.test.Login"/> 
-      <class name="com.test.AddAssetTestcases"/>     
-      </classes>      
-  </test> <!-- Test -->
+    <classes>    
+    <class name="com.test.LoginSample"/> 
+     <class name="com.test.AddAssetTestcases"/>  
+     <class name="com.test.RiskDeterminationTestcase"/>      
+       <class name="com.test.ControlsGlobalMediaTestcases"/>     
+       <class name="com.test.ControlReviewTestcases"/> 
+       <class name="com.test.RatingReviewTestcases"/> 
+       <class name="com.test.RiskResponseListNew"/>       
+       <class name="com.test.ControlsResponseReviewTestcases"/>     
+       <class name="com.test.ResidualRatingReviewTestcases"/>         
+       <class name="com.test.RiskReconciliationListTestcases"/>   
+        <class name="com.test.DocumentsTestcase"/> 
+        <class name="com.test.ReportsTestcases"/>     
+         <class name="com.test.FramingGovernanceTestcases"/> 
+        <class name="com.test.DashBoardTestcases"/>       
+                        
+    </classes>      
+    </test> <!-- Test -->
 </suite> <!--b Suite -->

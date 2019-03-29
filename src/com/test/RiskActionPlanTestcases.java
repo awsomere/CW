@@ -70,7 +70,7 @@ public class RiskActionPlanTestcases extends WrapperClass{
 			   
 		   }
 		 
-	   @Test(priority=150, enabled = true)
+	   @Test(priority=150, enabled = false)
 		 public void PageLevelHelp_RiskActionPlan() throws IOException, InterruptedException {
 			   
 			   Thread.sleep(3000);
@@ -91,7 +91,7 @@ public class RiskActionPlanTestcases extends WrapperClass{
 			   
 		 }
 			
-		 @Test(priority=151, enabled = true)
+		 @Test(priority=151, enabled = false)
 		 public void RiskManagementMap_RiskActionPlan() throws IOException, InterruptedException {
 			   
 			   Thread.sleep(3000); 

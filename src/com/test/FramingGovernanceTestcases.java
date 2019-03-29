@@ -12,15 +12,14 @@ public class FramingGovernanceTestcases extends WrapperClass{
 	  String browser=null;
 	  	 
 
-	  @Test(priority=45, enabled = true)
+	  @Test(priority=279, enabled = true)
 	  public void ChkAllSubModules_FramingGovernance() throws InterruptedException {
 		  
 		  Thread.sleep(8000);
-	  
-	  		
+		 
 	  		 //Select the Framing/Governance module at sidebar-left
-		     assertTextXpath("//li[2]/a/span[2]");
-			 clickByXpath("//li[2]/a/span[2]");  	
+		     assertTextXpath("//*[@id='sidebar-left']/ul/li[2]/a/span[2]");
+			 clickByXpath("//*[@id='sidebar-left']/ul/li[2]/a/span[2]");  	
 			 Reporter.log("Selected the Framing/Governance module at sidebar-left | ");
 			 Thread.sleep(5000);
 			 Thread.sleep(2000);
@@ -63,7 +62,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 		  
 	  }
 	  
-	  @Test(priority=46, enabled = true)
+	  @Test(priority=280, enabled = true)
 	   public void PageLevelHelp_RiskThreshold() throws IOException, InterruptedException {
 		   
 		  
@@ -91,7 +90,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 	   }
 	   
 	   
-	   @Test(priority=47, enabled = true)
+	   @Test(priority=281, enabled = true)
 	   public void RiskManagementMap_RiskThreshold() throws IOException, InterruptedException {
 			    
 			    //Click on AppMap button Icon
@@ -102,14 +101,14 @@ public class FramingGovernanceTestcases extends WrapperClass{
 			    //Thread.sleep(5000);
 			    
 			    // Click OK Button in AppMap pop-up window
-			    assertTextXpath("//div[4]/div/div/div[3]/button");
-		        clickByXpath("//div[4]/div/div/div[3]/button");
+			    assertTextXpath("//div[4]/div/div/div[2]/button");
+		        clickByXpath("//div[4]/div/div/div[2]/button");
 		        Reporter.log("Click OK Button in AppMap pop-up window | ");
 		        Thread.sleep(3000);
 			   // Thread.sleep(5000);
 	   }
 	   
-	   @Test(priority=48, enabled = true)
+	   @Test(priority=282, enabled = true)
 	   public void RiskThresholddropdown_RiskThreshold() throws IOException, InterruptedException {
 
 		     Thread.sleep(5000);
@@ -140,7 +139,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 			 
 	   }
     
-	   @Test(priority=49, enabled = true)
+	   @Test(priority=283, enabled = true)
 	   public void Export_RiskThreshold() throws IOException, InterruptedException {
 
 				//Click on Export button
@@ -215,7 +214,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 }
 	   
 	   
-	   @Test(priority=50, enabled = true)
+	   @Test(priority=284, enabled = true)
 	   public void PageLevelHelp_LikelihoodSettings() throws IOException, InterruptedException {
 		   
 		   
@@ -243,7 +242,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 	   }
 	   
 	   
-	   @Test(priority=51, enabled = true)
+	   @Test(priority=285, enabled = true)
 	   public void RiskManagementMap_LikelihoodSettings() throws IOException, InterruptedException {
 			    
 			    //Click on AppMap button Icon
@@ -254,14 +253,14 @@ public class FramingGovernanceTestcases extends WrapperClass{
 			    //Thread.sleep(5000);
 			    
 			    // Click OK Button in AppMap pop-up window
-			    assertTextXpath("//div[4]/div/div/div[3]/button");
-		        clickByXpath("//div[4]/div/div/div[3]/button");
+			    assertTextXpath("//div[4]/div/div/div[2]/button");
+		        clickByXpath("//div[4]/div/div/div[2]/button");
 		        Reporter.log("Click OK Button in AppMap pop-up window | ");
 		        Thread.sleep(3000);
 			   // Thread.sleep(5000);
 	   }
 	   
-	   @Test(priority=52, enabled = true)
+	   @Test(priority=286, enabled = true)
 	   public void Export_LikelihoodSettings() throws IOException, InterruptedException {
 		   	 
 		     //Click on Export button
@@ -281,7 +280,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 		     Thread.sleep(8000);
 	   }
 	   
-	   @Test(priority=53, enabled = true)
+	   @Test(priority=287, enabled = true)
 	   public void Search_LikelihoodSettings() throws IOException, InterruptedException {
 		   
 		     //Search data 
@@ -295,7 +294,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 		     Thread.sleep(5000);
 	   }
 	   
-	   @Test(priority=54, enabled = true)
+	   @Test(priority=288, enabled = true)
 	   public void PageLevelHelp_ImpactSettings() throws IOException, InterruptedException {
 		   
 		 //Select Impact Settings Sub-module
@@ -322,7 +321,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 	   }
 	   
 	   
-	   @Test(priority=55, enabled = true)
+	   @Test(priority=289, enabled = true)
 	   public void RiskManagementMap_ImpactSettings() throws IOException, InterruptedException {
 			    
 			    //Click on AppMap button Icon
@@ -333,14 +332,14 @@ public class FramingGovernanceTestcases extends WrapperClass{
 			    //Thread.sleep(5000);
 			    
 			    // Click OK Button in AppMap pop-up window
-			    assertTextXpath("//div[4]/div/div/div[3]/button");
-		        clickByXpath("//div[4]/div/div/div[3]/button");
+			    assertTextXpath("//div[4]/div/div/div[2]/button");
+		        clickByXpath("//div[4]/div/div/div[2]/button");
 		        Reporter.log("Click OK Button in AppMap pop-up window | ");
 		        Thread.sleep(3000);
 			   // Thread.sleep(5000);
 	   }
 	   
-	   @Test(priority=56, enabled = true)
+	   @Test(priority=290, enabled = true)
 	   public void Export_ImpactSettings() throws IOException, InterruptedException {
 		   	 
 		     //Click on Export button
@@ -360,7 +359,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 		     Thread.sleep(8000);
 	   }
 	   
-	   @Test(priority=57, enabled = true)
+	   @Test(priority=291, enabled = true)
 	   public void Search_ImpactSettings() throws IOException, InterruptedException {
 		   
 		     //Search data 
@@ -374,7 +373,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 		     Thread.sleep(5000);
 	   }
 	   
-	   @Test(priority=58, enabled = true)
+	   @Test(priority=292, enabled = true)
 	   public void PageLevelHelp_CustomControls() throws IOException, InterruptedException {
 		   
 		   //Select Custom Controls Sub-module
@@ -401,7 +400,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 	   }	
 	   	
 	   	
-	   @Test(priority=59, enabled = true)
+	   @Test(priority=293, enabled = true)
 	   public void RiskManagementMap_CustomControls() throws IOException, InterruptedException {
 			    
 			    //Click on AppMap button Icon
@@ -412,15 +411,15 @@ public class FramingGovernanceTestcases extends WrapperClass{
 			    //Thread.sleep(5000);
 			    
 			    // Click OK Button in AppMap pop-up window
-			    assertTextXpath("//div[4]/div/div/div[3]/button");
-		        clickByXpath("//div[4]/div/div/div[3]/button");
+			    assertTextXpath("//div[4]/div/div/div[2]/button");
+		        clickByXpath("//div[4]/div/div/div[2]/button");
 		        Reporter.log("Click OK Button in AppMap pop-up window | ");
 		        Thread.sleep(3000);
 			   // Thread.sleep(5000);
 	   }   
 	  
 	   
-	   @Test(priority=60, enabled = true)
+	   @Test(priority=294, enabled = true)
 	   public void NewButton_CustomControls() throws IOException, InterruptedException {
 		    
 		     //Select the New button
@@ -454,7 +453,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 			 Thread.sleep(5000);
 	   }
 	   
-	   @Test(priority=61, enabled = true)
+	   @Test(priority=295, enabled = true)
 	   public void EditButton_CustomControls() throws IOException, InterruptedException {
 		   
 			 //Select the List link
@@ -494,7 +493,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 			 
 	   }
 	   
-	   @Test(priority=62, enabled = true)
+	   @Test(priority=296, enabled = true)
 	   public void Export_CustomControls() throws IOException, InterruptedException {
 			 
 			 //Click on Export button
@@ -516,7 +515,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 		   
 	   }
 	   
-	   @Test(priority=63, enabled = true)
+	   @Test(priority=297, enabled = true)
 	   public void Search_CustomControls() throws IOException, InterruptedException {
 		   
 		     //Search data 
@@ -531,7 +530,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 		     
 	   }
 	   
-	   @Test(priority=64, enabled = true)
+	   @Test(priority=298, enabled = true)
 	   public void PageLevelHelp_CustomTags() throws IOException, InterruptedException {
 		   
 		 //Select Custom Controls Sub-module
@@ -558,7 +557,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 	   }
 	   
 	   
-	   @Test(priority=65, enabled = true)
+	   @Test(priority=299, enabled = true)
 	   public void RiskManagementMap_CustomTags() throws IOException, InterruptedException {
 			    
 			    //Click on AppMap button Icon
@@ -569,14 +568,14 @@ public class FramingGovernanceTestcases extends WrapperClass{
 			    //Thread.sleep(5000);
 			    
 			    // Click OK Button in AppMap pop-up window
-			    assertTextXpath("//div[4]/div/div/div[3]/button");
-		        clickByXpath("//div[4]/div/div/div[3]/button");
+			    assertTextXpath("//div[4]/div/div/div[2]/button");
+		        clickByXpath("//div[4]/div/div/div[2]/button");
 		        Reporter.log("Click OK Button in AppMap pop-up window | ");
 		        Thread.sleep(3000);
 			   // Thread.sleep(5000);
 	   }
 	   
-	   @Test(priority=66, enabled = true)
+	   @Test(priority=300, enabled = true)
 	   public void NewButton_CustomTags() throws IOException, InterruptedException {
 		   
 		     //Select the New button
@@ -611,7 +610,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 			 
 	   }
 	   
-	   @Test(priority=67, enabled = true)
+	   @Test(priority=301, enabled = true)
 	   public void EditButton_CustomTags() throws IOException, InterruptedException {
 		   
 			 //Select the List link
@@ -651,7 +650,7 @@ public class FramingGovernanceTestcases extends WrapperClass{
 			 
 	   }
 	   
-	   @Test(priority=68, enabled = true)
+	   @Test(priority=302, enabled = true)
 	   public void Export_CustomTags() throws IOException, InterruptedException {
 			 
 			//Click on Export button
@@ -685,16 +684,16 @@ public class FramingGovernanceTestcases extends WrapperClass{
 		   
 	   }	
 	   
-	   @Test(priority=69, enabled = true)
+	   @Test(priority=303, enabled = true)
 	   public void Search_CustomTags() throws IOException, InterruptedException {
 		   
 		     //Search data 
-		     assertTextXpath("//*[@id='impact-settings_filter']/label/input");
-		     sendvaluebyxpath("//*[@id='impact-settings_filter']/label/input", "Edit");
+		     assertTextXpath("//*[@id='tags-list_filter']/label/input");
+		     sendvaluebyxpath("//*[@id='tags-list_filter']/label/input", "Edit");
 		     Reporter.log("Filled data for Control Name | ");
 		     Thread.sleep(5000);
 		     Thread.sleep(5000);
-		     sendvaluebyxpath("//*[@id='impact-settings_filter']/label/input", "");
+		     sendvaluebyxpath("//*[@id='tags-list_filter']/label/input", "");
 		     Thread.sleep(5000);
 		     Thread.sleep(5000);
 	   }

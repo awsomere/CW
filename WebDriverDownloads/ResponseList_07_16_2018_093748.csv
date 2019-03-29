@@ -1,7 +1,0 @@
-Progress,Media/Label,"Asset Name(s)","Threat Source","Threat Event",Vulnerability,"Risk Rating","Residual Risk Rating","Risk Treatment","Evaluation Status","Implementation Planning","Risk Action Plan Status","Reconciliation Status","Risk Owner"
-0.0%,Pager,"Pager Media","System Cracker","Theft of Sensitive Data","System Configuration Deficiencies",12,TBD,TBD,TBD,TBD,TBD,TBD,N/A
-100.0%,Pager,"Pager Media","Careless IT Personnel","Loss of Equipment","Improper Media/Device Handling",12,12,Transfer,Approved,Planned,Complete,Reconciled,N/A
-0.0%,Pager,"Pager Media","Careless User","Physical Damage to Equipment",Accidents,12,TBD,TBD,TBD,TBD,TBD,TBD,N/A
-0.0%,Pager,"Pager Media",Entropy,"Hardware Failure","Old or Outdated Equipment",12,TBD,TBD,TBD,TBD,TBD,TBD,N/A
-0.0%,Pager,"Pager Media","Careless IT Personnel","Improper Destruction, Disposal or Reuse of Storage Media","Destruction/Disposal Deficiencies",12,TBD,TBD,TBD,TBD,TBD,TBD,N/A
-0.0%,Pager,"Pager Media",Burglar/Thief,"Theft of Equipment","Physical Security Deficiencies",12,TBD,TBD,TBD,TBD,TBD,TBD,N/A

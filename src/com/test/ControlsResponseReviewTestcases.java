@@ -12,13 +12,12 @@ public class ControlsResponseReviewTestcases extends WrapperClass{
 	  String browser=null;
 
 	  
-	  @Test(priority=122, enabled =true)
+	  @Test(priority=190, enabled =true)
 	  public void NavigatePage_ControlsResponseReview() throws InterruptedException, IOException {
 		
 		   Thread.sleep(5000);
-		   Thread.sleep(5000);
-		   
-	        
+		   Thread.sleep(8000);
+		          
 	        //Click on Controls Response Review Sub-module
 	        assertTextLink("Controls Response Review");
 	        clickBylinktext("Controls Response Review");
@@ -36,7 +35,7 @@ public class ControlsResponseReviewTestcases extends WrapperClass{
 	   	     Thread.sleep(8000);
        }
 	
-	@Test(priority=123, enabled =true)
+	@Test(priority=191, enabled =true)
 	  public void PageHearder_ControlsResponseReview() throws InterruptedException, IOException {
 		
 		 Thread.sleep(3000);
@@ -56,7 +55,7 @@ public class ControlsResponseReviewTestcases extends WrapperClass{
 		 Thread.sleep(1000);
 	}
 	
-	 @Test(priority=124, enabled = true)
+	 @Test(priority=192, enabled = true)
 	   public void PanelBar_ControlsResponseReview() throws IOException, InterruptedException {
 			   
 		   Thread.sleep(3000);
@@ -77,7 +76,7 @@ public class ControlsResponseReviewTestcases extends WrapperClass{
 		   
 	   }
 	   
-	 @Test(priority=125, enabled = true)
+	 @Test(priority=193, enabled = true)
 	 public void PageLevelHelp_ControlsResponseReview() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(3000);
@@ -98,7 +97,7 @@ public class ControlsResponseReviewTestcases extends WrapperClass{
 		   
 	 }
 		
-	 @Test(priority=126, enabled = true)
+	 @Test(priority=194, enabled = true)
 	 public void RiskManagementMap_ControlsResponseReview() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(3000); 
@@ -108,14 +107,14 @@ public class ControlsResponseReviewTestcases extends WrapperClass{
 		   clickByXpath("//*[@id='cw-panelbar']/div/div[2]/ul/li[3]/cw-appmap/button");
 		   Reporter.log("Click on Risk Management Map | ");
 		   Thread.sleep(3000);
-		   clickByXpath("html/body/div[5]/div/div/div[3]/button");
+		   clickByXpath("//div[5]/div/div/div[2]/button");
 		   Thread.sleep(3000);
 		   Thread.sleep(5000);
 	 }
 	
 	 
 	
-	 @Test(priority=127, enabled = true)
+	 @Test(priority=195, enabled = true)
 	   public void Functions_ControlsResponseReview() throws IOException, InterruptedException {
 		  
 	        
@@ -138,6 +137,15 @@ public class ControlsResponseReviewTestcases extends WrapperClass{
 	        Thread.sleep(5000);
 	        //Thread.sleep(3000);
 	        
+	      //Click on proceed button to make global
+	        assertTextXpath("/html/body/div[5]/div/div/div[3]/button[2]");
+	        clickByXpath("html/body/div[5]/div/div/div[3]/button[2]");
+	        Reporter.log("Click on Proceed button | ");
+	        Thread.sleep(5000);
+	        Thread.sleep(3000);
+	        //Thread.sleep(3000);
+	        
+	        
 	        //Click on Feasibility drop-down
 	        assertTextXpath("//*[@id='container-body']/tr[1]/td[9]/cw-evaluation-choices/div/button");
 	        clickByXpath("//*[@id='container-body']/tr[1]/td[9]/cw-evaluation-choices/div/button");
@@ -149,6 +157,14 @@ public class ControlsResponseReviewTestcases extends WrapperClass{
 	        clickBylinktext("3: Feasible");
 	        Reporter.log("Select Feasible option from Feasibility drop-down | ");
 	        Thread.sleep(3000);
+	        
+	      //Click on proceed button to make global
+	        assertTextXpath("/html/body/div[5]/div/div/div[3]/button[2]");
+	        clickByXpath("html/body/div[5]/div/div/div[3]/button[2]");
+	        Reporter.log("Click on Proceed button | ");
+	        Thread.sleep(5000);
+	        Thread.sleep(3000);
+	        //Thread.sleep(3000);
 	        
 	        //Click on Action Drop-down
 	        assertTextXpath("//*[@id='container-body']/tr[1]/td[11]/cw-evaluation-choices/div/button");
@@ -162,11 +178,27 @@ public class ControlsResponseReviewTestcases extends WrapperClass{
 	        Reporter.log("Select Enhance option from Action drop-down | ");
 	        Thread.sleep(3000);   
 	        
-	        //Enter Cost Value
+	      //Click on proceed button to make global
+	        assertTextXpath("/html/body/div[5]/div/div/div[3]/button[2]");
+	        clickByXpath("html/body/div[5]/div/div/div[3]/button[2]");
+	        Reporter.log("Click on Proceed button | ");
+	        Thread.sleep(5000);
+	        Thread.sleep(3000);
+	        //Thread.sleep(3000);
+	        
+	       /* //Enter Cost Value
 			assertTextXpath("//*[@id='container-body']/tr[1]/td[8]/div/input");
 			sendvaluebyxpath("//*[@id='container-body']/tr[1]/td[8]/div/input", "150");
 			Reporter.log("Enter Cost Value successfully | ");
-			Thread.sleep(3000);
+			Thread.sleep(5000);
+			
+			//Click on proceed button to make global
+	        assertTextXpath("/html/body/div[5]/div/div/div[3]/button[2]");
+	        clickByXpath("html/body/div[5]/div/div/div[3]/button[2]");
+	        Reporter.log("Click on Proceed button | ");
+	        Thread.sleep(5000);*/
+	        Thread.sleep(3000);
+	        //Thread.sleep(3000);
 			
 	       /* // Click on Global check-box
 	        assertTextXpath("//*[@id='container-body']/tr[1]/td[10]/div");
@@ -176,7 +208,7 @@ public class ControlsResponseReviewTestcases extends WrapperClass{
 	        //Thread.sleep(3000);
 */	        
 	        /*//Click on proceed button to make global
-	        assertTextXpath("html/body/div[5]/div/div/div[3]/button[2]");
+	        assertTextXpath("/html/body/div[5]/div/div/div[3]/button[2]");
 	        clickByXpath("html/body/div[5]/div/div/div[3]/button[2]");
 	        Reporter.log("Click on Proceed button | ");
 	        Thread.sleep(5000);
@@ -186,7 +218,7 @@ public class ControlsResponseReviewTestcases extends WrapperClass{
 	 }
 
 	   
-	   @Test(priority=128, enabled = false)
+	   @Test(priority=196, enabled = false)
 		  public void Filter_ControlsResponseReview() throws InterruptedException {	  		
 			  	 
 		       	        
@@ -279,7 +311,7 @@ public class ControlsResponseReviewTestcases extends WrapperClass{
 			        Thread.sleep(3000);
 			        
 		  }
-	   @Test(priority=129, enabled = true)
+	   @Test(priority=197, enabled = true)
 		  public void Export_ControlsResponseReview() throws InterruptedException {
 			        	       
 					  
@@ -321,7 +353,7 @@ public class ControlsResponseReviewTestcases extends WrapperClass{
 	   
 		      }
 	   
-	   @Test(priority=130, enabled =true)
+	   @Test(priority=198, enabled =true)
 		  public void QuickFilter_ControlsResponseReview() throws InterruptedException, IOException {
 	 		 		 
 		   //Thread.sleep(3000);
@@ -350,7 +382,7 @@ public class ControlsResponseReviewTestcases extends WrapperClass{
 		     
 	 	 }
 	   
-	   @Test(priority=131, enabled = true)
+	   @Test(priority=199, enabled = true)
 	   public void Sorting_ControlsResponseReview() throws IOException, InterruptedException {
 		
 			
@@ -370,35 +402,16 @@ public class ControlsResponseReviewTestcases extends WrapperClass{
 		//sort("//*[@id='assets']/tbody/tr[1]/td[*]"); //Get the row count and values
 		Thread.sleep(5000);	
 		Thread.sleep(5000);
+		
+		Thread.sleep(8000);
+		//Click on Minimize sidebar
+	        clickByXpath("//*[@id='header']/div[2]/div/ul[1]/li/a/i");
+	        Thread.sleep(5000);
+	        Thread.sleep(3000);
+	        //Thread.sleep(3000); 
 			
 	   }
-	   
-	   @Test(priority=132, enabled = false)
-	   public void ControlTag_ControlsResponseReview() throws IOException, InterruptedException {
-		   
-		   
-	   }
-	   
-	   @Test(priority=133, enabled = false)
-	   public void NSIT_ControlsResponseReview() throws IOException, InterruptedException {
-		   
-	   }
-		   
-		   @Test(priority=134, enabled = false)
-		   public void Notes_ControlsResponseReview() throws IOException, InterruptedException {
-			   
-			   
-		  
-	   }
-		   
-   @Test(priority=135, enabled = false)
-   public void Documents_ControlsResponseReview() throws IOException, InterruptedException {
-			   
-		   }
-	   
-   @Test(priority=136, enabled = false)
-   public void Mutiselector_ControlsResponseReview() throws IOException, InterruptedException {
-			   
-		   }
+
+
 
 }

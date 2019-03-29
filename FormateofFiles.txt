@@ -1,18 +1,36 @@
       
-       <class name="com.test.AddAssetTestcases"/>     
+       <class name="com.test.Login"/>    
+     <class name="com.test.AssetInventoryList"/>  
+       <class name="com.test.ComponentGroupsTestcases"/>
        <class name="com.test.RiskDeterminationTestcase"/>      
        <class name="com.test.ControlsGlobalMediaTestcases"/>     
        <class name="com.test.ControlReviewTestcases"/> 
        <class name="com.test.RatingReviewTestcases"/> 
-       <class name="com.test.RiskResponseListTestcase"/>       
+       <class name="com.test.RiskResponseListNew"/>       
        <class name="com.test.ControlsResponseReviewTestcases"/>     
-       <class name="com.test.ResidualRatingReviewTestcases"/> 
-       <class name="com.test.RiskActionPlanTestcases"/> 
+       <class name="com.test.ResidualRatingReviewTestcases"/>         
        <class name="com.test.RiskReconciliationListTestcases"/>   
-        <class name="com.test.DocumentsTestcase"/>
-        <class name="com.test.Activities"/>  
-        <class name="com.test.ReportsTestcases"/> 
+        <class name="com.test.DocumentsTestcase"/> 
+        <class name="com.test.ReportsTestcases"/>     
+         <class name="com.test.FramingGovernanceTestcases"/> 
+        <class name="com.test.DashBoardTestcases"/>    
 
+Overreview - https://www.screencast.com/t/dGgPGQucZc
+Login - https://www.screencast.com/t/FRx4fZP9
+Asset Module - https://www.screencast.com/t/Tr9sobeAHxB
+RiskDeterminationTestcase - https://www.screencast.com/t/UAjV1Tdnmgb
+Control-Global - https://www.screencast.com/t/DDEjaIESX
+Control Review - https://www.screencast.com/t/Kb4WoDDE6
+Rating Review - https://www.screencast.com/t/d4ATLdzrJ
+Documnet - https://www.screencast.com/t/I8wvEX8QlSh
+Reports - https://www.screencast.com/t/8WFLayMhkk
+FramingGovernance - https://www.screencast.com/t/vOfSu6PuwT
+Dashboard - https://www.screencast.com/t/m4I43YnljF
+RiskResponseList - https://www.screencast.com/t/C3BduB4Da6Ng
+ControlsResponseReviewTestcases - https://www.screencast.com/t/fyEs4ioZPkMx
+ResidualRatingReview - https://www.screencast.com/t/ruUANccZ
+RiskActionPlan - https://www.screencast.com/t/BJgUg9DhUpYD
+RiskReconciliationList - https://www.screencast.com/t/Qngu1gkfkcl
    
 
 

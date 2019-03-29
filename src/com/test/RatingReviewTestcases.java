@@ -11,7 +11,7 @@ public class RatingReviewTestcases extends WrapperClass {
 	 public WebDriver driver;
 	  String browser=null;
 	  
-	  @Test(priority=93, enabled =true)
+	  @Test(priority=145, enabled =true)
 	  public void NavigatePage_RatingReview() throws InterruptedException, IOException {
 		  
 		  Thread.sleep(8000);
@@ -27,10 +27,11 @@ public class RatingReviewTestcases extends WrapperClass {
 		   
 }
 	  
-	@Test(priority=94, enabled =true)
+	@Test(priority=146, enabled =true)
 	  public void PageHearder_RatingReview() throws InterruptedException, IOException {
 		
-		 Thread.sleep(3000);
+		 Thread.sleep(8000);
+		 Thread.sleep(8000);
 		   
 		 // Click on Page header Icon
 		 assertTextXpath("//h2/i");
@@ -47,7 +48,7 @@ public class RatingReviewTestcases extends WrapperClass {
 		 Thread.sleep(1000);
 	}
 	
-	 @Test(priority=95, enabled = true)
+	 @Test(priority=147, enabled = true)
 	   public void PanelBar_RatingReview() throws IOException, InterruptedException {
 			   
 		   Thread.sleep(3000);
@@ -69,7 +70,7 @@ public class RatingReviewTestcases extends WrapperClass {
 		   
 	   }
 	   
-	 @Test(priority=96, enabled = true)
+	 @Test(priority=148, enabled = true)
 	 public void PageLevelHelp_RatingReview() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(3000);
@@ -90,7 +91,7 @@ public class RatingReviewTestcases extends WrapperClass {
 		   
 	 }
 		
-	 @Test(priority=97, enabled = true)
+	 @Test(priority=149, enabled = true)
 	 public void RiskManagementMap_RatingReview() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(3000); 
@@ -100,11 +101,11 @@ public class RatingReviewTestcases extends WrapperClass {
 		   clickByXpath("//*[@id='cw-panelbar']/div/div[2]/ul/li[3]/cw-appmap/button");
 		   Reporter.log("Click on Risk Management Map | ");
 		   Thread.sleep(3000);
-		   clickByXpath("html/body/div[4]/div/div/div[3]/button");
-		   Thread.sleep(3000);
+		   clickByXpath("html/body/div[4]/div/div/div[2]/button");
+		   Thread.sleep(8000);
 	 }
 	 
-	 @Test(priority=98, enabled = true)
+	 @Test(priority=150, enabled = true)
 	  public void ScenarioAdvisory_RatingReview() throws InterruptedException, IOException {
 		  
 		    Thread.sleep(8000);
@@ -144,7 +145,7 @@ public class RatingReviewTestcases extends WrapperClass {
 	 }
 	 
 			 
-	 @Test(priority=99, enabled = true)
+	 @Test(priority=151, enabled = true)
 	  public void Vulnerabilitylink_RatingReview() throws InterruptedException, IOException {
 		 
 		 
@@ -173,7 +174,7 @@ public class RatingReviewTestcases extends WrapperClass {
 		    
 	 }
 	 
-	 @Test(priority=100, enabled = true)
+	 @Test(priority=152, enabled = true)
 	  public void ContextHelpIcon_RatingReview() throws InterruptedException, IOException {
 	 
 		    //Click on ContextHelp Icon
@@ -190,7 +191,7 @@ public class RatingReviewTestcases extends WrapperClass {
 		    
 	 }
 	 
-	 @Test(priority=101, enabled = true)
+	 @Test(priority=153, enabled = true)
 	  public void Notes_RatingReview() throws InterruptedException, IOException {
 	 
 		    			    		   		    
@@ -234,7 +235,7 @@ public class RatingReviewTestcases extends WrapperClass {
 		    
 	  }
 	  
-	  @Test(priority=102, enabled =true)
+	  @Test(priority=154, enabled =true)
 	  public void QuickFilter_RatingReview() throws InterruptedException, IOException {
 		 
 		  Thread.sleep(3000);
@@ -266,7 +267,7 @@ public class RatingReviewTestcases extends WrapperClass {
 	     	     
   	 }
 	  
-	  @Test(priority=103, enabled = false)
+	  @Test(priority=155, enabled = false)
 	  public void Filter_RatingReview() throws InterruptedException {
 		  
 		  		Thread.sleep(2000);
@@ -369,7 +370,7 @@ public class RatingReviewTestcases extends WrapperClass {
 		  		//Thread.sleep(3000); 
 	  }
 	  
-	  @Test(priority=104, enabled = true)
+	  @Test(priority=156, enabled = true)
 	  public void Export_RatingReview() throws InterruptedException {
 		  		
 		  					  
@@ -406,7 +407,7 @@ public class RatingReviewTestcases extends WrapperClass {
 				  //Thread.sleep(3000);
 			  }
 	  
-	  @Test (priority=105, enabled = false)
+	  @Test (priority=157, enabled = false)
 		public void Sorting_RatingReview() throws IOException, InterruptedException {
 			
 		    Thread.sleep(3000);
@@ -451,7 +452,7 @@ public class RatingReviewTestcases extends WrapperClass {
 			
 	}
 	  
-	  @Test (priority=106, enabled = true)
+	  @Test (priority=158, enabled = true)
 	public void ClearResponse_RatingReview() throws IOException, InterruptedException {
 		
 		  Thread.sleep(8000);	

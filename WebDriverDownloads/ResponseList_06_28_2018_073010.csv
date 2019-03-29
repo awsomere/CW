@@ -1,3 +1,0 @@
-Progress,Media/Label,"Asset Name(s)","Threat Source","Threat Event",Vulnerability,"Risk Rating","Residual Risk Rating","Risk Treatment","Evaluation Status","Implementation Planning","Risk Action Plan Status","Reconciliation Status","Risk Owner"
-0.0%,"Backup Media/sample Backup label",TestingAsset,"Careless IT Personnel","Improper Destruction, Disposal or Reuse of Storage Media","Destruction/Disposal Deficiencies",12,TBD,TBD,TBD,TBD,TBD,TBD,N/A
-100.0%,"Backup Media/sample Backup label",TestingAsset,Test,"Theft of Storage Media","Anti-malware Deficiencies",12,9,Transfer,Approved,Planned,Complete,Reconciled,N/A

@@ -11,11 +11,11 @@ public class ControlReviewTestcases extends WrapperClass {
 	 public WebDriver driver;
 	  String browser=null;
 	  
-	  @Test(priority=78, enabled =true)
+	  @Test(priority=130, enabled =true)
 	  public void NavigatePage_ControlReview() throws InterruptedException, IOException {
 		  
 		    Thread.sleep(8000);
-		          	        
+		    
 	        //Click on Controls Review Page
 	        assertTextLink("Controls Review");
 		    clickBylinktext("Controls Review");
@@ -36,7 +36,7 @@ public class ControlReviewTestcases extends WrapperClass {
 		   
 }
 	  
-	@Test(priority=79, enabled =true)
+	@Test(priority=131, enabled =true)
 	  public void PageHearder_ControlReview() throws InterruptedException, IOException {
 		
 		 Thread.sleep(3000);
@@ -56,7 +56,7 @@ public class ControlReviewTestcases extends WrapperClass {
 		 Thread.sleep(1000);
 	}
 	
-	 @Test(priority=80, enabled = true)
+	 @Test(priority=132, enabled = true)
 	   public void PanelBar_ControlReview() throws IOException, InterruptedException {
 			   
 		   Thread.sleep(3000);
@@ -78,7 +78,7 @@ public class ControlReviewTestcases extends WrapperClass {
 		   */
 	   }
 	   
-	 @Test(priority=81, enabled = true)
+	 @Test(priority=133, enabled = true)
 	 public void PageLevelHelp_ControlReview() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(3000);
@@ -99,7 +99,7 @@ public class ControlReviewTestcases extends WrapperClass {
 		   
 	 }
 		
-	 @Test(priority=82, enabled = true)
+	 @Test(priority=134, enabled = true)
 	 public void RiskManagementMap_ControlReview() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(3000); 
@@ -109,12 +109,12 @@ public class ControlReviewTestcases extends WrapperClass {
 		   clickByXpath("//*[@id='cw-panelbar']/div/div[2]/ul/li[3]/cw-appmap/button");
 		   Reporter.log("Click on Risk Management Map | ");
 		   Thread.sleep(3000);
-		   clickByXpath("html/body/div[4]/div/div/div[3]/button");
+		   clickByXpath("html/body/div[4]/div/div/div[2]/button");
 		   Thread.sleep(3000);
 	 }
 	
 	
-	@Test(priority=83, enabled =true)
+	@Test(priority=135, enabled =true)
 	  public void Notes_ControlReview() throws InterruptedException, IOException {
 		  
 		 Thread.sleep(3000); 
@@ -182,7 +182,7 @@ public class ControlReviewTestcases extends WrapperClass {
 		    
 	}
 	
-	@Test(priority=84, enabled =true)
+	@Test(priority=136, enabled =true)
 	  public void ClearResponse_ControlReview() throws InterruptedException, IOException {
 		   		    
 		    //Click on ClearResponse for negative scenario
@@ -202,7 +202,7 @@ public class ControlReviewTestcases extends WrapperClass {
 	}
 	
 		    
-    @Test(priority=85, enabled =true)
+    @Test(priority=137, enabled =true)
     public void SelectResponse_ControlReview() throws InterruptedException, IOException {
 		    
 		    // Click on Control Response again
@@ -230,7 +230,7 @@ public class ControlReviewTestcases extends WrapperClass {
  	         		       
 	  }
 	  
-	  @Test(priority=86, enabled =true)
+	  @Test(priority=138, enabled =true)
 	  public void QuickFilter_ControlReview() throws InterruptedException, IOException {
 		 
 		     Thread.sleep(2000);
@@ -310,7 +310,7 @@ public class ControlReviewTestcases extends WrapperClass {
 		     //Thread.sleep(8000);
 	 }
 	  
-	  @Test(priority=87, enabled = false)
+	  @Test(priority=139, enabled = false)
 	  public void Filter_ControlsReview() throws InterruptedException {
 		  
 		  		Thread.sleep(2000);
@@ -456,7 +456,7 @@ public class ControlReviewTestcases extends WrapperClass {
 		  		Thread.sleep(3000);
 	  }
 	  
-	  @Test(priority=88, enabled = true)
+	  @Test(priority=140, enabled = true)
 	  public void Export_ControlsReview() throws InterruptedException, IOException {
 		  	
 				 Thread.sleep(8000);
@@ -511,7 +511,7 @@ public class ControlReviewTestcases extends WrapperClass {
 				  Thread.sleep(8000);
 	  }
 	  
-	  @Test (priority=89, enabled = false)
+	  @Test (priority=141, enabled = false)
 		public void Sorting_ControlsReview() throws IOException, InterruptedException {
 			
 			//Thread.sleep(8000);	
@@ -567,7 +567,7 @@ public class ControlReviewTestcases extends WrapperClass {
 			
 		}
 	  
-	  @Test (priority=90, enabled = true)
+	  @Test (priority=142, enabled = true)
 		public void NIST_ControlsReview() throws IOException, InterruptedException {
 		  
 		  
@@ -585,7 +585,7 @@ public class ControlReviewTestcases extends WrapperClass {
 		  
 	 
 	  }
-	  @Test (priority=91, enabled = false)
+	  @Test (priority=143, enabled = false)
 	  public void ControlTag_ControlsReview() throws IOException, InterruptedException {
 		  
 		  
@@ -610,7 +610,7 @@ public class ControlReviewTestcases extends WrapperClass {
 		     Thread.sleep(3000);	
 	  }
 
-	  @Test(priority=92, enabled =true)
+	  @Test(priority=144, enabled =true)
 	    public void Autoloading_ControlsGlobalMedia() throws InterruptedException, IOException { 
 
 	 		Thread.sleep(3000);

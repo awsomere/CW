@@ -11,7 +11,7 @@ public class ResidualRatingReviewTestcases extends WrapperClass{
 	public WebDriver driver;
 	  String browser=null;
 	
-	@Test(priority=137, enabled =true)
+	@Test(priority=200, enabled =true)
 	public void NavigatePage_ResidualRatingReview() throws InterruptedException, IOException {
 	        
 	 Thread.sleep(5000);
@@ -28,7 +28,7 @@ public class ResidualRatingReviewTestcases extends WrapperClass{
 	        
      }
 	
-	@Test(priority=138, enabled =true)
+	@Test(priority=201, enabled =true)
 	  public void PageHearder_ResidualRatingReview() throws InterruptedException, IOException {
 		
 		 Thread.sleep(3000);
@@ -48,7 +48,7 @@ public class ResidualRatingReviewTestcases extends WrapperClass{
 		 Thread.sleep(1000);
 	}
 	
-	 @Test(priority=139, enabled = true)
+	 @Test(priority=202, enabled = true)
 	   public void PanelBar_ResidualRatingReview() throws IOException, InterruptedException {
 			   
 		   Thread.sleep(3000);
@@ -69,7 +69,7 @@ public class ResidualRatingReviewTestcases extends WrapperClass{
 		   
 	   }
 	   
-	 @Test(priority=140, enabled = true)
+	 @Test(priority=203, enabled = true)
 	 public void PageLevelHelp_ResidualRatingReview() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(3000);
@@ -90,7 +90,7 @@ public class ResidualRatingReviewTestcases extends WrapperClass{
 		   
 	 }
 		
-	 @Test(priority=141, enabled = true)
+	 @Test(priority=204, enabled = true)
 	 public void RiskManagementMap_ResidualRatingReview() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(3000); 
@@ -100,11 +100,11 @@ public class ResidualRatingReviewTestcases extends WrapperClass{
 		   clickByXpath("//*[@id='cw-panelbar']/div/div[2]/ul/li[3]/cw-appmap/button");
 		   Reporter.log("Click on Risk Management Map | ");
 		   Thread.sleep(3000);
-		   clickByXpath("html/body/div[4]/div/div/div[3]/button");
+		   clickByXpath("//div[4]/div/div/div[2]/button");
 		   Thread.sleep(3000);
 	 }
 	
- @Test(priority=142, enabled =true)
+ @Test(priority=205, enabled =true)
 public void Functions_ResidualRatingReview() throws InterruptedException, IOException {
 		 		    	        
 	    Thread.sleep(5000);
@@ -112,7 +112,7 @@ public void Functions_ResidualRatingReview() throws InterruptedException, IOExce
 	  //Click on Quick Column Selector Filter drop-down
 	     clickByXpath("//*[@id='risk-treatment-option']");
 	     Thread.sleep(3000);
-	     clickByXpath("//*[@id='cw-panelbar']/div/div[4]/cw-drop-list[1]/div/ul/li[4]/a");
+	     clickByXpath("//*[@id='cw-panelbar']/div/div[4]/cw-drop-list[1]/div/ul/li[6]/a");
 	     Thread.sleep(3000);
 	     //Thread.sleep(3000);
 	     Thread.sleep(8000);
@@ -147,7 +147,7 @@ public void Functions_ResidualRatingReview() throws InterruptedException, IOExce
 		
  }
  
- @Test(priority=143, enabled =true)
+ @Test(priority=206, enabled =true)
    public void QuickFilter_ResidualRatingReview() throws InterruptedException, IOException {
 		
 		
@@ -169,7 +169,7 @@ public void Functions_ResidualRatingReview() throws InterruptedException, IOExce
 	 }
  
    
- @Test(priority=144, enabled = false)
+ @Test(priority=207, enabled = false)
 	  public void Filter_ResidualRatingReview() throws InterruptedException {
 		  
 		  		Thread.sleep(3000);
@@ -264,7 +264,7 @@ public void Functions_ResidualRatingReview() throws InterruptedException, IOExce
 	  }
  
  
-     @Test(priority=145, enabled = true)
+     @Test(priority=208, enabled = true)
 	  public void Export_ResidualRatingReview() throws InterruptedException {
 		  	  
 	   Thread.sleep(5000);
@@ -303,7 +303,7 @@ public void Functions_ResidualRatingReview() throws InterruptedException, IOExce
 	      Thread.sleep(5000);
    }
  
- @Test(priority = 146, enabled = false)
+ @Test(priority =209, enabled = true)
  public void Sorting_ResidualRatingReview() throws IOException, InterruptedException {
 	
 	
@@ -311,25 +311,21 @@ public void Functions_ResidualRatingReview() throws InterruptedException, IOExce
 	clickByXpath("//*[@id='residual_rating_review']/thead/tr[2]/th[4]/span[1]/span");
 	Reporter.log("Click on Media/label column Header to sort for Ascending order  | ");
 	Thread.sleep(5000);	
-	Thread.sleep(5000);	
-	//Thread.sleep(5000);	  
-	Thread.sleep(5000);	
-	sortascen("//*[@id='content']/tr[*]/td[4]"); //Get the Column count and values
-	Thread.sleep(5000);	
-	Thread.sleep(5000);	
-	Thread.sleep(5000);
+	
 				
 	// Click on Media/label column Header to sort for Ascending order
 	clickByXpath("//*[@id='residual_rating_review']/thead/tr[2]/th[4]/span[1]/span");
 	Reporter.log("Click on Media/label column Header to sort for Ascending order  | ");
 	Thread.sleep(5000);	
 	Thread.sleep(5000);	
-	//Thread.sleep(5000);	
-	Thread.sleep(5000);				
-	sortdesc("//*[@id='content']/tr[*]/td[4]"); //Get the Column count and values
-	//sort("//*[@id='assets']/tbody/tr[1]/td[*]"); //Get the row count and values
-	Thread.sleep(5000);	
-	Thread.sleep(5000);	
+	
+	Thread.sleep(8000);
+	//Click on Minimize sidebar
+        clickByXpath("//*[@id='header']/div[2]/div/ul[1]/li/a/i");
+        Thread.sleep(5000);
+        Thread.sleep(3000);
+        //Thread.sleep(3000); 
+
 	
  }
  

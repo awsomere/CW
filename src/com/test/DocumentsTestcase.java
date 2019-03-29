@@ -12,10 +12,15 @@ public class DocumentsTestcase extends WrapperClass {
 	 public WebDriver driver;
 	  String browser=null;
 	  
-	  @Test(priority=166, enabled =true)
+	  @Test(priority=219, enabled =true)
 	  public void NavigatePage_Documents() throws InterruptedException, IOException {
 		  
-		    Thread.sleep(5000);		    
+		    Thread.sleep(8000);		
+		    Thread.sleep(8000);		
+		    Thread.sleep(8000);		
+		    Thread.sleep(8000);		
+		    Thread.sleep(8000);		
+		    Thread.sleep(8000);		
 	   	    
 		    //Click on Full Screen Button 
 	        assertTextXpath("//a[2]/i");
@@ -35,7 +40,7 @@ public class DocumentsTestcase extends WrapperClass {
 		   
 }
 	  
-	@Test(priority=167, enabled =true)
+	@Test(priority=220, enabled =true)
 	  public void PageHearder_Documents() throws InterruptedException, IOException {
 		
 		 Thread.sleep(3000);
@@ -55,7 +60,7 @@ public class DocumentsTestcase extends WrapperClass {
 		 Thread.sleep(1000);
 	}
 	
-	 @Test(priority=168, enabled = true)
+	 @Test(priority=221, enabled = true)
 	   public void PanelBar_Documents() throws IOException, InterruptedException {
 			   
 		   Thread.sleep(3000);
@@ -77,7 +82,7 @@ public class DocumentsTestcase extends WrapperClass {
 		   
 	   }
 	   
-	 @Test(priority=169, enabled = true)
+	 @Test(priority=222, enabled = false)
 	 public void PageLevelHelp_Documents() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(3000);
@@ -98,7 +103,7 @@ public class DocumentsTestcase extends WrapperClass {
 		   
 	 }
 		
-	 @Test(priority=170, enabled = true)
+	 @Test(priority=223, enabled = false)
 	 public void RiskManagementMap_Documents() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(3000); 
@@ -113,7 +118,7 @@ public class DocumentsTestcase extends WrapperClass {
 	 }
 
 
-	  @Test(priority=171, enabled =true)
+	  @Test(priority=224, enabled =true)
 	  public void ChkEachFields_Documents() throws InterruptedException, IOException {
      
         // Click on Upload Button
@@ -133,7 +138,7 @@ public class DocumentsTestcase extends WrapperClass {
   	 assertTextXpath("//*[@id='column_selector_button']/i");
  }
 	
-	@Test(priority=172, enabled =true)
+	@Test(priority=225, enabled =true)
 	  public void QuickFilter_Documents() throws InterruptedException, IOException {
 		
 		//Click on Quick Column Selector Filter drop-down
@@ -151,7 +156,7 @@ public class DocumentsTestcase extends WrapperClass {
 	
 	}
 	
-	@Test(priority=173, enabled =false)
+	@Test(priority=226, enabled =false)
 	  public void MultiSelector_Documents() throws InterruptedException, IOException {
 		
 		 // Multi-row selector
@@ -159,7 +164,7 @@ public class DocumentsTestcase extends WrapperClass {
 
 	
 	
-	@Test(priority=174, enabled =true)
+	@Test(priority=227, enabled =true)
 	  public void Upload_Documents() throws InterruptedException, IOException {
 		
 		//1st file
@@ -190,7 +195,7 @@ public class DocumentsTestcase extends WrapperClass {
  	    Thread.sleep(5000);
 	}
 	
-	@Test(priority=175, enabled =true)
+	@Test(priority=228, enabled =true)
 	  public void Notes_Documents() throws InterruptedException, IOException {
 		
 	//Click on Notes button to add text
@@ -259,7 +264,7 @@ public class DocumentsTestcase extends WrapperClass {
 	
 }
 	
-	@Test(priority=176, enabled =true)
+	@Test(priority=229, enabled =true)
 	  public void SubRowsUpload_Documents() throws InterruptedException, IOException {
 	
 		
@@ -289,7 +294,7 @@ public class DocumentsTestcase extends WrapperClass {
  	    Thread.sleep(3000);
 	}
 	
-	@Test(priority=177, enabled =true)
+	@Test(priority=230, enabled =true)
 	  public void DownloadandDelete_Documents() throws InterruptedException, IOException {
  	   
 		//Click on Download button
@@ -324,7 +329,7 @@ public class DocumentsTestcase extends WrapperClass {
 	
 	}
 
-	@Test(priority=178, enabled =false)
+	@Test(priority=231, enabled =false)
 	  public void Filter_Documents() throws InterruptedException, IOException {
 		
 		// Click on Filter Button 
@@ -396,7 +401,7 @@ public class DocumentsTestcase extends WrapperClass {
 		
 	}
 	
-	@Test(priority=179, enabled =true)
+	@Test(priority=232, enabled =true)
 	  public void Export_Documents() throws InterruptedException, IOException {
 		
 		Thread.sleep(3000);
@@ -433,7 +438,7 @@ public class DocumentsTestcase extends WrapperClass {
 		  Thread.sleep(3000);	
 		  
 	}
-	@Test(priority=180, enabled =true)
+	@Test(priority=233, enabled =true)
 	  public void ColumnHeader_Documents() throws InterruptedException, IOException {
 		
 		
@@ -455,14 +460,14 @@ public class DocumentsTestcase extends WrapperClass {
 	}
 	
 	
-	@Test(priority=181, enabled =false)
+	@Test(priority=234, enabled =false)
 	  public void TC212() throws InterruptedException, IOException {
 		
 		//Columns Selector functionaliy
 		
 	}
 
-	@Test(priority=182, enabled =false)
+	@Test(priority=235, enabled =false)
 	  public void TC214() throws InterruptedException, IOException {
 		
 		// Auto - loading

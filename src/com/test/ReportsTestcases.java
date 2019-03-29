@@ -11,11 +11,11 @@ public class ReportsTestcases extends WrapperClass{
 	  public WebDriver driver;
 	  String browser=null;	     
   
-  @Test(priority=183, enabled = true)
+  @Test(priority=236, enabled = true)
   public void Check_Submenu_Reports() throws IOException, InterruptedException {
 	  
 	  Thread.sleep(8000);
-	  Thread.sleep(8000);
+
 	  
 	   //Click on Full screen
       clickByXpath("//*[@id='fullscreen']/i");
@@ -67,7 +67,7 @@ public class ReportsTestcases extends WrapperClass{
 	   
   }
   
-  @Test(priority=184, enabled = true)
+  @Test(priority=237, enabled = true)
   public void Navigate_RiskRatingReport() throws InterruptedException {
 		  
 		  Thread.sleep(3000);
@@ -82,7 +82,7 @@ public class ReportsTestcases extends WrapperClass{
 			Thread.sleep(3000);	
   }
   
-  @Test(priority=185, enabled = true)
+  @Test(priority=238, enabled = true)
   public void PageHearder_RiskRatingReport() throws IOException, InterruptedException {
 	   
 	   Thread.sleep(5000);
@@ -102,7 +102,7 @@ public class ReportsTestcases extends WrapperClass{
 	   Thread.sleep(1000);
   }
   
-  @Test(priority=186, enabled = true)
+  @Test(priority=239, enabled = true)
   public void PanelBar_RiskRatingReport() throws IOException, InterruptedException {
 		   
 	   Thread.sleep(6000);
@@ -116,7 +116,7 @@ public class ReportsTestcases extends WrapperClass{
 	   
   }
   
-  @Test(priority=187, enabled = true)
+  @Test(priority=240, enabled = false)
   public void PageLevelHelp_RiskRatingReport() throws IOException, InterruptedException {
 	   
 	   Thread.sleep(6000);
@@ -137,7 +137,7 @@ public class ReportsTestcases extends WrapperClass{
 	   
   }
 	
-  @Test(priority=188, enabled = true)
+  @Test(priority=241, enabled = false)
   public void RiskManagementMap_RiskRatingReport() throws IOException, InterruptedException {
 	   
 	   Thread.sleep(6000); 
@@ -151,7 +151,7 @@ public class ReportsTestcases extends WrapperClass{
 	   Thread.sleep(6000);
   }
   
-  @Test(priority=189, enabled = true)
+  @Test(priority=242, enabled = true)
   public void Check_ColumnHeader_RiskRatingReport() throws IOException, InterruptedException {
 	  
 	  Thread.sleep(6000);
@@ -167,32 +167,32 @@ public class ReportsTestcases extends WrapperClass{
  	   Thread.sleep(3000);
   
  	// Check ColumnHeader
- 	   assertEquals("//*[@id='risk-rating-report-table']/thead/tr/th[3]/span[1]/span", "Asset Name(s)");
+ 	   assertEquals("//*[@id='risk-rating-report-table']/thead/tr/th[3]/span[1]/span", "Threat Source/Event");
  	   Reporter.log("Check ColumnHeader | ");
  	   Thread.sleep(3000);
  	   
  	// Check ColumnHeader
- 	   assertEquals("//*[@id='risk-rating-report-table']/thead/tr/th[4]/span[1]/span", "Threat Source/Event");
+ 	   assertEquals("//*[@id='risk-rating-report-table']/thead/tr/th[4]/span[1]/span", "Vulnerability");
  	   Reporter.log("Check ColumnHeader | ");
  	   Thread.sleep(3000);
  	   
  	// Check ColumnHeader
- 	   assertEquals("//*[@id='risk-rating-report-table']/thead/tr/th[5]/span[1]/span", "Vulnerability");
+ 	   assertEquals("//*[@id='risk-rating-report-table']/thead/tr/th[5]/span[1]/span", "Likelihood");
  	   Reporter.log("Check ColumnHeader | ");
  	   Thread.sleep(3000);
  	   
  	// Check ColumnHeader
- 	   assertEquals("//*[@id='risk-rating-report-table']/thead/tr/th[6]/span[1]/span", "Likelihood");
+ 	   assertEquals("//*[@id='risk-rating-report-table']/thead/tr/th[6]/span[1]/span", "Impact");
  	   Reporter.log("Check ColumnHeader | ");
  	   Thread.sleep(3000);
  	   
  	// Check ColumnHeader
- 	   assertEquals("//*[@id='risk-rating-report-table']/thead/tr/th[7]/span[1]/span", "Impact");
+ 	   assertEquals("//*[@id='risk-rating-report-table']/thead/tr/th[7]/span[1]/span", "Rating");
  	   Reporter.log("Check ColumnHeader | ");
  	   Thread.sleep(3000);
  	   
  	// Check ColumnHeader
- 	   assertEquals("//*[@id='risk-rating-report-table']/thead/tr/th[8]/span[1]/span", "Rating");
+ 	   assertEquals("//*[@id='risk-rating-report-table']/thead/tr/th[9]/span[1]/span", "Physical Location");
  	   Reporter.log("Check ColumnHeader | ");
  	   Thread.sleep(3000);
  	   
@@ -208,7 +208,7 @@ public class ReportsTestcases extends WrapperClass{
    
   }
 			
-  @Test(priority=190, enabled = true)
+  @Test(priority=243, enabled = true)
   public void Export_RiskRatingReport() throws InterruptedException {
 		  
 		  //Click on Export Button
@@ -244,45 +244,30 @@ public class ReportsTestcases extends WrapperClass{
 	      
 	  }
   
-  @Test(priority=191, enabled = true)
+  @Test(priority=244, enabled = true)
   public void QuickFilter_RiskRatingReport() throws InterruptedException {
 	  
 	  		Thread.sleep(3000);
 		       
 	  		// Click on Scenario Status Filter Button
-	        assertTextXpath("//*[@id='advisory-filter']");
-	  		clickByXpath("//*[@id='advisory-filter']");
+	        assertTextXpath("//*[@id='report-version']");
+	  		clickByXpath("//*[@id='report-version']");
 	  		Reporter.log("Click on Filter Button | ");
 	  		Thread.sleep(8000);
 	  		//Thread.sleep(3000);
 	        //Thread.sleep(3000);
        
 	  		//Click on Scenario Status Filter Drop-down
-	  		assertTextXpath("//*[@id='cw-panelbar']/div/div[4]/cw-drop-list/div/ul/li[1]/a");
-	  		clickByXpath("//*[@id='cw-panelbar']/div/div[4]/cw-drop-list/div/ul/li[1]/a");
+	  		assertTextXpath("//*[@id='cw-panelbar']/div/div[4]/ng-transclude/cw-version-selector/div/ul/li/a");
+	  		clickByXpath("//*[@id='cw-panelbar']/div/div[4]/ng-transclude/cw-version-selector/div/ul/li/a");
 	  		Reporter.log("Click on Media Drop-down | ");
 	  		Thread.sleep(8000);
 	  		Thread.sleep(3000);
-	  		
-	  	// Click on Scenario Status Filter Button
-	        assertTextXpath("//*[@id='advisory-filter']");
-	  		clickByXpath("//*[@id='advisory-filter']");
-	  		Reporter.log("Click on Filter Button | ");
-	  		Thread.sleep(8000);
-	  		//Thread.sleep(3000);
-	        //Thread.sleep(3000);
-	  			  		
-	  	//Click on Scenario Status Filter Drop-down
-	  		assertTextXpath("//*[@id='cw-panelbar']/div/div[4]/cw-drop-list/div/ul/li[2]/a");
-	  		clickByXpath("//*[@id='cw-panelbar']/div/div[4]/cw-drop-list/div/ul/li[2]/a");
-	  		Reporter.log("Click on Media Drop-down | ");
-	  		Thread.sleep(3000);
-	  		Thread.sleep(8000);
-	  		//Thread.sleep(3000);
+	  	
 	  		
   }
 	  
-	  @Test(priority=192, enabled = false)
+	  @Test(priority=245, enabled = false)
 	  public void Filter_RiskRatingReport() throws InterruptedException {
 		  
 		  		Thread.sleep(3000);
@@ -363,7 +348,7 @@ public class ReportsTestcases extends WrapperClass{
 		  	
 	  }
 	  
-	  @Test(priority=193, enabled = true)
+	  @Test(priority=246, enabled = true)
 	  public void Navigate_RiskRatingDetailReport() throws InterruptedException {
 			  
 			  Thread.sleep(3000);
@@ -378,7 +363,7 @@ public class ReportsTestcases extends WrapperClass{
 				Thread.sleep(3000);	
 	  }
 	  
-	  @Test(priority=194, enabled = true)
+	  @Test(priority=247, enabled = true)
 	  public void PageHearder_RiskRatingDetailReport() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(5000);
@@ -398,7 +383,7 @@ public class ReportsTestcases extends WrapperClass{
 		   Thread.sleep(1000);
 	  }
 	  
-	  @Test(priority=195, enabled = true)
+	  @Test(priority=248, enabled = true)
 	  public void PanelBar_RiskRatingDetailReport() throws IOException, InterruptedException {
 			   
 		   Thread.sleep(6000);
@@ -412,7 +397,7 @@ public class ReportsTestcases extends WrapperClass{
 		   
 	  }
 	  
-	  @Test(priority=196, enabled = true)
+	  @Test(priority=249, enabled = false)
 	  public void PageLevelHelp_RiskRatingDetailReport() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(6000);
@@ -433,7 +418,7 @@ public class ReportsTestcases extends WrapperClass{
 		   
 	  }
 		
-	  @Test(priority=197, enabled = true)
+	  @Test(priority=250, enabled = false)
 	  public void RiskManagementMap_RiskRatingDetailReport() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(6000); 
@@ -447,69 +432,55 @@ public class ReportsTestcases extends WrapperClass{
 		   Thread.sleep(6000);
 	  }
 	  
-	  @Test(priority=198, enabled = true)
+	  @Test(priority=251, enabled = true)
 	  public void Check_ColumnHeader_RiskRatingDetailReport() throws IOException, InterruptedException {
 		  
 		  Thread.sleep(6000);
 		   
 		// Check ColumnHeader
-	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[1]/span[1]/span", "Scenario Advisory");
+	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[1]/span[1]/span", "Component / Group Name");
 	 	   Reporter.log("Check ColumnHeader | ");
 	 	   Thread.sleep(3000);
 	 	   
 	 	// Check ColumnHeader
-	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[2]/span[1]/span", "Component / Group Name");
+	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[2]/span[1]/span", "Threat Source / Event");
 	 	   Reporter.log("Check ColumnHeader | ");
 	 	   Thread.sleep(3000);
 	  
 	 	// Check ColumnHeader
-	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[3]/span[1]/span", "Asset Name(s)");
+	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[3]/span[1]/span", "Threat Source / Event");
 	 	   Reporter.log("Check ColumnHeader | ");
 	 	   Thread.sleep(3000);
 	 	   
 	 	// Check ColumnHeader
-	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[4]/span[1]/span", "Threat Source / Event");
+	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[4]/span[1]/span", "Vulnerability");
 	 	   Reporter.log("Check ColumnHeader | ");
 	 	   Thread.sleep(3000);
 	 	   
 	 	// Check ColumnHeader
-	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[5]/span[1]/span", "Vulnerability");
+	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[5]/span[1]/span", "Likelihood");
 	 	   Reporter.log("Check ColumnHeader | ");
 	 	   Thread.sleep(3000);
 	 	   
 	 	// Check ColumnHeader
-	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[6]/span[1]/span", "Likelihood");
+	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[6]/span[1]/span", "Impact");
 	 	   Reporter.log("Check ColumnHeader | ");
 	 	   Thread.sleep(3000);
 	 	   
 	 	// Check ColumnHeader
-	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[7]/span[1]/span", "Impact");
+	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[7]/span[1]/span", "Rating");
 	 	   Reporter.log("Check ColumnHeader | ");
 	 	   Thread.sleep(3000);
 	 	   
-	 	// Check ColumnHeader
-	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[8]/span[1]/span", "Rating");
-	 	   Reporter.log("Check ColumnHeader | ");
-	 	   Thread.sleep(3000);
-	 	   
-	 	/*// Check ColumnHeader
-	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[10]/span[1]/span", "Created Date");
-	 	   Reporter.log("Check ColumnHeader | ");
-	 	   Thread.sleep(3000);
-	 	   
-	 	// Check ColumnHeader
-	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[11]/span[1]/span", "Updated Date");
-	 	   Reporter.log("Check ColumnHeader | ");
-	 	   Thread.sleep(3000);*/
 	   
 	 	// Check ColumnHeader
-	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[12]/span[1]/span", "Notes / Answers");
+	 	   assertEquals("//*[@id='risk-rating-table']/thead/tr/th[11]/span/span", "Notes / Answers");
 	 	   Reporter.log("Check ColumnHeader | ");
 	 	   Thread.sleep(3000);
 	 	   
 	  }
 				
-	  @Test(priority=199, enabled = true)
+	  @Test(priority=252, enabled = true)
 	  public void Export_RiskRatingDetailReport() throws InterruptedException {
 			  
 			  //Click on Export Button
@@ -545,45 +516,31 @@ public class ReportsTestcases extends WrapperClass{
 		      
 		  }
 	  
-	  @Test(priority=200, enabled = true)
+	  @Test(priority=253, enabled = true)
 	  public void QuickFilter_RiskRatingDetailReport() throws InterruptedException {
 		  
 		  		Thread.sleep(3000);
 			       
-		  		// Click on Scenario Status Filter Button
-		        assertTextXpath("//*[@id='advisory-filter']");
-		  		clickByXpath("//*[@id='advisory-filter']");
+		  		// Click on History Quick Filter Button
+		        assertTextXpath("//*[@id='report-version']");
+		  		clickByXpath("//*[@id='report-version']");
 		  		Reporter.log("Click on Filter Button | ");
 		  		Thread.sleep(8000);
 		  		//Thread.sleep(3000);
 		        //Thread.sleep(3000);
 	       
-		  		//Click on Scenario Status Filter Drop-down
-		  		assertTextXpath("//*[@id='cw-panelbar']/div/div[4]/cw-drop-list/div/ul/li[1]/a");
-		  		clickByXpath("//*[@id='cw-panelbar']/div/div[4]/cw-drop-list/div/ul/li[1]/a");
+		  		//Click on History Quick Filter Drop-down
+		  		assertTextXpath("//*[@id='cw-panelbar']/div/div[4]/ng-transclude/cw-version-selector/div/ul/li/a");
+		  		clickByXpath("//*[@id='cw-panelbar']/div/div[4]/ng-transclude/cw-version-selector/div/ul/li/a");
 		  		Reporter.log("Click on Media Drop-down | ");
 		  		Thread.sleep(8000);
 		  		Thread.sleep(3000);
 		  		
-		  	// Click on Scenario Status Filter Button
-		        assertTextXpath("//*[@id='advisory-filter']");
-		  		clickByXpath("//*[@id='advisory-filter']");
-		  		Reporter.log("Click on Filter Button | ");
-		  		Thread.sleep(8000);
-		  		//Thread.sleep(3000);
-		        //Thread.sleep(3000);
-		  		
-		  	//Click on Scenario Status Filter Drop-down
-		  		assertTextXpath("//*[@id='cw-panelbar']/div/div[4]/cw-drop-list/div/ul/li[2]/a");
-		  		clickByXpath("//*[@id='cw-panelbar']/div/div[4]/cw-drop-list/div/ul/li[2]/a");
-		  		Reporter.log("Click on Media Drop-down | ");
-		  		Thread.sleep(3000);
-		  		Thread.sleep(8000);
-		  		//Thread.sleep(3000);
+		  
 		  		
 	  }
 		  
-		  @Test(priority=201, enabled = false)
+		  @Test(priority=254, enabled = false)
 		  public void Filter_RiskRatingDetailReport() throws InterruptedException {
 			  
 			  		Thread.sleep(3000);
@@ -677,7 +634,7 @@ public class ReportsTestcases extends WrapperClass{
 			  	
 		  }
 		  
-		  @Test(priority=202, enabled = true)
+		  @Test(priority=255, enabled = true)
 		  public void Navigate_AssetInventoryReport() throws InterruptedException {
 				  
 				  Thread.sleep(3000);
@@ -692,7 +649,7 @@ public class ReportsTestcases extends WrapperClass{
 				  //Thread.sleep(3000);	
 		  }
 		  
-		  @Test(priority=203, enabled = true)
+		  @Test(priority=256, enabled = true)
 		  public void PageHearder_AssetInventoryReport() throws IOException, InterruptedException {
 			   
 			   Thread.sleep(5000);
@@ -712,7 +669,7 @@ public class ReportsTestcases extends WrapperClass{
 			   Thread.sleep(1000);
 		  }
 		  
-		  @Test(priority=204, enabled = true)
+		  @Test(priority=257, enabled = true)
 		  public void PanelBar_AssetInventoryReport() throws IOException, InterruptedException {
 				   
 			   Thread.sleep(6000);
@@ -726,7 +683,7 @@ public class ReportsTestcases extends WrapperClass{
 			   
 		  }
 		  
-		  @Test(priority=205, enabled = true)
+		  @Test(priority=258, enabled = false)
 		  public void PageLevelHelp_AssetInventoryReport() throws IOException, InterruptedException {
 			   
 			   Thread.sleep(6000);
@@ -747,7 +704,7 @@ public class ReportsTestcases extends WrapperClass{
 			   
 		  }
 			
-		  @Test(priority=206, enabled = true)
+		  @Test(priority=259, enabled = false)
 		  public void RiskManagementMap_AssetInventoryReport() throws IOException, InterruptedException {
 			   
 			   Thread.sleep(6000); 
@@ -761,7 +718,7 @@ public class ReportsTestcases extends WrapperClass{
 			   Thread.sleep(6000);
 		  }
 		  
-		  @Test(priority=207, enabled = true)
+		  @Test(priority=260, enabled = true)
 		  public void Check_ColumnHeader_AssetInventoryReport() throws IOException, InterruptedException {
 			  
 			  Thread.sleep(6000);
@@ -792,7 +749,7 @@ public class ReportsTestcases extends WrapperClass{
 		 	   Thread.sleep(3000);
 		 	   
 		 	// Check ColumnHeader
-		 	   assertEquals("//*[@id='asset-inventory-table']/thead/tr/th[6]/span[1]/span", "Media and Storage Devices");
+		 	   assertEquals("//*[@id='asset-inventory-table']/thead/tr/th[6]/span[1]/span", "Component and Storage Devices");
 		 	   Reporter.log("Check ColumnHeader | ");
 		 	   Thread.sleep(3000);
 		 	   
@@ -832,7 +789,7 @@ public class ReportsTestcases extends WrapperClass{
 		 	   Thread.sleep(3000);
 		  }
 					
-		  @Test(priority=208, enabled = true)
+		  @Test(priority=261, enabled = true)
 		  public void Export_AssetInventoryReport() throws InterruptedException {
 				  
 				  //Click on Export Button
@@ -868,7 +825,7 @@ public class ReportsTestcases extends WrapperClass{
 			      
 			  }
 		  
-		  @Test(priority=209, enabled = true)
+		  @Test(priority=262, enabled = true)
 		  public void QuickFilter_AssetInventoryReport() throws InterruptedException {
 			  
 			  		Thread.sleep(3000);
@@ -882,15 +839,15 @@ public class ReportsTestcases extends WrapperClass{
 			        //Thread.sleep(3000);
 		       
 			  		//Click on History Drop-down
-			  		assertTextXpath("//*[@id='cw-panelbar']/div/div[3]/ng-transclude/cw-version-selector/div/ul/li/a");
-			  		clickByXpath("//*[@id='cw-panelbar']/div/div[3]/ng-transclude/cw-version-selector/div/ul/li/a");
+			  		assertTextXpath("//*[@id='cw-panelbar']/div/div[4]/ng-transclude/cw-version-selector/div/ul/li/a");
+			  		clickByXpath("//*[@id='cw-panelbar']/div/div[4]/ng-transclude/cw-version-selector/div/ul/li/a");
 			  		Reporter.log("Click on Media Drop-down | ");
 			  		Thread.sleep(8000);
 			  		Thread.sleep(3000);
 			  		
 		  }
 			  
-			  @Test(priority=210, enabled = false)
+			  @Test(priority=263, enabled = false)
 			  public void Filter_AssetInventoryReport() throws InterruptedException {
 				  
 				  Thread.sleep(3000);
@@ -974,7 +931,7 @@ public class ReportsTestcases extends WrapperClass{
 				  	
 			  }
 			  
-			  @Test(priority=211, enabled = true)
+			  @Test(priority=264, enabled = true)
 			  public void Navigate_RiskResponseDetailReport() throws InterruptedException {
 					  
 					  Thread.sleep(3000);
@@ -989,7 +946,7 @@ public class ReportsTestcases extends WrapperClass{
 						//Thread.sleep(3000);	
 			  }
 			  
-			  @Test(priority=212, enabled = true)
+			  @Test(priority=265, enabled = true)
 			  public void PageHearder_RiskResponseDetailReport() throws IOException, InterruptedException {
 				   
 				   Thread.sleep(5000);
@@ -1009,7 +966,7 @@ public class ReportsTestcases extends WrapperClass{
 				   Thread.sleep(1000);
 			  }
 			  
-			  @Test(priority=213, enabled = true)
+			  @Test(priority=266, enabled = true)
 			  public void PanelBar_RiskResponseDetailReport() throws IOException, InterruptedException {
 					   
 				   Thread.sleep(6000);
@@ -1023,7 +980,7 @@ public class ReportsTestcases extends WrapperClass{
 				   
 			  }
 			  
-			  @Test(priority=214, enabled = true)
+			  @Test(priority=267, enabled = false)
 			  public void PageLevelHelp_RiskResponseDetailReport() throws IOException, InterruptedException {
 				   
 				   Thread.sleep(6000);
@@ -1044,7 +1001,7 @@ public class ReportsTestcases extends WrapperClass{
 				   
 			  }
 				
-			  @Test(priority=215, enabled = true)
+			  @Test(priority=268, enabled = false)
 			  public void RiskManagementMap_RiskResponseDetailReport() throws IOException, InterruptedException {
 				   
 				   Thread.sleep(6000); 
@@ -1058,7 +1015,7 @@ public class ReportsTestcases extends WrapperClass{
 				   Thread.sleep(6000);
 			  }
 			  
-			  @Test(priority=216, enabled = false)
+			  @Test(priority=269, enabled = false)
 			  public void Check_ColumnHeader_RiskResponseDetailReport() throws IOException, InterruptedException {
 				  
 				  Thread.sleep(6000);
@@ -1120,7 +1077,7 @@ public class ReportsTestcases extends WrapperClass{
 			 	   
 			  }
 						
-			  @Test(priority=217, enabled = true)
+			  @Test(priority=270, enabled = true)
 			  public void Export_RiskResponseDetailReport() throws InterruptedException {
 					  
 					  //Click on Export Button
@@ -1156,7 +1113,7 @@ public class ReportsTestcases extends WrapperClass{
 				      
 				  }
 			  
-			  @Test(priority=218, enabled = true)
+			  @Test(priority=271, enabled = true)
 			  public void QuickFilter_RiskResponseDetailReport() throws InterruptedException {
 				  
 				  		Thread.sleep(3000);
@@ -1254,7 +1211,7 @@ public class ReportsTestcases extends WrapperClass{
 				  		//Thread.sleep(3000);
 			  }
 				  
-				  @Test(priority=219, enabled = false)
+				  @Test(priority=272, enabled = false)
 				  public void Filter_RiskResponseDetailReport() throws InterruptedException {
 					  
 					  Thread.sleep(3000);
@@ -1370,7 +1327,7 @@ public class ReportsTestcases extends WrapperClass{
 					  	
 				  }
 				  
-				  @Test(priority=220, enabled = true)
+				  @Test(priority=273, enabled = true)
 				  public void Navigate_EnterpriseExtracts() throws InterruptedException {
 						  
 						  Thread.sleep(3000);
@@ -1394,7 +1351,7 @@ public class ReportsTestcases extends WrapperClass{
 						   Thread.sleep(3000);	
 				  }
 				  
-				  @Test(priority=221, enabled = true)
+				  @Test(priority=274, enabled = true)
 				  public void PageHearder_EnterpriseExtracts() throws IOException, InterruptedException {
 					   
 					   Thread.sleep(5000);
@@ -1414,7 +1371,7 @@ public class ReportsTestcases extends WrapperClass{
 					   Thread.sleep(1000);
 				  }
 				  
-				  @Test(priority=222, enabled = true)
+				  @Test(priority=275, enabled = true)
 				  public void PanelBar_EnterpriseExtracts() throws IOException, InterruptedException {
 						   
 					   Thread.sleep(6000);
@@ -1428,7 +1385,7 @@ public class ReportsTestcases extends WrapperClass{
 					   
 				  }
 				  
-				  @Test(priority=223, enabled = true)
+				  @Test(priority=276, enabled = false)
 				  public void PageLevelHelp_EnterpriseExtracts() throws IOException, InterruptedException {
 					   
 					   Thread.sleep(6000);
@@ -1449,7 +1406,7 @@ public class ReportsTestcases extends WrapperClass{
 					   
 				  }
 					
-				  @Test(priority=224, enabled = true)
+				  @Test(priority=277, enabled = false)
 				  public void RiskManagementMap_EnterpriseExtracts() throws IOException, InterruptedException {
 					   
 					   Thread.sleep(6000); 
@@ -1463,7 +1420,7 @@ public class ReportsTestcases extends WrapperClass{
 					   Thread.sleep(6000);
 				  }
 				  
-				  @Test(priority=225, enabled = true)
+				  @Test(priority=278, enabled = true)
 					 public void ExportButtons_EnterpriseExtracts () throws InterruptedException, IOException
 						   {
 					    	  

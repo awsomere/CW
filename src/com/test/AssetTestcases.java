@@ -6,7 +6,6 @@ import org.testng.annotations.*;
 import org.openqa.selenium.*;
 import com.test.WrapperClass;
 
-
 public class AssetTestcases extends WrapperClass{
 	
   public WebDriver driver;

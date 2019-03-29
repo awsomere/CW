@@ -1,8 +1,0 @@
-Media/Label,"Asset Name(s)","Threat Source","Threat Event",Vulnerability,"Created Date","Updated Date","Risk Likelihood","Risk Impact","Risk Rating"
-Pager,"Pager Media","Careless User","Loss of Equipment","Endpoint Leakage","07/16/2018 09:02","07/16/2018 09:02",3,4,12
-Pager,"Pager Media",Burglar/Thief,"Theft of Equipment","Physical Security Deficiencies","07/16/2018 08:58","07/16/2018 08:58",3,4,12
-Pager,"Pager Media","Careless IT Personnel","Improper Destruction, Disposal or Reuse of Storage Media","Destruction/Disposal Deficiencies","07/16/2018 09:00","07/16/2018 09:00",3,4,12
-Pager,"Pager Media","Careless IT Personnel","Loss of Equipment","Improper Media/Device Handling","07/16/2018 09:01","07/16/2018 09:01",3,4,12
-Pager,"Pager Media","Careless User","Physical Damage to Equipment",Accidents,"07/16/2018 09:02","07/16/2018 09:03",3,4,12
-Pager,"Pager Media",Entropy,"Hardware Failure","Old or Outdated Equipment","07/16/2018 09:03","07/16/2018 09:03",3,4,12
-Pager,"Pager Media","System Cracker","Theft of Sensitive Data","System Configuration Deficiencies","07/16/2018 09:04","07/16/2018 09:04",3,4,12

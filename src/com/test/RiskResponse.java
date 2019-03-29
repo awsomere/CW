@@ -13,7 +13,7 @@ public class RiskResponse extends WrapperClass{
 	   @Test(priority=29, enabled = true)
 	   public void BackupListmedia() throws IOException, InterruptedException {
 		    
-		    Thread.sleep(5000);
+		    Thread.sleep(8000);
 		    Thread.sleep(5000);
 		    Thread.sleep(5000);
 		            		    

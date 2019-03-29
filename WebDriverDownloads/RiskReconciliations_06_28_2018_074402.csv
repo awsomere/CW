@@ -1,2 +1,0 @@
-Media/Label,"Asset Name(s)","Threat Source","Threat Event",Vulnerability,"Prior Risk Rating","Risk Rating","Residual Risk Rating Likelihood","Residual Risk Rating Impact","Residual Risk Rating","Reconciled Risk Rating Likelihood","Reconciled Risk Rating Impact","Reconciled Risk Rating","Reconciliation Status","Date Reconciled","Risk Owner"
-"Backup Media / sample Backup label",TestingAsset,Test,"Theft of Storage Media","Anti-malware Deficiencies",16,12,3,3,9,3,4,12,Reconciled,"06/28/2018 07:27:01",N/A

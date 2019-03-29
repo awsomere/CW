@@ -20,7 +20,6 @@ public class Login extends WrapperClass {
 				Reporter.log("Broser Launched successfully | ");
 				Thread.sleep(5000);
 				Thread.sleep(5000);
-				Thread.sleep(5000);
 							    
 				//Enter EmailID in Textbox
 				assertTextXpath("//*[@id='lEmail']");
@@ -32,7 +31,10 @@ public class Login extends WrapperClass {
 				assertTextXpath("//*[@id='lPass']");
 				sendvaluebyxpath("//*[@id='lPass']", password);
 				Reporter.log("Enter Password successfully | ");
-				Thread.sleep(3000);
+				Thread.sleep(8000);
+				Thread.sleep(8000);
+				Thread.sleep(8000);
+				
 			
 				//Click on SignIN button
 				try {

@@ -581,6 +581,7 @@ public class WrapperClass {
 //			expType.printStackTrace();
 //		}
 	}
+	
 	public void clickwaitByXpath(String xpath) {
 		try {
 			WebElement w =driver.findElement(By.xpath(xpath));
@@ -686,6 +687,25 @@ public class WrapperClass {
 	   return null;
 	}
 	
+	public void IsNotEditableTextByXpath(String xpath) {
+		
+		 WebElement element1 = driver.findElement(By.xpath(xpath));
+		    String readonly = element1.getAttribute("readonly");
+		    Assert.assertNull(readonly);
+		    System.out.println(readonly);
+		    
+	 }
+	 
+	 
+	 
+	 public void DisableTextByXpath(String xpath) {
+			
+		 WebElement button = driver.findElement(By.xpath(xpath));
+		 Assert.assertTrue(button.isEnabled(), "Not");
+	}
+	 
+	 
+	 
 	public void uploadFile(String xpath, String sendvalue) {
 		WebElement uploadElement = driver.findElement(By.xpath(xpath));
 		uploadElement.sendKeys(sendvalue);
@@ -1372,6 +1392,30 @@ public void assertEquals(String xpath, String Value){
 	    	   }
 	    	    }
 	    
+	    public void ArrowLeft() {
+	    	   try {
+	    	    Actions mouseAction = new Actions(driver);
+	    	    Actions seriesOfActions = mouseAction.sendKeys(Keys.ARROW_LEFT);
+	    	    seriesOfActions.build().perform();
+	    	   
+	    	   } catch (Exception e) {
+	    	    // TODO Auto-generated catch block
+	    	    e.printStackTrace();
+	    	   }
+	    	    }
+	    
+	    public void ArrowRight() {
+	    	   try {
+	    	    Actions mouseAction = new Actions(driver);
+	    	    Actions seriesOfActions = mouseAction.sendKeys(Keys.ARROW_RIGHT);
+	    	    seriesOfActions.build().perform();
+	    	   
+	    	   } catch (Exception e) {
+	    	    // TODO Auto-generated catch block
+	    	    e.printStackTrace();
+	    	   }
+	    	    }
+	    
 	    public void ArrowUp() {
 		 	   try {
 		 	    Actions mouseAction = new Actions(driver);
@@ -1524,7 +1568,7 @@ public void assertEquals(String xpath, String Value){
 	
 	public String[][] getlogin() throws IOException {
 		// Create an input stream
-		FileInputStream fis = new FileInputStream(new File(".\\Testdata\\Stage.xlsx"));
+		FileInputStream fis = new FileInputStream(new File(".\\Testdata\\Fixes.xlsx"));
 
 		// Open the excel work sheet
 		XSSFWorkbook wb = new XSSFWorkbook(fis);

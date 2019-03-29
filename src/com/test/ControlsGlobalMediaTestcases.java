@@ -10,11 +10,12 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 	 public WebDriver driver;
 	  String browser=null;
 	  
-	  @Test(priority=63, enabled =true)
+	  @Test(priority=115, enabled =true)
 	  public void NavigatePage_ControlsGlobalMedia() throws InterruptedException, IOException {
 	  
-		  Thread.sleep(8000);
-		  Thread.sleep(8000);	
+		
+		   
+		    Thread.sleep(8000);	
 		    	       
 		  //Select Controls - Global/Media sub-module under Risk determination Module 
 		  assertTextXpath("//*[@id='sidebar-left']/ul/li[4]/ul/li[1]/a");
@@ -28,7 +29,7 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 	  }
 	  
 	  
-		@Test(priority=64, enabled =true)
+		@Test(priority=116, enabled =true)
 		  public void PageHearder_ControlsGlobalMedia() throws InterruptedException, IOException {
 			
 			 Thread.sleep(3000);
@@ -48,7 +49,7 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 			 Thread.sleep(1000);
 		}
 		
-		 @Test(priority=65, enabled = true)
+		 @Test(priority=117, enabled = true)
 		   public void PanelBar_ControlsGlobalMedia() throws IOException, InterruptedException {
 				   
 			   Thread.sleep(3000);
@@ -70,7 +71,7 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 			   
 		   }
 		   
-		 @Test(priority=66, enabled = true)
+		 @Test(priority=118, enabled = true)
 		 public void PageLevelHelp_ControlsGlobalMedia() throws IOException, InterruptedException {
 			   
 			   Thread.sleep(3000);
@@ -91,7 +92,7 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 			   
 		 }
 		 
-		 @Test(priority=67, enabled = true)
+		 @Test(priority=119, enabled = true)
 		 public void RiskManagementMap_ControlsGlobalMedia() throws IOException, InterruptedException {
 			   
 			   Thread.sleep(3000); 
@@ -101,12 +102,12 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 			   clickByXpath("//*[@id='cw-panelbar']/div/div[2]/ul/li[3]/cw-appmap/button");
 			   Reporter.log("Click on Risk Management Map | ");
 			   Thread.sleep(3000);
-			   clickByXpath("html/body/div[4]/div/div/div[3]/button");
+			   clickByXpath("html/body/div[4]/div/div/div[2]/button");
 			   Thread.sleep(3000);
 		 }
 		
 		
-		@Test(priority=68, enabled =true)
+		@Test(priority=120, enabled =true)
 		  public void ExpandControls_ControlsGlobalMedia() throws InterruptedException, IOException {
 			
 			 //Click on + Icon to open Control 
@@ -125,7 +126,7 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 			  
 		}
 		
-		 @Test(priority=69, enabled =true)
+		 @Test(priority=121, enabled =true)
 		 public void SelectResponse_ControlsGlobalMedia() throws InterruptedException, IOException {
 	 		 		 		 
 	 		   Thread.sleep(2000);
@@ -152,6 +153,13 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 			  Thread.sleep(3000);
 			  //Thread.sleep(3000);
 			  
+			//Click on proceed button to make global
+			  //assertTextXpath("html/body/div[2]/div/div/div[3]/button[1]");
+			  clickByXpath("html/body/div[4]/div/div/div[3]/button[1]");
+			  Reporter.log("Click on Proceed button | ");
+			  Thread.sleep(8000);
+			  Thread.sleep(2000);	
+			  
 			  // 3rd
 			  //Select 'InProgress' option in Response choice of Third listed Controls
 			  assertTextXpath("//*[@id='container-body']/tr[5]/td[4]/cw-s-response-choices/div/div/label[2]");
@@ -160,7 +168,14 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 			  Thread.sleep(3000);
 			  //Thread.sleep(3000);
 			  
-			  //Click on + Icon to open Control for negative scenario
+			//Click on proceed button to make global
+			  //assertTextXpath("html/body/div[2]/div/div/div[3]/button[1]");
+			  clickByXpath("html/body/div[4]/div/div/div[3]/button[1]");
+			  Reporter.log("Click on Proceed button | ");
+			  Thread.sleep(8000);
+			  Thread.sleep(2000);	
+			  
+			 /* //Click on + Icon to open Control for negative scenario
 			  assertTextXpath("//*[@id='container-body']/tr[5]/td[3]/span[1]");
 			  clickByXpath("//*[@id='container-body']/tr[5]/td[3]/span[1]");
 			  Reporter.log("Click on + Icon to open Control | ");
@@ -180,7 +195,7 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 			  assertTextXpath("//*[@id='container-body']/tr[5]/td[3]/span[1]");
 			  clickByXpath("//*[@id='container-body']/tr[5]/td[3]/span[1]");
 			  Reporter.log("Click on '-' Icon to close Controls | ");
-			  Thread.sleep(3000);
+			  Thread.sleep(3000);*/
 			  
 			  //4th
 			  //Select 'No' option in Response choice of Four listed Controls
@@ -190,6 +205,13 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 			  Thread.sleep(3000);
 			  //Thread.sleep(3000);
 			  
+			//Click on proceed button to make global
+			  //assertTextXpath("html/body/div[2]/div/div/div[3]/button[1]");
+			  clickByXpath("html/body/div[4]/div/div/div[3]/button[1]");
+			  Reporter.log("Click on Proceed button | ");
+			  Thread.sleep(8000);
+			  Thread.sleep(2000);	
+			  
 			  //5th
 	          //Select 'NA' option in Response choice of Fifth listed Controls
 			  assertTextXpath("//*[@id='container-body']/tr[9]/td[4]/cw-s-response-choices/div/div/label[4]");
@@ -197,6 +219,13 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 			  Reporter.log("Select 'NA' option in Response choice of Fifth listed Controls | ");
 			  Thread.sleep(3000);
 			  //Thread.sleep(3000);
+			  
+			//Click on proceed button to make global
+			  //assertTextXpath("html/body/div[2]/div/div/div[3]/button[1]");
+			  clickByXpath("html/body/div[4]/div/div/div[3]/button[1]");
+			  Reporter.log("Click on Proceed button | ");
+			  Thread.sleep(8000);
+			  Thread.sleep(2000);	
 
 			  //6th
 			  //Select 'InProgress' option in Response choice of 6th listed Controls
@@ -205,6 +234,13 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 			  Reporter.log("Select 'InProgress' option in Response choice of 6th listed Controls | ");
 			  Thread.sleep(3000);
 			  //Thread.sleep(3000);
+			  
+			//Click on proceed button to make global
+			  //assertTextXpath("html/body/div[2]/div/div/div[3]/button[1]");
+			  clickByXpath("html/body/div[4]/div/div/div[3]/button[1]");
+			  Reporter.log("Click on Proceed button | ");
+			  Thread.sleep(8000);
+			  Thread.sleep(2000);	
 
 			  //7th
 			  //Select 'No' option in Response choice of 7th listed Controls
@@ -213,6 +249,13 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 			  Reporter.log("Select 'No' option in Response choice of 7th listed Controls | ");
 			  Thread.sleep(3000);
 			  //Thread.sleep(3000);
+			  
+			//Click on proceed button to make global
+			  //assertTextXpath("html/body/div[2]/div/div/div[3]/button[1]");
+			  clickByXpath("html/body/div[4]/div/div/div[3]/button[1]");
+			  Reporter.log("Click on Proceed button | ");
+			  Thread.sleep(8000);
+			  Thread.sleep(2000);	
 			 	  
 	          //8th
 	        //Select 'yes' option in Response choice of 8th listed Controls
@@ -222,6 +265,13 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 			  Thread.sleep(3000);
 			  //Thread.sleep(3000);
 
+			//Click on proceed button to make global
+			  //assertTextXpath("html/body/div[2]/div/div/div[3]/button[1]");
+			  clickByXpath("html/body/div[4]/div/div/div[3]/button[1]");
+			  Reporter.log("Click on Proceed button | ");
+			  Thread.sleep(8000);
+			  Thread.sleep(2000);	
+			  
 			  //9th
 			  //Select 'InProgress' option in Response choice of 9th listed Controls
 			  assertTextXpath("//*[@id='container-body']/tr[17]/td[4]/cw-s-response-choices/div/div/label[2]");
@@ -230,15 +280,29 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 			  Thread.sleep(3000);
 			  //Thread.sleep(3000);
 			  
+			//Click on proceed button to make global
+			  //assertTextXpath("html/body/div[2]/div/div/div[3]/button[1]");
+			  clickByXpath("html/body/div[4]/div/div/div[3]/button[1]");
+			  Reporter.log("Click on Proceed button | ");
+			  Thread.sleep(8000);
+			  Thread.sleep(2000);	
+			  
 			  //10th
 			  //Select 'No' option in Response choice of 10th listed Controls
 			  assertTextXpath("//*[@id='container-body']/tr[19]/td[4]/cw-s-response-choices/div/div/label[3]");
 			  clickByXpath("//*[@id='container-body']/tr[19]/td[4]/cw-s-response-choices/div/div/label[3]");
 			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
 			  Thread.sleep(3000);
-			  //Thread.sleep(3000);
+			  Thread.sleep(3000);
 			  
-		  ArrowDown();
+			//Click on proceed button to make global
+			  //assertTextXpath("html/body/div[2]/div/div/div[3]/button[1]");
+			  clickByXpath("html/body/div[4]/div/div/div[3]/button[1]");
+			  Reporter.log("Click on Proceed button | ");
+			  Thread.sleep(8000);
+			  Thread.sleep(2000);	
+			  
+		/*  ArrowDown();
 			  ArrowDown();
 			  ArrowDown();
 			  ArrowDown();
@@ -262,223 +326,24 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 			  Reporter.log("Click on Proceed button | ");
 			  Thread.sleep(8000);
 			  Thread.sleep(2000);		  
+			  			  
+			  ArrowUp();
+			  ArrowUp();
+			  ArrowUp();
+			  ArrowUp();
+			  ArrowUp();
+			  ArrowUp();
+			  ArrowUp();*/
+		
+			  ArrowUp();
+			  ArrowUp();
+			  ArrowUp();
 			  
-			/*//12th
-			  //Select 'No' option in Response choice of 10th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[23]/td[4]/cw-s-response-choices/div/div/label[2]");
-			  clickByXpath("//*[@id='container-body']/tr[23]/td[4]/cw-s-response-choices/div/div/label[2]");
-			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
-			  Thread.sleep(3000);
-			  //Thread.sleep(3000);	 
-			  
-			//13th
-			  //Select 'No' option in Response choice of 10th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[25]/td[4]/cw-s-response-choices/div/div/label[3]");
-			  clickByXpath("//*[@id='container-body']/tr[25]/td[4]/cw-s-response-choices/div/div/label[3]");
-			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
-			  Thread.sleep(3000);
-			  //Thread.sleep(3000);	 
-			  
-			//14th
-			  //Select 'No' option in Response choice of 10th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[27]/td[4]/cw-s-response-choices/div/div/label[1]");
-			  clickByXpath("//*[@id='container-body']/tr[27]/td[4]/cw-s-response-choices/div/div/label[1]");
-			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
-			  Thread.sleep(3000);
-			  //Thread.sleep(3000);	 
-			  
-			//15th
-			  //Select 'No' option in Response choice of 10th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[29]/td[4]/cw-s-response-choices/div/div/label[2]");
-			  clickByXpath("//*[@id='container-body']/tr[29]/td[4]/cw-s-response-choices/div/div/label[2]");
-			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
-			  Thread.sleep(3000);
-			  //Thread.sleep(3000);	 
-			  
-			//16th
-			  //Select 'No' option in Response choice of 10th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[31]/td[4]/cw-s-response-choices/div/div/label[3]");
-			  clickByXpath("//*[@id='container-body']/tr[31]/td[4]/cw-s-response-choices/div/div/label[3]");
-			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
-			  Thread.sleep(3000);
-			  //Thread.sleep(3000);	 
-			  
-			//17th
-			  //Select 'No' option in Response choice of 10th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[33]/td[4]/cw-s-response-choices/div/div/label[1]");
-			  clickByXpath("//*[@id='container-body']/tr[33]/td[4]/cw-s-response-choices/div/div/label[1]");
-			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
-			  Thread.sleep(3000);
-			  //Thread.sleep(3000);	
-			  
-			  //18th
-			  //Select 'No' option in Response choice of 10th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[35]/td[4]/cw-s-response-choices/div/div/label[4]");
-			  clickByXpath("//*[@id='container-body']/tr[35]/td[4]/cw-s-response-choices/div/div/label[4]");
-			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
-			  Thread.sleep(3000);
-			  //Thread.sleep(3000);	 
-			  
-			  ArrowUp();
-			  ArrowUp();
-			  ArrowUp();
-			  ArrowUp();
-			  ArrowUp();
-			 */
-			  ArrowUp();
-			  ArrowUp();
-			  ArrowUp();
-			  ArrowUp();
-			  ArrowUp();
-			  ArrowUp();
-			  ArrowUp();
-			  ArrowUp();
-			  ArrowUp();
-			  ArrowUp();
-			  Thread.sleep(8000);
-			  
-			  Thread.sleep(2000); 
-			  //Thread.sleep(3000);
-		 	  //Click on Control Type Filter drop-down
-		      clickByXpath("//*[@id='control-type']");
-	         Thread.sleep(3000);
-		   	 clickByXpath("//*[@id='cw-panelbar']/div/div[4]/cw-drop-list[1]/div/ul/li[2]/a");
-		   	 Thread.sleep(8000);
-		   	 Thread.sleep(8000);
-		   	 
-		   //7th
-			  //Select 'No' option in Response choice of 7th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[13]/td[4]/cw-s-response-choices/div/div/label[3]");
-			  clickByXpath("//*[@id='container-body']/tr[13]/td[4]/cw-s-response-choices/div/div/label[3]");
-			  Reporter.log("Select 'No' option in Response choice of 7th listed Controls | ");
-			  Thread.sleep(8000);
-			  Thread.sleep(3000);
-			 	  
-	          //8th
-	        //Select 'yes' option in Response choice of 8th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[15]/td[4]/cw-s-response-choices/div/div/label[1]");
-			  clickByXpath("//*[@id='container-body']/tr[15]/td[4]/cw-s-response-choices/div/div/label[1]");
-			  Reporter.log("Select 'yes' option in Response choice of 8th listed Controls | ");
-			  Thread.sleep(8000);
-			  Thread.sleep(3000);
-
-			/*//Click on proceed button to make global
-			  assertTextXpath("html/body/div[2]/div/div/div[3]/button[1]");
-			  clickByXpath("html/body/div[2]/div/div/div[3]/button[1]");
-			  Reporter.log("Click on Proceed button | ");
-			  Thread.sleep(8000);
-			  Thread.sleep(2000);	*/
-			  
-			  //9th
-			  //Select 'InProgress' option in Response choice of 9th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[17]/td[4]/cw-s-response-choices/div/div/label[2]");
-			  clickByXpath("//*[@id='container-body']/tr[17]/td[4]/cw-s-response-choices/div/div/label[2]");
-			  Reporter.log("Select 'InProgress' option in Response choice of 9th listed Controls | ");
-			  Thread.sleep(8000);
-			  Thread.sleep(3000);
-			  
-			  //10th
-			  //Select 'No' option in Response choice of 10th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[19]/td[4]/cw-s-response-choices/div/div/label[3]");
-			  clickByXpath("//*[@id='container-body']/tr[19]/td[4]/cw-s-response-choices/div/div/label[3]");
-			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
-			  Thread.sleep(8000);
-			  Thread.sleep(3000);
-			  
-			  ArrowDown();
-			  ArrowDown();
-			  ArrowDown();
-			  ArrowDown();
-			  ArrowDown();
-			  ArrowDown();
-			  ArrowDown();
-			  ArrowDown();
-			  Thread.sleep(8000);
-			  Thread.sleep(2000);
-			 
-			  //11th
-			  //Select 'No' option in Response choice of 10th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[21]/td[4]/cw-s-response-choices/div/div/label[1]");
-			  clickByXpath("//*[@id='container-body']/tr[21]/td[4]/cw-s-response-choices/div/div/label[1]");
-			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
-			  Thread.sleep(8000);
-			  Thread.sleep(3000);	
-			  
-			/*//Click on proceed button to make global
-			  assertTextXpath("html/body/div[4]/div/div/div[3]/button[1]");
-			  clickByXpath("html/body/div[4]/div/div/div[3]/button[1]");
-			  Reporter.log("Click on Proceed button | ");
-			  Thread.sleep(8000);
-			  Thread.sleep(2000);	*/	  
-			  
-			//12th
-			  //Select 'No' option in Response choice of 10th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[23]/td[4]/cw-s-response-choices/div/div/label[2]");
-			  clickByXpath("//*[@id='container-body']/tr[23]/td[4]/cw-s-response-choices/div/div/label[2]");
-			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
-			  Thread.sleep(8000);
-			  Thread.sleep(3000);	 
-			  
-/*			//13th
-			  //Select 'No' option in Response choice of 10th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[25]/td[4]/cw-s-response-choices/div/div/label[3]");
-			  clickByXpath("//*[@id='container-body']/tr[25]/td[4]/cw-s-response-choices/div/div/label[3]");
-			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
-			  Thread.sleep(3000);
-			  //Thread.sleep(3000);	 
-			  
-			//14th
-			  //Select 'No' option in Response choice of 10th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[27]/td[4]/cw-s-response-choices/div/div/label[1]");
-			  clickByXpath("//*[@id='container-body']/tr[27]/td[4]/cw-s-response-choices/div/div/label[1]");
-			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
-			  Thread.sleep(3000);
-			  //Thread.sleep(3000);	 
-			  
-			//15th
-			  //Select 'No' option in Response choice of 10th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[29]/td[4]/cw-s-response-choices/div/div/label[2]");
-			  clickByXpath("//*[@id='container-body']/tr[29]/td[4]/cw-s-response-choices/div/div/label[2]");
-			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
-			  Thread.sleep(3000);
-			  //Thread.sleep(3000);	 
-			  
-			//16th
-			  //Select 'No' option in Response choice of 10th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[31]/td[4]/cw-s-response-choices/div/div/label[3]");
-			  clickByXpath("//*[@id='container-body']/tr[31]/td[4]/cw-s-response-choices/div/div/label[3]");
-			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
-			  Thread.sleep(3000);
-			  //Thread.sleep(3000);	 
-			  
-			//17th
-			  //Select 'No' option in Response choice of 10th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[33]/td[4]/cw-s-response-choices/div/div/label[1]");
-			  clickByXpath("//*[@id='container-body']/tr[33]/td[4]/cw-s-response-choices/div/div/label[1]");
-			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
-			  Thread.sleep(3000);
-			  //Thread.sleep(3000);	
-			  
-			  //18th
-			  //Select 'No' option in Response choice of 10th listed Controls
-			  assertTextXpath("//*[@id='container-body']/tr[35]/td[4]/cw-s-response-choices/div/div/label[4]");
-			  clickByXpath("//*[@id='container-body']/tr[35]/td[4]/cw-s-response-choices/div/div/label[4]");
-			  Reporter.log("Select 'No' option in Response choice of 10th listed Controls | ");
-			  Thread.sleep(3000);
-			  //Thread.sleep(3000);	 
-*/			  
-			  ArrowUp();
-			  ArrowUp();
-			  ArrowUp();
-			  ArrowUp();
-			  ArrowUp();
-			  ArrowUp();
-			  ArrowUp();
 			  Thread.sleep(8000);
 			  Thread.sleep(8000);
 		  }
 		 
-		 @Test(priority=70, enabled =true)
+		 @Test(priority=122, enabled =true)
 		  public void ClearResponse_ControlsGlobalMedia() throws InterruptedException, IOException {
 	 	 
 			 Thread.sleep(3000);
@@ -497,7 +362,7 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 		  Thread.sleep(2000);
 
 }
-		 @Test(priority=71, enabled =true)
+		 @Test(priority=123, enabled =true)
 		  public void Notes_ControlsGlobalMedia() throws InterruptedException, IOException {
 		
 			 Thread.sleep(3000);
@@ -541,7 +406,7 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 		 
 		 }
 		  
-		  @Test(priority=72, enabled =false)
+		  @Test(priority=124, enabled =false)
 		  public void Documents_ControlsGlobalMedia() throws InterruptedException, IOException {
 		  
 			  Thread.sleep(3000);
@@ -604,7 +469,7 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 		    Thread.sleep(3000);
 }
 		    
-	 	 @Test(priority=73, enabled =true)
+	 	 @Test(priority=125, enabled =true)
 		  public void QuickFilter_ControlsGlobalMedia() throws InterruptedException, IOException {
 	 		 
 	 		Thread.sleep(2000); 	 		
@@ -658,7 +523,7 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 		     Thread.sleep(8000);
 	 	 }
 		  
-	 	 @Test(priority=74, enabled = false)
+	 	 @Test(priority=126, enabled = false)
 		  public void Filter_ControlsGlobalMedia() throws InterruptedException {
 			  
 	 		 Thread.sleep(3000);
@@ -774,7 +639,7 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 			       Thread.sleep(3000);
 	 	 }
 	 	 
-	 	@Test(priority=75, enabled =true)
+	 	@Test(priority=127, enabled =true)
 	    public void Export_ControlsGlobalMedia() throws InterruptedException, IOException { 
 	 		
 	 		          Thread.sleep(3000);
@@ -811,34 +676,34 @@ public class ControlsGlobalMediaTestcases extends WrapperClass {
 					  
 	 	}
 	 	
-	 	@Test(priority=76, enabled =false)
+	 	@Test(priority=128, enabled =true)
 	    public void Icons_ControlsGlobalMedia() throws InterruptedException, IOException { 
 					  
 					// Click on NIST
 					  assertTextXpath("//*[@id='container-body']/tr[1]/td[3]/span[4]/div/div[1]/span");
 					  clickByXpath("//*[@id='container-body']/tr[1]/td[3]/span[4]/div/div[1]/span");
 					  Reporter.log("Click on '-' Icon to close Controls | ");
-					  Thread.sleep(3000);
+					  Thread.sleep(5000);
 					  clickByXpath("//*[@id='info-nist-modal']/div/div/div[3]/button");
-					  Thread.sleep(3000);
+					  Thread.sleep(6000);
 					  
 					// Click on ? icon
 					  assertTextXpath("//span[3]/span/i");
 					  clickByXpath("//span[3]/span/i");
 					  Reporter.log("Click on '-' Icon to close Controls | ");
 					  Thread.sleep(4000);
-					  clickByXpath("html/body/div[4]/div/div/div[1]/button");
+					  clickByXpath("html/body/div[5]/div/div/div[3]/button");
 					  Thread.sleep(3000);
 					  
 					  //Click on Progress bar
-					  assertTextXpath("//*[@id='container-body']/tr[1]/td[2]/div[1]/p");
-					  mouseHoverByXpath("//*[@id='container-body']/tr[1]/td[2]/div[1]/p");
+					  assertTextXpath("//*[@id='container-body']/tr[1]/td[1]/div[1]/p");
+					  mouseHoverByXpath("//*[@id='container-body']/tr[1]/td[1]/div[1]/p");
 					  Thread.sleep(3000);
 					  
 					  
 		  }
 	 	
-	 	@Test(priority=77, enabled =true)
+	 	@Test(priority=129, enabled =true)
 	    public void Autoloading_ControlsGlobalMedia() throws InterruptedException, IOException { 
 
 	 		Thread.sleep(3000);

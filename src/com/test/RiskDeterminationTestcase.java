@@ -12,10 +12,16 @@ public class RiskDeterminationTestcase extends WrapperClass {
 	 public WebDriver driver;
 	  String browser=null;
 	
-	  @Test(priority=41, enabled =true)
+	  @Test(priority=95, enabled =true)
 	  public void NavigatePage_RiskQuestionnaireList() throws InterruptedException, IOException {
 		  
+		   
 		    Thread.sleep(8000);	
+		    Thread.sleep(8000);	
+		    Thread.sleep(8000);	
+		    Thread.sleep(8000);	
+		    Thread.sleep(8000);	
+
 		    		           	        
 		   //Select Risk Determination sidebar-left Module
 		    try {
@@ -42,7 +48,7 @@ public class RiskDeterminationTestcase extends WrapperClass {
 			//Thread.sleep(3000);	
 }
 	  
-	@Test(priority=42, enabled =true)
+	@Test(priority=96, enabled = true)
 	  public void PageHearder_RiskQuestionnaireList() throws InterruptedException, IOException {
 		
 		 Thread.sleep(3000);
@@ -62,7 +68,7 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		 Thread.sleep(1000);
 	}
 	
-	 @Test(priority=43, enabled = true)
+	 @Test(priority=97, enabled = true)
 	   public void PanelBar_RiskQuestionnaireList() throws IOException, InterruptedException {
 			   
 		   Thread.sleep(3000);
@@ -83,7 +89,7 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		   
 	   }
 	   
-	 @Test(priority=44, enabled = true)
+	 @Test(priority=98, enabled = true)
 	 public void PageLevelHelp_RiskQuestionnaireList() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(3000);
@@ -104,7 +110,7 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		   
 	 }
 		
-	 @Test(priority=45, enabled = true)
+	 @Test(priority=99, enabled = true)
 	 public void RiskManagementMap_RiskQuestionnaireList() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(3000); 
@@ -114,12 +120,12 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		   clickByXpath("//*[@id='cw-panelbar']/div/div[2]/ul/li[3]/cw-appmap/button");
 		   Reporter.log("Click on Risk Management Map | ");
 		   Thread.sleep(3000);
-		   clickByXpath("html/body/div[5]/div/div/div[3]/button");
+		   clickByXpath("html/body/div[5]/div/div/div[2]/button");
 		   Thread.sleep(3000);
 	 }
 	
 	
-	@Test(priority=46, enabled =true)
+	@Test(priority=100, enabled =false)
 	  public void PageHearder_RiskQuestionnaireForm() throws InterruptedException, IOException {
 		
 		 Thread.sleep(3000);
@@ -153,7 +159,7 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		 Thread.sleep(1000);
 	}
 	
-	 @Test(priority=47, enabled = true)
+	 @Test(priority=101, enabled = false)
 	   public void PanelBar_RiskQuestionnaireForm() throws IOException, InterruptedException {
 			   
 		   Thread.sleep(2000);
@@ -168,7 +174,7 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		   
 	   }
 	   
-	 @Test(priority=48, enabled = true)
+	 @Test(priority=102, enabled = false)
 	 public void PageLevelHelp_RiskQuestionnaireForm() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(3000);
@@ -178,18 +184,18 @@ public class RiskDeterminationTestcase extends WrapperClass {
 	     clickByXpath("//cw-page-help/button");
 	     Reporter.log("Click on PageHelp button Icon | ");
 	     Thread.sleep(3000);
-		    //Thread.sleep(3000);
+		  Thread.sleep(3000);
 		    
 		    // Click OK Button in PageHelp pop-up window
 		    assertTextXpath("//div[4]/div/div/div[3]/button");
 	     clickByXpath("//div[4]/div/div/div[3]/button");
 	     Reporter.log("Click OK Button in PageHelp pop-up window | ");
 	     Thread.sleep(3000);
-		   // Thread.sleep(3000);
+		  Thread.sleep(3000);
 		   
 	 }
 		
-	 @Test(priority=49, enabled = true)
+	 @Test(priority=103, enabled = false)
 	 public void RiskManagementMap_RiskQuestionnaireForm() throws IOException, InterruptedException {
 		   
 		   Thread.sleep(3000); 
@@ -199,8 +205,8 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		   clickByXpath("//*[@id='cw-panelbar']/div/div[2]/ul/li[3]/cw-appmap/button");
 		   Reporter.log("Click on Risk Management Map | ");
 		   Thread.sleep(3000);
-		   clickByXpath("html/body/div[4]/div/div/div[3]/button");
-		   Thread.sleep(3000);
+		   clickByXpath("html/body/div[4]/div/div/div[2]/button");
+		   Thread.sleep(8000);
 		   
 		// Click on 'Return to Risk Questionnaire List' button of Media/Asset
 	        try {
@@ -222,10 +228,13 @@ public class RiskDeterminationTestcase extends WrapperClass {
 	       Thread.sleep(3000); 
 	 }
 	 
-	 @Test(priority=50,enabled = true)
+	 @Test(priority=104, enabled = false)
 	  public void RQLBackUp_RiskQuestionnaire() throws InterruptedException, IOException {
   
 		  
+		 Thread.sleep(3000); 
+		 Thread.sleep(3000); 
+		 
 	        // Click on 'continue' button of Media/Asset
 	        try {
 	        	assertTextXpath("//*[@id='content']/tr[1]/td[7]/div/div[1]/span");
@@ -291,11 +300,10 @@ public class RiskDeterminationTestcase extends WrapperClass {
 	   }
     Thread.sleep(3000);
     Thread.sleep(8000);
-    Thread.sleep(8000);
     
-    /*//Click on Global checkbox
-    //assertTextXpath("//cw-s-response-global/div/div/label");
-    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[7]/cw-s-response-global/div/div");
+   /* //Click on Global checkbox
+    assertTextXpath("//tr[2]/td[7]/cw-s-response-global/div/div/label");
+    clickByXpath("//tr[2]/td[7]/cw-s-response-global/div/div/label");
     Reporter.log("Click on Global checkbox | ");
     Thread.sleep(3000);
     Thread.sleep(8000);
@@ -305,9 +313,15 @@ public class RiskDeterminationTestcase extends WrapperClass {
     clickByXpath("//div[4]/div/div/div[3]/button");
     Reporter.log("Click on Proceed Button In Warning Pop-up | ");
     Thread.sleep(8000);
+     
+   //Click on Proceed Button In Warning Pop-up
+     assertTextXpath("//div[4]/div/div/div[3]/button");
+     clickByXpath("//div[4]/div/div/div[3]/button");
+     Reporter.log("Click on Proceed Button In Warning Pop-up | ");
      Thread.sleep(8000);
+     */
     
-    //Click on Notes button to add text
+    /*//Click on Notes button to add text
     assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[8]/div[1]/a");
     clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[8]/div[1]/a");
     Reporter.log("Click on Notes button to add text | ");
@@ -368,7 +382,7 @@ public class RiskDeterminationTestcase extends WrapperClass {
     clickByXpath("//div[4]/div/div/div[3]/button");
     Reporter.log("Click on Close button in popup | ");
     Thread.sleep(5000);
-    Thread.sleep(3000);
+    Thread.sleep(3000);*/
     
     //Expand the Controls
     assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[2]/span[1]");
@@ -380,7 +394,7 @@ public class RiskDeterminationTestcase extends WrapperClass {
      assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[2]/span[1]");
       clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[2]/span[1]");
       Reporter.log("Expand the Controls | ");
-      Thread.sleep(8000);*/
+      Thread.sleep(8000);
     
     Thread.sleep(8000);
     
@@ -408,6 +422,41 @@ public class RiskDeterminationTestcase extends WrapperClass {
         Reporter.log("Select 'NA' option in Response choice of listed Controls | ");
         Thread.sleep(3000);	
         Thread.sleep(8000);
+        
+      //Click on Notes button to add text
+	    assertTextXpath("//tr[5]/td[7]/div/a/strong");
+	    clickByXpath("//tr[5]/td[7]/div/a/strong");
+	    Reporter.log("Click on Notes button to add text | ");
+	    Thread.sleep(8000);
+	    //Thread.sleep(3000);
+	    
+	    //Click on New button in Notes pop-up window
+	    assertTextXpath("//div/a/span");
+	    clickByXpath("//div/a/span");
+	    Reporter.log("Click on New button in Notes pop-up window | ");
+	    Thread.sleep(8000);
+	    //Thread.sleep(3000);
+	    
+	    // Enter Text for Note textarea
+	    assertTextXpath("//textarea");
+	    sendvaluebyxpath("//textarea", "created notes");
+	    Reporter.log("Enter Text for Note textarea | ");
+	    Thread.sleep(8000);
+	    //Thread.sleep(8000);
+	    
+	    // Click on Create Button
+	    assertTextXpath("//div[4]/div[3]/button");
+	    clickByXpath("//div[4]/div[3]/button");
+	    Reporter.log("Click on Create Button | ");
+	    Thread.sleep(8000);
+	    //Thread.sleep(8000);
+	    
+	    //Click on Close button in popup
+	    assertTextXpath("//div[4]/div/div/div[3]/button");
+	    clickByXpath("//div[4]/div/div/div[3]/button");
+	    Reporter.log("Click on Close button in popup | ");
+	    Thread.sleep(8000);
+	    Thread.sleep(3000);
   	         
       //Expand the Controls
      assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[2]/span[1]");
@@ -416,22 +465,21 @@ public class RiskDeterminationTestcase extends WrapperClass {
       Thread.sleep(8000);
       Thread.sleep(8000);
       
-     
-   /* //Click on Global checkbox
-      //assertTextXpath("//cw-s-response-global/div/div/label");
-      clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[7]/cw-s-response-global/div/div");
+    /*//Click on Global checkbox
+      assertTextXpath("//cw-s-response-global/div/div/label");
+      clickByXpath("//cw-s-response-global/div/div/label");
       Reporter.log("Click on Global checkbox | ");
-      Thread.sleep(8000);
+      Thread.sleep(3000);
       Thread.sleep(8000);
       
      //Click on Proceed Button In Warning Pop-up
       assertTextXpath("//div[4]/div/div/div[3]/button");
       clickByXpath("//div[4]/div/div/div[3]/button");
       Reporter.log("Click on Proceed Button In Warning Pop-up | ");
-      Thread.sleep(8000);
-      Thread.sleep(8000);
-    	       	       
-    //Click on Notes button to add text
+      Thread.sleep(8000);*/
+    	      
+    
+    /*//Click on Notes button to add text
 	    assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[8]/div[1]/a");
 	    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[8]/div[1]/a");
 	    Reporter.log("Click on Notes button to add text | ");
@@ -459,44 +507,16 @@ public class RiskDeterminationTestcase extends WrapperClass {
 	    Thread.sleep(8000);
 	    //Thread.sleep(8000);
 	    
-	 // Select any one of the Listed Notes
-	    assertTextXpath("//div[2]/div[2]/table/tbody/tr/td[2]");
-	    clickByXpath("//div[2]/div[2]/table/tbody/tr/td[2]");
-	    Reporter.log("Select any one of the Listed Notes | ");
-	    Thread.sleep(8000);
-	    //Thread.sleep(8000);
-	    
-	 // Click on Edit Button
-	    assertTextXpath("//a[2]/span");
-	    clickByXpath("//a[2]/span");
-	    Reporter.log("Click on Edit Button | ");
-	    Thread.sleep(8000);
-	    //Thread.sleep(8000);
-	    
-	   // Enter Text for Note textarea
-	    assertTextXpath("//textarea");
-	    sendvaluebyxpath("//textarea", "Edit notes");
-	    Reporter.log("Enter Text for Note textarea | ");
-	    Thread.sleep(8000);
-	    //Thread.sleep(8000);
-	    
-	    // Click on Save Button
-	    assertTextXpath("//div[4]/div[3]/button");
-	    clickByXpath("//div[4]/div[3]/button");
-	    Reporter.log("Click on Save Button | ");
-	    Thread.sleep(8000);
-	    //Thread.sleep(8000);
-	    
 	    //Click on Close button in popup
 	    assertTextXpath("//div[4]/div/div/div[3]/button");
 	    clickByXpath("//div[4]/div/div/div[3]/button");
 	    Reporter.log("Click on Close button in popup | ");
 	    Thread.sleep(8000);
-	    Thread.sleep(3000);*/
+	    Thread.sleep(3000);
 	    
-	    /*//Click on Document to upload
-	    assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[9]/a[1]/a");
-	    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[9]/a[1]/a");
+	    //Click on Document to upload
+	    assertTextXpath("//a[2]/a/strong");
+	    clickByXpath("//a[2]/a/strong");
 	    Reporter.log("Click on Document to upload | ");
 	    Thread.sleep(8000);
 	    
@@ -507,8 +527,8 @@ public class RiskDeterminationTestcase extends WrapperClass {
 	    Thread.sleep(8000);
 	    
 	    //Click on Choose File from document pop-up
-	    assertTextXpath("html/body/div[6]/div/div/div/div[3]/div/form/div/div[1]/div/div[1]/div/div/div[1]/div[1]/button");
-	    clickByXpath("html/body/div[6]/div/div/div/div[3]/div/form/div/div[1]/div/div[1]/div/div/div[1]/div[1]/button");
+	    assertTextXpath("//div/div/div/div/div/div/div/input");
+	    clickByXpath("//div/div/div/div/div/div/div/input");
 	    Reporter.log("Click on Choose File from document pop-up | ");
 	    Thread.sleep(3000);
 	    
@@ -575,6 +595,9 @@ public class RiskDeterminationTestcase extends WrapperClass {
 	    //clickByXpath("html/body/div[4]/div/div/div[3]/button");
      Thread.sleep(8000);    */
     	      
+	    ArrowDown();
+	    ArrowDown();
+	    ArrowDown();
 	    ArrowDown();
 	    ArrowDown();
 	    ArrowDown();
@@ -1535,58 +1558,41 @@ public class RiskDeterminationTestcase extends WrapperClass {
 	   	        
 }
 	 
-	  @Test(priority=50,enabled = false)
+	  @Test(priority=105, enabled = false)
 	  public void RQLPager_RiskQuestionnaireForm() throws InterruptedException, IOException {
 
 		  
-		// Click on 'Return to Risk Questionnaire List' button of Media/Asset
-	        try {
-	        	assertTextXpath("//*[@id='rMedia']");
-	 	        clickByXpath("//*[@id='rMedia']");
-	 	        Reporter.log("Click on 'Return to Risk Questionnaire List' button | ");
-       }catch(Exception e)
-		    {
-		         e.printStackTrace();
-		         Reporter.log("Click on 'Return to Risk Questionnaire List' button doesnt work | ");
-		    }
-	        Thread.sleep(3000);
-	        Thread.sleep(3000);  
-	        
-	        //Click on Leave Page button 
-	        assertTextXpath("html/body/div[4]/div/div/div[3]/button[2]");
- 	        clickByXpath("html/body/div[4]/div/div/div[3]/button[2]");
- 	        Reporter.log("Click on Leave Page button | ");
- 	       Thread.sleep(3000);    
-		  
-		  
-	        // Click on 'continue' button of Media/Asset
-	        try {
-	        	assertTextXpath("//*[@id='content']/tr[1]/td[7]/div/div[1]/span");
-	 	        clickByXpath("//*[@id='content']/tr[1]/td[7]/div/div[1]/span");
-	 	        Reporter.log("Click on 'continue' button of Desktop Media/Asset | ");
-         }catch(Exception e)
-		    {
-		         e.printStackTrace();
-		         Reporter.log("Click on 'continue' button of Media/Asset doesn't work | ");
-		    }
-	        Thread.sleep(3000);
-	        Thread.sleep(3000);
-	        //Thread.sleep(3000);
-	       
-	       // 1st page	           
-	        // Click on Add a Custom Control	  
-		    assertTextXpath("//cw-add-custom-control/div/div/span");
-		    clickByXpath("//cw-add-custom-control/div/div/span");
+			 Thread.sleep(3000); 
+			 Thread.sleep(3000); 
+			 
+		        // Click on 'continue' button of Media/Asset
+		        try {
+		        	assertTextXpath("//*[@id='content']/tr[1]/td[7]/div/div[1]/span");
+		 	        clickByXpath("//*[@id='content']/tr[1]/td[7]/div/div[1]/span");
+		 	        Reporter.log("Click on 'continue' button of Desktop Media/Asset | ");
+	        }catch(Exception e)
+			    {
+			         e.printStackTrace();
+			         Reporter.log("Click on 'continue' button of Media/Asset doesn't work | ");
+			    }
+		        Thread.sleep(3000);
+		        Thread.sleep(3000);
+		        //Thread.sleep(3000);
+		 
+	     // 1st page	           
+	     // Click on Add a Custom Control	  
+		    assertTextXpath("//*[@id='controlInfo-content']/div/cw-add-custom-control/div/div/span[1]");
+		    clickByXpath("//*[@id='controlInfo-content']/div/cw-add-custom-control/div/div/span[1]");
 		    Reporter.log("Click on Add a Custom Control	| ");
 		    Thread.sleep(3000); 
 
-         // Click on Add a Custom Control textbox		  
+	    // Click on Add a Custom Control textbox		  
 		    //assertTextXpath("//cw-add-custom-control/div/div/div/div/div/input");
 		    clickByXpath("//cw-add-custom-control/div/div/div/div/div/input");
 		    Reporter.log("Click on Add a Custom Control tetbox| ");
 		    Thread.sleep(2000); 
 
-         // Enter the New Custom Control
+	    // Enter the New Custom Control
 		    //assertTextXpath("//cw-add-custom-control/div/div/div/div/div/input");
 		    sendvaluebyxpath("//cw-add-custom-control/div/div/div/div/div/input", "TestControls");
 		    Reporter.log("Enter the New Custom Controls| ");
@@ -1600,10 +1606,10 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		    
 		    // Select 'Yes' option in Response choice of listed Controls
 		       try {
-		    	   assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
-		 	       clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
+		    	   assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[1]");
+		 	       clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[1]");
 		 	       Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-	           }catch(Exception e)
+	        }catch(Exception e)
 			   {
 			       e.printStackTrace();
 			       Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
@@ -1613,79 +1619,143 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		       //Thread.sleep(3000);
 		       
 		    // Select 'Yes' option in Response choice of listed Controls
-	       try {
-	    	   //assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
-	 	       clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[6]/cw-s-response-choices/div/div/label[1]");
-	 	       Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-       }catch(Exception e)
+	    try {
+	 	   //assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
+		       clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[5]/cw-s-response-choices/div/div/label[1]");
+		       Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	  }catch(Exception e)
 		   {
 		       e.printStackTrace();
 		       Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
 		   }
-	       Thread.sleep(3000);
-	       //Thread.sleep(8000);
-	       //Thread.sleep(8000);
-	       
-	     //Expand the Controls
-	       assertTextXpath("//td[2]/span[1]");
-	       clickByXpath("//td[2]/span[1]");
-	       Reporter.log("Expand the Controls | ");
-	       Thread.sleep(3000);
-	       
-	         // Select 'Inprogress' option in Response choice of listed Controls
-	         assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[4]/cw-s-response-choices/div/div/label[2]");
-	         clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[4]/cw-s-response-choices/div/div/label[2]");
-	         Reporter.log("Select 'Inprogress' option in Response choice of listed Controls | ");
- 	    Thread.sleep(3000);
- 	    
- 	    /* // Select 'No' option in Response choice of listed Controls
-	         assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[4]/cw-s-response-choices/div/div/label[3]");
-	         clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[4]/cw-s-response-choices/div/div/label[3]");
-	         Reporter.log("Select 'NO' option in Response choice of listed Controls | ");
-	         Thread.sleep(3000);
+	    Thread.sleep(3000);
+	    Thread.sleep(8000);
 	    
+	   /* //Click on Global checkbox
+	    assertTextXpath("//tr[2]/td[7]/cw-s-response-global/div/div/label");
+	    clickByXpath("//tr[2]/td[7]/cw-s-response-global/div/div/label");
+	    Reporter.log("Click on Global checkbox | ");
+	    Thread.sleep(3000);
+	    Thread.sleep(8000);
+	    
+	   //Click on Proceed Button In Warning Pop-up
+	    assertTextXpath("//div[4]/div/div/div[3]/button");
+	    clickByXpath("//div[4]/div/div/div[3]/button");
+	    Reporter.log("Click on Proceed Button In Warning Pop-up | ");
+	    Thread.sleep(8000);
+	     
+	   //Click on Proceed Button In Warning Pop-up
+	     assertTextXpath("//div[4]/div/div/div[3]/button");
+	     clickByXpath("//div[4]/div/div/div[3]/button");
+	     Reporter.log("Click on Proceed Button In Warning Pop-up | ");
+	     Thread.sleep(8000);
+	     */
+	    
+	    /*//Click on Notes button to add text
+	    assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[8]/div[1]/a");
+	    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[8]/div[1]/a");
+	    Reporter.log("Click on Notes button to add text | ");
+	    Thread.sleep(8000);
+	    //Thread.sleep(3000);
+	    
+	    //Click on New button in Notes pop-up window
+	    assertTextXpath("//div/a/span");
+	    clickByXpath("//div/a/span");
+	    Reporter.log("Click on New button in Notes pop-up window | ");
+	    Thread.sleep(8000);
+	    //Thread.sleep(3000);
+	    
+	    // Enter Text for Note textarea
+	    assertTextXpath("//textarea");
+	    sendvaluebyxpath("//textarea", "created notes");
+	    Reporter.log("Enter Text for Note textarea | ");
+	    Thread.sleep(8000);
+	    //Thread.sleep(8000);
+	    
+	    // Click on Create Button
+	    assertTextXpath("//div[4]/div[3]/button");
+	    clickByXpath("//div[4]/div[3]/button");
+	    Reporter.log("Click on Create Button | ");
+	    Thread.sleep(8000);
+	    //Thread.sleep(8000);
+	    
+	 // Select any one of the Listed Notes
+	    assertTextXpath("//div[2]/div[2]/table/tbody/tr/td[2]");
+	    clickByXpath("//div[2]/div[2]/table/tbody/tr/td[2]");
+	    Reporter.log("Select any one of the Listed Notes | ");
+	    Thread.sleep(8000);
+	    //Thread.sleep(8000);
+	    
+	 // Click on Edit Button
+	    assertTextXpath("//a[2]/span");
+	    clickByXpath("//a[2]/span");
+	    Reporter.log("Click on Edit Button | ");
+	    Thread.sleep(8000);
+	    //Thread.sleep(8000);
+	    
+	   // Enter Text for Note textarea
+	    assertTextXpath("//textarea");
+	    sendvaluebyxpath("//textarea", "Edit notes");
+	    Reporter.log("Enter Text for Note textarea | ");
+	    Thread.sleep(8000);
+	    //Thread.sleep(8000);
+	    
+	    // Click on Save Button
+	    assertTextXpath("//div[4]/div[3]/button");
+	    clickByXpath("//div[4]/div[3]/button");
+	    Reporter.log("Click on Save Button | ");
+	    Thread.sleep(8000);
+	    //Thread.sleep(8000);
+	    
+	    //Click on Close button in popup
+	    assertTextXpath("//div[4]/div/div/div[3]/button");
+	    clickByXpath("//div[4]/div/div/div[3]/button");
+	    Reporter.log("Click on Close button in popup | ");
+	    Thread.sleep(5000);
+	    Thread.sleep(3000);*/
+	    
+	    //Expand the Controls
+	    assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[2]/span[1]");
+	     clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[2]/span[1]");
+	     Reporter.log("Expand the Controls | ");
+	     Thread.sleep(8000);
+	     
+	     //Expand the Controls
+	     assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[2]/span[1]");
+	      clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[2]/span[1]");
+	      Reporter.log("Expand the Controls | ");
+	      Thread.sleep(8000);
+	    
+	    Thread.sleep(8000);
+	    
+	  //Expand the Controls
+	    assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[2]/span[1]");
+	    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[2]/span[1]");
+	    Reporter.log("Expand the Controls | ");
+	    Thread.sleep(8000);
+	    
+	      // Select 'Inprogress' option in Response choice of listed Controls
+	      assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[4]/cw-s-response-choices/div/div/label[2]");
+	      clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[4]/cw-s-response-choices/div/div/label[2]");
+	      Reporter.log("Select 'Inprogress' option in Response choice of listed Controls | ");
+	    Thread.sleep(8000);
+	    
+	    // Select 'No' option in Response choice of listed Controls
+	      assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[4]/cw-s-response-choices/div/div/label[3]");
+	      clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[4]/cw-s-response-choices/div/div/label[3]");
+	      Reporter.log("Select 'NO' option in Response choice of listed Controls | ");
+	        Thread.sleep(8000);
+	   
 	       // Select 'NA' option in Response choice of listed Controls
-	         assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[5]/td[4]/cw-s-response-choices/div/div/label[4]");
-	         clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[5]/td[4]/cw-s-response-choices/div/div/label[4]");
-	         Reporter.log("Select 'NA' option in Response choice of listed Controls | ");
-	         Thread.sleep(3000);	
-	         //Thread.sleep(8000);
-*/  	         
-	       //Expand the Controls
-	       assertTextXpath("//td[2]/span[1]");
-	       clickByXpath("//td[2]/span[1]");
-	       Reporter.log("Expand the Controls | ");
-	       Thread.sleep(3000);
-	       
-	      //Click on Global checkbox
-	       //assertTextXpath("//cw-s-response-global/div/div/label");
-	       clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[8]/cw-s-response-global/div/div");
-	       Reporter.log("Click on Global checkbox | ");
-	       Thread.sleep(3000);
-	       
-	      //Click on Proceed Button In Warning Pop-up
-	       assertTextXpath("//div[4]/div/div/div[3]/button");
-	       clickByXpath("//div[4]/div/div/div[3]/button");
-	       Reporter.log("Click on Proceed Button In Warning Pop-up | ");
-	       Thread.sleep(8000);
-	       //Thread.sleep(2000);
-	       
-	      /*//Click on Global checkbox
-	       //assertTextXpath("//cw-s-response-global/div/div/label");
-	       clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[8]/cw-s-response-global/div/div");
-	       Reporter.log("Click on Global checkbox | ");
-	       Thread.sleep(3000);
-	       
-	      //Click on Proceed Button In Warning Pop-up
-	       assertTextXpath("//div[4]/div/div/div[3]/button");
-	       clickByXpath("//div[4]/div/div/div[3]/button");
-	       Reporter.log("Click on Proceed Button In Warning Pop-up | ");
-	       Thread.sleep(8000);
-	      //Thread.sleep(2000);
-*/      	       	       
-	       //Click on Notes button to add text
-		    assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[9]/div[1]/a");
-		    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[9]/div[1]/a");
+	        assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[5]/td[4]/cw-s-response-choices/div/div/label[4]");
+	        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[5]/td[4]/cw-s-response-choices/div/div/label[4]");
+	        Reporter.log("Select 'NA' option in Response choice of listed Controls | ");
+	        Thread.sleep(3000);	
+	        Thread.sleep(8000);
+	        
+	      //Click on Notes button to add text
+		    assertTextXpath("//tr[5]/td[7]/div/a/strong");
+		    clickByXpath("//tr[5]/td[7]/div/a/strong");
 		    Reporter.log("Click on Notes button to add text | ");
 		    Thread.sleep(8000);
 		    //Thread.sleep(3000);
@@ -1701,7 +1771,7 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		    assertTextXpath("//textarea");
 		    sendvaluebyxpath("//textarea", "created notes");
 		    Reporter.log("Enter Text for Note textarea | ");
-		    Thread.sleep(3000);
+		    Thread.sleep(8000);
 		    //Thread.sleep(8000);
 		    
 		    // Click on Create Button
@@ -1711,31 +1781,59 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		    Thread.sleep(8000);
 		    //Thread.sleep(8000);
 		    
-		 // Select any one of the Listed Notes
-		    assertTextXpath("//div[2]/div[2]/table/tbody/tr/td[2]");
-		    clickByXpath("//div[2]/div[2]/table/tbody/tr/td[2]");
-		    Reporter.log("Select any one of the Listed Notes | ");
+		    //Click on Close button in popup
+		    assertTextXpath("//div[4]/div/div/div[3]/button");
+		    clickByXpath("//div[4]/div/div/div[3]/button");
+		    Reporter.log("Click on Close button in popup | ");
+		    Thread.sleep(8000);
 		    Thread.sleep(3000);
-		    //Thread.sleep(8000);
+	  	         
+	      //Expand the Controls
+	     assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[2]/span[1]");
+	      clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[2]/span[1]");
+	      Reporter.log("Expand the Controls | ");
+	      Thread.sleep(8000);
+	      Thread.sleep(8000);
+	      
+	    /*//Click on Global checkbox
+	      assertTextXpath("//cw-s-response-global/div/div/label");
+	      clickByXpath("//cw-s-response-global/div/div/label");
+	      Reporter.log("Click on Global checkbox | ");
+	      Thread.sleep(3000);
+	      Thread.sleep(8000);
+	      
+	     //Click on Proceed Button In Warning Pop-up
+	      assertTextXpath("//div[4]/div/div/div[3]/button");
+	      clickByXpath("//div[4]/div/div/div[3]/button");
+	      Reporter.log("Click on Proceed Button In Warning Pop-up | ");
+	      Thread.sleep(8000);*/
+	    	      
+	    
+	    /*//Click on Notes button to add text
+		    assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[8]/div[1]/a");
+		    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[8]/div[1]/a");
+		    Reporter.log("Click on Notes button to add text | ");
+		    Thread.sleep(8000);
+		    //Thread.sleep(3000);
 		    
-		 // Click on Edit Button
-		    assertTextXpath("//a[2]/span");
-		    clickByXpath("//a[2]/span");
-		    Reporter.log("Click on Edit Button | ");
+		    //Click on New button in Notes pop-up window
+		    assertTextXpath("//div/a/span");
+		    clickByXpath("//div/a/span");
+		    Reporter.log("Click on New button in Notes pop-up window | ");
+		    Thread.sleep(8000);
+		    //Thread.sleep(3000);
+		    
+		    // Enter Text for Note textarea
+		    assertTextXpath("//textarea");
+		    sendvaluebyxpath("//textarea", "created notes");
+		    Reporter.log("Enter Text for Note textarea | ");
 		    Thread.sleep(8000);
 		    //Thread.sleep(8000);
 		    
-		   // Enter Text for Note textarea
-		    assertTextXpath("//textarea");
-		    sendvaluebyxpath("//textarea", "Edit notes");
-		    Reporter.log("Enter Text for Note textarea | ");
-		    Thread.sleep(3000);
-		    //Thread.sleep(8000);
-		    
-		    // Click on Save Button
+		    // Click on Create Button
 		    assertTextXpath("//div[4]/div[3]/button");
 		    clickByXpath("//div[4]/div[3]/button");
-		    Reporter.log("Click on Save Button | ");
+		    Reporter.log("Click on Create Button | ");
 		    Thread.sleep(8000);
 		    //Thread.sleep(8000);
 		    
@@ -1743,12 +1841,12 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		    assertTextXpath("//div[4]/div/div/div[3]/button");
 		    clickByXpath("//div[4]/div/div/div[3]/button");
 		    Reporter.log("Click on Close button in popup | ");
-		    Thread.sleep(3000);
+		    Thread.sleep(8000);
 		    Thread.sleep(3000);
 		    
 		    //Click on Document to upload
-		    assertTextXpath("//a[2]/a/i");
-		    clickByXpath("//a[2]/a/i");
+		    assertTextXpath("//a[2]/a/strong");
+		    clickByXpath("//a[2]/a/strong");
 		    Reporter.log("Click on Document to upload | ");
 		    Thread.sleep(8000);
 		    
@@ -1759,24 +1857,24 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		    Thread.sleep(8000);
 		    
 		    //Click on Choose File from document pop-up
-		    assertTextXpath("html/body/div[6]/div/div/div/div[3]/div/form/div/div[1]/div/div[1]/div/div/div[1]/div[1]/button");
-		    clickByXpath("html/body/div[6]/div/div/div/div[3]/div/form/div/div[1]/div/div[1]/div/div/div[1]/div[1]/button");
+		    assertTextXpath("//div/div/div/div/div/div/div/input");
+		    clickByXpath("//div/div/div/div/div/div/div/input");
 		    Reporter.log("Click on Choose File from document pop-up | ");
 		    Thread.sleep(3000);
 		    
 		    // Using AutoIT
-	        Runtime.getRuntime().exec("C:\\Users\\User\\eclipse-workspace\\ClearWater\\AutoIT\\importfiles\\Fileupload4.exe"); //Uploading xls file using AutoIT
-	        Reporter.log("Given Filepath of pdf file | ");
-	        Thread.sleep(8000);
-	        Thread.sleep(3000);
-	        
-	        //Click on Upload button from document pop-up
+	     Runtime.getRuntime().exec("C:\\Users\\User\\eclipse-workspace\\ClearWater\\AutoIT\\importfiles\\Fileupload4.exe"); //Uploading xls file using AutoIT
+	     Reporter.log("Given Filepath of pdf file | ");
+	     Thread.sleep(8000);
+	     Thread.sleep(3000);
+	     
+	     //Click on Upload button from document pop-up
 		    assertTextXpath("//div[4]/div[3]/button");
 		    clickByXpath("//div[4]/div[3]/button");
 		    Reporter.log("Click on Upload button from document pop-up | ");
 		    Thread.sleep(3000);
 		    Thread.sleep(3000);
-	      
+	   
 		    //Select any one of the listed item
 		    assertTextXpath("//div[4]/div/div/div[2]/div/div/table/tbody/tr/td[2]");
 		    clickByXpath("//div[4]/div/div/div[2]/div/div/table/tbody/tr/td[2]");
@@ -1790,8 +1888,8 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		    Thread.sleep(3000);
 		    
 		    // Click on Delete button in Deleted Pop-up
-		    assertTextXpath("//div[3]/button[2]");
-		    clickByXpath("//div[3]/button[2]");
+		    assertTextXpath("//div[3]/button[1]");
+		    clickByXpath("//div[3]/button[1]");
 		    Reporter.log("Click on Delete button in Deleted Pop-up | ");
 		    Thread.sleep(8000);		    
 		  
@@ -1800,9 +1898,9 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		    clickByXpath("//div[4]/div/div/div[3]/button");
 		    Reporter.log("Click on CLose Button | ");
 		    Thread.sleep(3000); 
-		    Thread.sleep(3000); 
+		    Thread.sleep(3000); */
 		    
-	       /* //Expand the Controls
+	    /* //Expand the Controls
 		    assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[2]/span[1]");
 		    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[2]/span[1]");
 		    Reporter.log("Expand the Controls | ");
@@ -1813,179 +1911,108 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[2]/span[1]");
 		    Reporter.log("Expand the Controls | ");
 		    Thread.sleep(3000);
-	   	      
+		      
 		    // Click ? Button
 		    assertTextXpath("//*[@id='controlInfo-content']/div/cw-add-custom-control/div/div/span[3]/i");
 		    clickByXpath("//*[@id='controlInfo-content']/div/cw-add-custom-control/div/div/span[3]/i");
 		    Reporter.log("Click ? Button | ");
 		    Thread.sleep(8000);
-	           
+	        
 		    // Click on Close button in ? Pop-up
 		    assertTextXpath("html/body/div[4]/div/div/div[3]/button");
 		    clickByXpath("html/body/div[4]/div/div/div[3]/button");
 		    Reporter.log("Click on Close button in ? Pop-up | ");
 		    //clickByXpath("html/body/div[4]/div/div/div[3]/button");
-	        Thread.sleep(8000);    */
-	       	       	   
-		    Thread.sleep(8000); 
-		    // Click on NIST Button 
-		    assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[4]/span/div/div[1]/span");
-		    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[4]/span/div/div[1]/span");
-		    Reporter.log("Click on Close button in ? Pop-up | ");
-		    //clickByXpath("html/body/div[4]/div/div/div[3]/button");
-	        Thread.sleep(8000); 
-	        
-	     // Click on Close Button 
-		    assertTextXpath("//*[@id='info-nist-modal']/div/div/div[3]/button");
-		    clickByXpath("//*[@id='info-nist-modal']/div/div/div[3]/button");
-		    Reporter.log("Click on Close button in ? Pop-up | ");
-		    //clickByXpath("html/body/div[4]/div/div/div[3]/button");
-	        Thread.sleep(8000); 
-	        
-	     /*// Click on Custom Button 
-		    assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[4]/span/div/div[2]/span");
-		    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[4]/span/div/div[2]/span");
-		    Reporter.log("Click on Close button in ? Pop-up | ");
-		    //clickByXpath("html/body/div[4]/div/div/div[3]/button");
-	        Thread.sleep(8000); 
-	        
-	     // Click on Close Button 
-		    assertTextXpath("html/body/div[5]/div/div/div[3]/button");
-		    clickByXpath("html/body/div[5]/div/div/div[3]/button");
-		    Reporter.log("Click on Close button in ? Pop-up | ");
-		    //clickByXpath("html/body/div[4]/div/div/div[3]/button");
-	        Thread.sleep(8000); */
-	        
-	        // Click on Tag Button 
-		    assertTextXpath("//cw-tag/a/span/i");
-		    clickByXpath("//cw-tag/a/span/i");
-		    Reporter.log("Click on Tag Button | ");
-		    //clickByXpath("html/body/div[4]/div/div/div[3]/button");
-	        Thread.sleep(8000); 
-	        Thread.sleep(3000);
-	        
-	     // Click on Check the Tag checkbox
-		    assertTextXpath("html/body/div[5]/div/div/div[2]/div/div/div[2]/div[2]/div[1]/div");
-		    clickByXpath("html/body/div[5]/div/div/div[2]/div/div/div[2]/div[2]/div[1]/div");
-		    Reporter.log("Click on Close button in ? Pop-up | ");
-		    //clickByXpath("html/body/div[4]/div/div/div[3]/button");
-	        Thread.sleep(8000); 
-	       
-	     // Click on Done button
-		     assertTextXpath("//div[3]/button[2]");
-		     clickByXpath("//div[3]/button[2]");
-		     Reporter.log("Click on Close button | ");
-		     Thread.sleep(3000);
-		     Thread.sleep(3000);	     
-	        
-	        Thread.sleep(8000);
-	       //Click on RiskLikehood drop-down
-	       try {
-	    	   assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	       clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	       Reporter.log("Click on RiskLikehood drop-down | ");
-        }catch(Exception e)
+	     Thread.sleep(8000);    */
+	    	      
+		    ArrowDown();
+		    ArrowDown();
+		    ArrowDown();
+		    ArrowDown();
+		    ArrowDown();
+		    ArrowDown();
+		    Thread.sleep(5000);
+		    
+	    //Click on RiskLikehood drop-down
+	    try {
+	 	    assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		       clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		       Reporter.log("Click on RiskLikehood drop-down | ");
+	   }catch(Exception e)
 		   {
 		        e.printStackTrace();
 		        Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
 		   }
-	       Thread.sleep(3000);
-	       //Thread.sleep(3000);
-	       
-	       //Select 'Moderate' option from Likehood drop-down
-	       try {
-	    	   assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[4]/a");
-	 	       clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[4]/a");
-	 	       Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
-        }catch(Exception e)
+	    Thread.sleep(3000);
+	    //Thread.sleep(3000);
+	    
+	    //Select 'Moderate' option from Likehood drop-down
+	    try {
+	 	   assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[4]/a");
+		       clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[4]/a");
+		       Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
+	   }catch(Exception e)
 		   {
 		        e.printStackTrace();
 		        Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
 		   }
-	       Thread.sleep(3000);
-	       Thread.sleep(3000);
-	       
-	        // Click on RiskImpact drop-down
-	        try {
-	        	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	        Reporter.log("Click on RiskImpact drop-down | ");
-         }catch(Exception e)
+	    Thread.sleep(3000);
+	    Thread.sleep(3000);
+	    
+	     // Click on RiskImpact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskImpact drop-down | ");
+	    }catch(Exception e)
 		    {
 		          e.printStackTrace();
 		          Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
 		   }
-	       Thread.sleep(3000);
-	       //Thread.sleep(3000);
-	       	       
-	        //Select 'Major' option from Impact drop-down
-	        try {
-	        	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
-	 	        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
-	 	        Reporter.log("Select 'Major' option from Impact drop-down | ");
-         }catch(Exception e)
+	    Thread.sleep(3000);
+	    //Thread.sleep(3000);
+	    	       
+	     //Select 'Major' option from Impact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Major' option from Impact drop-down | ");
+	    }catch(Exception e)
 		   {
 		        e.printStackTrace();
 		        Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
 		   }
-	       Thread.sleep(3000);
-	       Thread.sleep(3000);
-	       
-	    /*//Click on Notes button to add text
-		    assertTextXpath("//*[@id='body-content']/div[1]/div[3]/div/div/div[2]/table/tbody/tr[1]/td[5]/div/a");
-		    clickByXpath("//*[@id='body-content']/div[1]/div[3]/div/div/div[2]/table/tbody/tr[1]/td[5]/div/a");
-		    Reporter.log("Click on Notes button to add text | ");
-		    Thread.sleep(8000);
-		    //Thread.sleep(8000);
-		    
-		    //Click on New button in Notes pop-up window
-		    assertTextXpath("//*[@id='note-details-table_wrapper']/div[1]/div[1]/div/a[1]");
-		    clickByXpath("//*[@id='note-details-table_wrapper']/div[1]/div[1]/div/a[1]");
-		    Reporter.log("Click on New button in Notes pop-up window | ");
-		    Thread.sleep(3000);
-		    //Thread.sleep(8000);
-		    
-		    // Enter Text for Note textarea
-		    assertTextXpath("//textarea");
-		    sendvaluebyxpath("//textarea", "created Risk notes");
-		    Reporter.log("Enter Text for Note textarea | ");
-		    Thread.sleep(3000);
-		    //Thread.sleep(8000);
-		    
+	    Thread.sleep(3000);
+	    Thread.sleep(3000);
+	    
+	  /*//Click on Notes button to add text
+	    assertTextXpath("//*[@id='body-content']/div[1]/div[3]/div/div/div[2]/table/tbody/tr[1]/td[5]/div/a");
+	    clickByXpath("//*[@id='body-content']/div[1]/div[3]/div/div/div[2]/table/tbody/tr[1]/td[5]/div/a");
+	    Reporter.log("Click on Notes button to add text | ");
+	    Thread.sleep(8000);
+	    //Thread.sleep(8000);
+	    
+	    //Click on New button in Notes pop-up window
+	    assertTextXpath("//*[@id='note-details-table_wrapper']/div[1]/div[1]/div/a[1]");
+	    clickByXpath("//*[@id='note-details-table_wrapper']/div[1]/div[1]/div/a[1]");
+	    Reporter.log("Click on New button in Notes pop-up window | ");
+	    Thread.sleep(3000);
+	    //Thread.sleep(8000);
+	    
+	    // Enter Text for Note textarea
+	    assertTextXpath("//textarea");
+	    sendvaluebyxpath("//textarea", "created Risk notes");
+	    Reporter.log("Enter Text for Note textarea | ");
+	    Thread.sleep(3000);
+	    //Thread.sleep(8000);
+	    
 		    // Click on Create Button
 		    assertTextXpath("//div[4]/div[3]/button");
 		    clickByXpath("//div[4]/div[3]/button");
 		    Reporter.log("Click on Create Button | ");
 		    Thread.sleep(8000);
-		    //Thread.sleep(8000);
+		    //Thread.sleep(8000);   
 		    
-		     // Select any one of the Listed Notes
-		    assertTextXpath("//div[2]/div[2]/table/tbody/tr/td[2]");
-		    clickByXpath("//div[2]/div[2]/table/tbody/tr/td[2]");
-		    Reporter.log("Select any one of the Listed Notes | ");
-		    Thread.sleep(3000);
-		    //Thread.sleep(8000);
-		    
-		    // Click on Edit Button
-		    assertTextXpath("//a[2]/span");
-		    clickByXpath("//a[2]/span");
-		    Reporter.log("Click on Edit Button | ");
-		    Thread.sleep(8000);
-		    //Thread.sleep(8000);
-		    
-		     // Enter Text for Note textarea
-		    assertTextXpath("//textarea");
-		    sendvaluebyxpath("//textarea", "Edit Risk notes");
-		    Reporter.log("Enter Text for Note textarea | ");
-		    Thread.sleep(3000);
-		    //Thread.sleep(8000);
-		    
-		    // Click on Save Button
-		    assertTextXpath("//div[4]/div[3]/button");
-		    clickByXpath("//div[4]/div[3]/button");
-		    Reporter.log("Click on Save Button | ");
-		    Thread.sleep(8000);
-		    //Thread.sleep(8000);
 		    
 		   //Click on New button in Notes pop-up window
 		    assertTextXpath("//*[@id='note-details-table_wrapper']/div[1]/div[1]/div/a[1]");
@@ -2007,244 +2034,35 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		    Reporter.log("Click on Create Button | ");
 		    Thread.sleep(8000);
 		    //Thread.sleep(8000);
-		    		    
-		    // Click on Delete Button
-		    assertTextXpath("//a[3]/span");
-		    clickByXpath("//a[3]/span");
-		    Reporter.log("Click on Delete Button | ");
-		    Thread.sleep(3000);
-		    clickByXpath("//div[4]/div[3]/button");
-		    Thread.sleep(8000);
-		  	   
-		 // Select any one of the Listed Notes
-		    assertTextXpath("//div[2]/div[2]/table/tbody/tr/td[2]");
-		    clickByXpath("//div[2]/div[2]/table/tbody/tr/td[2]");
-		    Reporter.log("Select any one of the Listed Notes | ");
-		    Thread.sleep(3000);
-		    //Thread.sleep(8000);
-		    
-		   //Click on Close button in popup
-		   // assertTextXpath("//div[4]/div/div/div[3]/button");
-		    doubleclickbyXpath("//div[4]/div/div/div[3]/button");
-		    Reporter.log("Click on Close button in popup | ");
-		    Thread.sleep(3000);
-		    Thread.sleep(3000);*/
-		    	    
-	        // Click on 'GoTo next Thread' button
-	        try {
-	        	assertTextXpath("//*[@id='pVuln']");
-	            clickByXpath("//*[@id='pVuln']");
-	            Reporter.log("First page - Click on 'GoTo next Thread' button | ");
-         }catch(Exception e)
-		    {
-		        e.printStackTrace();
-		        Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
-		    }
-	        Thread.sleep(3000);
-	        Thread.sleep(3000);
-	        
-	     // Click on 'Go to the Previous Threat/Vulnerability for this Media' button
-	        try {
-	        	assertTextXpath("//*[@id='_ppVuln']");
-	            clickByXpath("//*[@id='_ppVuln']");
-	            Reporter.log(" Click on Go to the Previous Threat/Vulnerability for this Media | ");
-         }catch(Exception e)
-		    {
-		        e.printStackTrace();
-		        Reporter.log("Click on 'Go to the Previous Threat/Vulnerability for this Media' button doesn't reached | ");
-		    }
-	        Thread.sleep(3000);
-	        clickByXpath("html/body/div[4]/div/div/div[3]/button[2]");
-	        Thread.sleep(8000);
-	        
-	        // Click on 'GoTo next Thread' button
-	        try {
-	        	assertTextXpath("//*[@id='pVuln']");
-	            clickByXpath("//*[@id='pVuln']");
-	            Reporter.log("First page - Click on 'GoTo next Thread' button | ");
-         }catch(Exception e)
-		    {
-		        e.printStackTrace();
-		        Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
-		    }
-	        Thread.sleep(3000);
-	        Thread.sleep(3000);
-	        
-	        //2nd page
-	        
-	        // Mousehover on Progress bar
-	        mouseHoverByXpath("//*[@id='uniqueMedia']/tbody/tr/td[2]/div[1]/p");
-	        Reporter.log("Mousehover on Progress bar | ");
-	        Thread.sleep(3000);
-	        
-	        //Select 'Yes' option in Response choice of listed Controls
-		    try {
-		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
-		 	    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
-		 	    Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-	        }catch(Exception e)
-			{
-			    e.printStackTrace();
-			    Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-			}
-		    Thread.sleep(3000);
-		    //Thread.sleep(3000);
-	       
-	        // Select 'Yes' option in Response choice of listed Controls
-		    try {
-		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[6]/cw-s-response-choices/div/div/label[2]");
-		 	    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[6]/cw-s-response-choices/div/div/label[2]");
-		 	    Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-	        }catch(Exception e)
-			{
-			    e.printStackTrace();
-			    Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-			}
-		    Thread.sleep(3000);
-		    //Thread.sleep(3000);
-	       
-	        // Select 'Yes' option in Response choice of listed Controls
-		    try {
-		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[6]/cw-s-response-choices/div/div/label[3]");
-		 	    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[6]/cw-s-response-choices/div/div/label[3]");
-		 	    Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-	        }catch(Exception e)
-			{
-			    e.printStackTrace();
-			    Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-			}
-		    //Thread.sleep(8000);
-		    Thread.sleep(3000);
-		    
-		    //Click on Notes button to add text
-		    assertTextXpath("//td[9]/div[2]/a");
-		    clickByXpath("//td[9]/div[2]/a");
-		    Reporter.log("Click on Notes button to add text | ");
-		    Thread.sleep(8000);
-		    //Thread.sleep(8000);
-		    
-		    //Click on New button in Notes pop-up window
-		    assertTextXpath("//div/div/div/div/a");
-		    clickByXpath("//div/div/div/div/a");
-		    Reporter.log("Click on New button in Notes pop-up window | ");
-		    Thread.sleep(3000);
-		    //Thread.sleep(8000);
-		    
-		    // Enter Text for Note textarea
-		    assertTextXpath("//textarea");
-		    sendvaluebyxpath("//textarea", "created notes for Delete function");
-		    Reporter.log("Enter Text for Note textarea | ");
-		    Thread.sleep(3000);
-		    //Thread.sleep(8000);
-		    
-		    // Click on Create Button
-		    assertTextXpath("//div[4]/div[3]/button");
-		    clickByXpath("//div[4]/div[3]/button");
-		    Reporter.log("Click on Create Button | ");
-		    Thread.sleep(8000);
-		    //Thread.sleep(8000);
-		    
-		 // Select any one of the Listed Notes
-		    assertTextXpath("//div[2]/div[2]/table/tbody/tr/td[2]");
-		    clickByXpath("//div[2]/div[2]/table/tbody/tr/td[2]");
-		    Reporter.log("Select any one of the Listed Notes | ");
-		    Thread.sleep(3000);
-		    //Thread.sleep(8000);
-		    
-		 // Click on Delete Button
-		    assertTextXpath("//a[3]/span");
-		    clickByXpath("//a[3]/span");
-		    Reporter.log("Click on Delete Button | ");
-		    Thread.sleep(8000);
-		    //Thread.sleep(8000);
-		       
-		    // Click on Delete Button in Confirmation pop-up
-		    assertTextXpath("//div[4]/div[3]/button");
-		    clickByXpath("//div[4]/div[3]/button");
-		    Reporter.log("Click on Delete Button in Confirmation pop-up | ");
-		    Thread.sleep(8000);
-		    //Thread.sleep(8000);
-		    
+		    	  	   
 		    //Click on Close button in popup
-		    assertTextXpath("//div[4]/div/div/div[3]/button");
-		    clickByXpath("//div[4]/div/div/div[3]/button");
+		    assertTextXpath("//div[4]/div/div/div[1]/button");
+		    clickByXpath("//div[4]/div/div/div[1]/button");
 		    Reporter.log("Click on Close button in popup | ");
 		    Thread.sleep(3000);
-		    Thread.sleep(3000); 		      
-		       
-	        //Click on RiskLikehood drop-down
-	        try {
-	        	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	        Reporter.log("Click on RiskLikehood drop-down | ");
-         }catch(Exception e)
+		    Thread.sleep(3000); */
+		    	    
+	     // Click on 'GoTo next Thread' button
+	     try {
+	     	assertTextXpath("//*[@id='pVuln']");
+	         clickByXpath("//*[@id='pVuln']");
+	         Reporter.log("First page - Click on 'GoTo next Thread' button | ");
+	    }catch(Exception e)
 		    {
-		        e.printStackTrace();
-		        Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
-		   }
-	       Thread.sleep(8000);
-	       //Thread.sleep(3000);
-	       
-	        //Select 'Moderate' option from Likehood drop-down
-	        try {
-	        	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[2]/a");
-	 	        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[2]/a");
-	 	        Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
-         }catch(Exception e)
-		    {
-		        e.printStackTrace();
-		        Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
-		    }
-	        Thread.sleep(3000);
-	        Thread.sleep(3000);
-	        
-	        // Click on RiskImpact drop-down
-	        try {
-	        	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	        Reporter.log("Click on RiskImpact drop-down | ");
-         }catch(Exception e)
-		    {
-		         e.printStackTrace();
-		         Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
-		    }
-	        Thread.sleep(8000);
-	       // Thread.sleep(3000);
-	       
-	        //Select 'Major' option from Impact drop-down
-	        try {
-	        	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
-	 	        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
-	 	        Reporter.log("Select 'Major' option from Impact drop-down | ");
-         }catch(Exception e)
-		    {
-		        e.printStackTrace();
-		        Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
-		     }
-	        Thread.sleep(3000);
-	        Thread.sleep(3000);
-	       
-	        // Click on 'GoTo next Thread' button
-	        try {
-	        	assertTextXpath("//*[@id='pVuln']");
-	            clickByXpath("//*[@id='pVuln']");
-	            Reporter.log("Second Page - Click on 'GoTo next Thread' button | ");
-          }catch(Exception e)
-		     {
 		        e.printStackTrace();
 		        Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
-		     }
-	         Thread.sleep(3000);
-	         Thread.sleep(3000);
-	       
-	         //3rd page       
-	         
-	         // Select 'Yes' option in Response choice of listed Controls
+		    }
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);
+	     
+	     //8rd page       
+	      
+	      // Select 'Yes' option in Response choice of listed Controls
 		     try {
-		    	 assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[2]");
-		 	     clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[2]");
+		    	 assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[2]");
+		 	     clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[2]");
 		 	     Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-	          }catch(Exception e)
+	       }catch(Exception e)
 			  {
 			      e.printStackTrace();
 			      Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
@@ -2252,24 +2070,24 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		       Thread.sleep(3000);
 		       //Thread.sleep(3000);
 		       
-	       
+	    
 		    // Select 'Yes' option in Response choice of listed Controls
 		    try {
-		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[6]/cw-s-response-choices/div/div/label[1]");
-		        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[6]/cw-s-response-choices/div/div/label[1]");
+		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[5]/cw-s-response-choices/div/div/label[1]");
+		        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[5]/cw-s-response-choices/div/div/label[1]");
 		        Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-         }catch(Exception e)
+	 }catch(Exception e)
 		    {
-     	    e.printStackTrace();
-	            Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-	        }
+		    e.printStackTrace();
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+	     }
 		    Thread.sleep(3000);
 		    //Thread.sleep(3000);
-	       
-         // Select 'Yes' option in Response choice of listed Controls
+	    
+	 // Select 'Yes' option in Response choice of listed Controls
 		    try {
-		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[6]/cw-s-response-choices/div/div/label[3]");
-		        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[6]/cw-s-response-choices/div/div/label[3]");
+		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[5]/cw-s-response-choices/div/div/label[3]");
+		        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[5]/cw-s-response-choices/div/div/label[3]");
 		        Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
 		    }catch(Exception e)
 		    {
@@ -2278,1006 +2096,926 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		    }
 		    Thread.sleep(3000);
 		    //Thread.sleep(3000);
-	       
-	        // Select 'Yes' option in Response choice of listed Controls
-	        try {
-	        	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[6]/cw-s-response-choices/div/div/label[1]");
-	            clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[6]/cw-s-response-choices/div/div/label[1]");
-	            Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	    
+	     // Select 'Yes' option in Response choice of listed Controls
+	     try {
+	     	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[5]/cw-s-response-choices/div/div/label[1]");
+	         clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[5]/cw-s-response-choices/div/div/label[1]");
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
 		    }catch(Exception e)
-	        {
-	            e.printStackTrace();
+	     {
+	         e.printStackTrace();
 		        Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
 		    }
-         Thread.sleep(3000);
-         //Thread.sleep(3000);
-	       
-         // Select 'Yes' option in Response choice of listed Controls
-         try {
-         	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[5]/td[6]/cw-s-response-choices/div/div/label[3]");
-	            clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[5]/td[6]/cw-s-response-choices/div/div/label[3]");
-	            Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-          }catch(Exception e)
-          {
-             e.printStackTrace();
-             Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-         }
-         Thread.sleep(3000);
-         //Thread.sleep(3000);
-	 
-         // Select 'Yes' option in Response choice of listed Controls
-	        try {
-	        	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[6]/td[6]/cw-s-response-choices/div/div/label[2]");
-	            clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[6]/td[6]/cw-s-response-choices/div/div/label[2]");
-	            Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-	        }catch(Exception e)
-	        {
-	            e.printStackTrace();
-	            Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-	        }
-		    //Thread.sleep(8000);
-		    Thread.sleep(3000);
-	       	       
-	        //Click on RiskLikehood drop-down
-	        try {
-	        	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	        Reporter.log("Click on RiskLikehood drop-down | ");
-         }catch(Exception e)
+	 Thread.sleep(3000);
+	 //Thread.sleep(3000);
+	    
+	 // Select 'Yes' option in Response choice of listed Controls
+	 try {
+	 	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[5]/td[5]/cw-s-response-choices/div/div/label[3]");
+	         clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[5]/td[5]/cw-s-response-choices/div/div/label[3]");
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	  }catch(Exception e)
+	  {
+	     e.printStackTrace();
+	     Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+	 }
+	 Thread.sleep(3000);
+	 //Thread.sleep(3000);
+	    	       
+	     //Click on RiskLikehood drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskLikehood drop-down | ");
+	 }catch(Exception e)
 		    {
 		         e.printStackTrace();
 		         Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
 		    }
-	        Thread.sleep(8000);
-	        //Thread.sleep(3000);
-	       
-	        //Select 'Moderate' option from Likehood drop-down
-	        try {
-	        	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
-	 	        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
-	 	        Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
-         }catch(Exception e)
+	     Thread.sleep(8000);
+	     //Thread.sleep(3000);
+	    
+	     //Select 'Moderate' option from Likehood drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
+	 }catch(Exception e)
 		    {
 		        e.printStackTrace();
 		        Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
 		    }
-	        Thread.sleep(3000);
-	        Thread.sleep(3000);
-	       
-	        // Click on RiskImpact drop-down
-	        try {
-	        	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	        Reporter.log("Click on RiskImpact drop-down | ");
-         }catch(Exception e)
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);
+	    
+	     // Click on RiskImpact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskImpact drop-down | ");
+	 }catch(Exception e)
 		    {
 		        e.printStackTrace();
 		        Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
 		    }
-	        Thread.sleep(8000);
-	        //Thread.sleep(3000);
-	       
-	        //Select 'Major' option from Impact drop-down
-	        try {
-	        	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
-	 	        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
-	 	        Reporter.log("Select 'Major' option from Impact drop-down | ");
-         }catch(Exception e)
+	     Thread.sleep(8000);
+	     //Thread.sleep(3000);
+	    
+	     //Select 'Major' option from Impact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Major' option from Impact drop-down | ");
+	 }catch(Exception e)
 		    {
 		         e.printStackTrace();
 		         Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
 		    }
-	        Thread.sleep(3000);
-	        Thread.sleep(3000);
-	       
-	        // Click on 'GoTo next Thread' button
-	        try {
-	        	assertTextXpath("//*[@id='pVuln']");
-	            clickByXpath("//*[@id='pVuln']");
-	            Reporter.log("Third Page - Click on 'GoTo next Thread' button | ");
-         }catch(Exception e)
-		    {
-		         e.printStackTrace();
-		         Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
-		    }
-	        Thread.sleep(3000);
-	        Thread.sleep(3000);
-	       
-	        // 4th page
-	        
-	        // Click on Updated button in Scenario Advisory
-	        assertTextXpath("//*[@id='uniqueMedia']/tbody/tr/td[1]/cw-advisory/a/span");
-            clickByXpath("//*[@id='uniqueMedia']/tbody/tr/td[1]/cw-advisory/a/span");
-            Reporter.log("Click on Updated button in Scenario Advisory | ");
-            Thread.sleep(3000);
-            
-            // Click on Changed Reviewed check-box
-	        assertTextXpath("html/body/div[4]/div/div/div[3]/div/div/label");
-            clickByXpath("html/body/div[4]/div/div/div[3]/div/div/label");
-            Reporter.log("Click on Changed Reviewed check-box | ");
-            Thread.sleep(3000);
-            
-           // Click on Save button
-	        assertTextXpath("html/body/div[4]/div/div/div[3]/button[2]");
-            clickByXpath("html/body/div[4]/div/div/div[3]/button[2]");
-            Reporter.log("Click on Save button | ");
-            Thread.sleep(3000);
-            
-	        // Select 'Yes' option in Response choice of listed Controls
-		    try {
-		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
-		 	    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
-		 	    Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-	         }catch(Exception e)
-			 {
-			    e.printStackTrace();
-			    Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-			 }
-		     Thread.sleep(3000);
-		     //Thread.sleep(3000);
-		     
-		     // Click on Clear button to clear the response 
-			  assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr/td[7]/cw-s-response-clear/div/span/i");
-			  clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr/td[7]/cw-s-response-clear/div/span/i");
-			  Reporter.log("Click on Clear button to clear the response | ");
-			  Thread.sleep(8000);
-			  //Thread.sleep(3000);
-			  
-			// Click on Remove button to clear the response 
-			  assertTextXpath("html/body/div[4]/div/div/div[3]/button[1]");
-			  clickByXpath("html/body/div[4]/div/div/div[3]/button[1]");
-			  Reporter.log("Click on Remove button to clear the response | ");
-			  Thread.sleep(8000);
-			 // Thread.sleep(3000);
-			  
-			// Select 'Yes' option in Response choice of listed Controls
-			    try {
-			    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
-			 	    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
-			 	    Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-		         }catch(Exception e)
-				 {
-				    e.printStackTrace();
-				    Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-				 }
-			     Thread.sleep(3000);
-			     //Thread.sleep(3000);
-		  			     
-			   // Click on Add a Custom Control	  
-			     assertTextXpath("//cw-add-custom-control/div/div/span");
-			     clickByXpath("//cw-add-custom-control/div/div/span");
-			     Reporter.log("Click on Add a Custom Control	| ");
-			     Thread.sleep(3000); 
-
-			     // Click on Add a Custom Control textbox		  
-			     //assertTextXpath("//cw-add-custom-control/div/div/div/div/div/input");
-			     clickByXpath("//cw-add-custom-control/div/div/div/div/div/input");
-			     Reporter.log("Click on Add a Custom Control tetbox| ");
-			     Thread.sleep(3000); 
-			     
-			     // Enter the New Custom Control
-			     //assertTextXpath("//cw-add-custom-control/div/div/div/div/div/input");
-			     sendvaluebyxpath("//cw-add-custom-control/div/div/div/div/div/input", "NewControl");
-			     Reporter.log("Enter the New Custom Controls| ");
-			     Thread.sleep(3000); 
-
-			     // Click from listed add custom controls		  
-			     assertTextXpath("//div/strong");
-			     clickByXpath("//div/strong");
-			     Reporter.log("Click from listed add custom controls | ");
-			     Thread.sleep(8000); 
-			     
-			     // Click on Custom Button	  
-			     assertTextXpath("//span[2]/div/div[2]/span");
-			     clickByXpath("//span[2]/div/div[2]/span");
-			     Reporter.log("Click on Custom Button | ");
-			     Thread.sleep(3000); 
-			     
-			     // Click on Close button
-			     assertTextXpath("//div[4]/div/div/div[3]/button");
-			     clickByXpath("//div[4]/div/div/div[3]/button");
-			     Reporter.log("Click on Close button | ");
-			     Thread.sleep(3000); 
-			     
-			     // Delete the Added Custom Controls
-			     assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[11]/cw-remove-custom-control/a/i");
-			     clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[11]/cw-remove-custom-control/a/i");
-			     Reporter.log("Click on Close button | ");
-			     Thread.sleep(8000); 
-			     //Thread.sleep(8000); 
-			     
-			     //Click on NST Button
-			     assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr/td[4]/span/div/div[1]/span");
-			     clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr/td[4]/span/div/div[1]/span");
-			     Reporter.log("Click on Close button | ");
-			     Thread.sleep(3000);
-			     			     
-			     // Click on Close button
-			     assertTextXpath("//div[4]/div/div/div[3]/button");
-			     clickByXpath("//div[4]/div/div/div[3]/button");
-			     Reporter.log("Click on Close button | ");
-			     Thread.sleep(3000);
-			     //Thread.sleep(8000);
-			    
-			     //Click on Control Tag Button
-			     assertTextXpath("//cw-tag/a/span");
-			     clickByXpath("//cw-tag/a/span");
-			     Reporter.log("Click on Control Tag button | ");
-			     Thread.sleep(3000);
-			     			     
-			     // Click on Checkbox from tag popup
-			     assertTextXpath("html/body/div[5]/div/div/div[2]/div/div/div[2]/div[2]/div[1]/div");
-			     clickByXpath("html/body/div[5]/div/div/div[2]/div/div/div[2]/div[2]/div[1]/div");
-			     Reporter.log("Click on Checkbox from tag popup | ");
-			     Thread.sleep(8000);
-			     //Thread.sleep(8000);
-			     
-			     // Click on Done button
-			     assertTextXpath("//div[3]/button[2]");
-			     clickByXpath("//div[3]/button[2]");
-			     Reporter.log("Click on Close button | ");
-			     Thread.sleep(3000);
-			     Thread.sleep(3000);		 	     
-	       
-	         //Click on RiskLikehood drop-down
-	         try {
-	        	 assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	         clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	         Reporter.log("Click on RiskLikehood drop-down | ");
-           }catch(Exception e)
-		      {
-		         e.printStackTrace();
-		         Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
-		       }
-	          Thread.sleep(8000);
-	          //Thread.sleep(3000);
-	       
-	          //Select 'Moderate' option from Likehood drop-down
-	          try {
-	        	  assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[2]/a");
-	 	          clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[2]/a");
-	 	          Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
-           }catch(Exception e)
-		      {
-		          e.printStackTrace();
-		          Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
-		      }
-	          Thread.sleep(3000);
-	          Thread.sleep(3000);
-	       
-	          // Click on RiskImpact drop-down
-	          try {
-	        	  assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	          clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	          Reporter.log("Click on RiskImpact drop-down | ");
-            }catch(Exception e)
-		       {
-		          e.printStackTrace();
-		          Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
-		       }
-	           Thread.sleep(8000);
-	           //Thread.sleep(3000);
-	       
-	          //Select 'Major' option from Impact drop-down
-	          try {
-	        	  assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[4]/a");
-	 	          clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[4]/a");
-	 	          Reporter.log("Select 'Major' option from Impact drop-down | ");
-           }catch(Exception e)
-		      {
-		           e.printStackTrace();
-		           Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
-		      }
-	          Thread.sleep(3000);
-	          Thread.sleep(3000);
-	       
-	          // Click on 'GoTo next Thread' button
-	          try {
-	        	  assertTextXpath("//*[@id='pVuln']");
-	              clickByXpath("//*[@id='pVuln']");
-	              Reporter.log("Fourth Page - Click on 'GoTo next Thread' button | ");
-           }catch(Exception e)
-		      {
-		           e.printStackTrace();
-		           Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
-		      }
-	          Thread.sleep(3000);
-	          Thread.sleep(3000);
-	       
-	         //5th page
-	         // Select 'Yes' option in Response choice of listed Controls
-		     try {
-		    	 assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
-		 	     clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
-		 	     Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-	          }catch(Exception e)
-			  {
-			     e.printStackTrace();
-			     Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-			  }
-		      Thread.sleep(3000);
-		      //Thread.sleep(3000);
-	       
-		     // Select 'Yes' option in Response choice of listed Controls
-			 try { 
-				 assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[6]/cw-s-response-choices/div/div/label[2]");
-			     clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[6]/cw-s-response-choices/div/div/label[2]");
-			     Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-		      }catch(Exception e)
-			  {
-			      e.printStackTrace();
-			      Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-			  }
-			  Thread.sleep(3000);
-			  //Thread.sleep(3000);
-	             
-	          //Click on RiskLikehood drop-down
-	          try {
-	        	  assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	          clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	          Reporter.log("Click on RiskLikehood drop-down | ");
-           }catch(Exception e)
-		      {
-		         e.printStackTrace();
-		         Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
-		      }
-	          Thread.sleep(8000);
-	          //Thread.sleep(3000);
-	       
-	         //Select 'Moderate' option from Likehood drop-down
-	         try {
-	        	 assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[4]/a");
-	 	         clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[4]/a");
-	 	         Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
-          }catch(Exception e)
-		     {
-		          e.printStackTrace();
-		          Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
-		     }
-	         Thread.sleep(3000);
-	         Thread.sleep(3000);
-	       
-	         // Click on RiskImpact drop-down
-	         try {
-	        	 assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	         clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	         Reporter.log("Click on RiskImpact drop-down | ");
-          }catch(Exception e)
-		     {
-		         e.printStackTrace();
-		         Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
-		     }
-	         Thread.sleep(8000);
-	         //Thread.sleep(3000);
-	       
-	         //Select 'Major' option from Impact drop-down
-	         try {
-	        	 assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
-	 	         clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
-	 	         Reporter.log("Select 'Major' option from Impact drop-down | ");
-          }catch(Exception e)
-		     {
-		         e.printStackTrace();
-		         Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
-		     }
-	         Thread.sleep(3000);
-	         Thread.sleep(3000);
-	       
-	          // Click on 'GoTo next Thread' button
-	          try {
-	        	  assertTextXpath("//*[@id='pVuln']");
-	              clickByXpath("//*[@id='pVuln']");
-	              Reporter.log("Fifth Page - Click on 'GoTo next Thread' button | ");
-          }catch(Exception e)
-		     {
-		          e.printStackTrace();
-		          Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
-		     }
-	         Thread.sleep(3000);
-	         Thread.sleep(3000);
-	       
-	          //6th page
-	          // Select 'Yes' option in Response choice of listed Controls
-		      try {
-		    	  assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[2]");
-		 	      clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[2]");
-		 	      Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-	           }catch(Exception e)
-			   {
-			       e.printStackTrace();
-			       Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-			   }
-		       Thread.sleep(3000);
-		      // Thread.sleep(3000);
-		       		       
-		       // Select 'Yes' option in Response choice of listed Controls
-			   try {
-				   assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[6]/cw-s-response-choices/div/div/label[1]");
-			 	   clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[6]/cw-s-response-choices/div/div/label[1]");
-			 	   Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-		       }catch(Exception e)
-			   {
-				   e.printStackTrace();
-				   Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-			   }
-			   Thread.sleep(3000);
-			  // Thread.sleep(3000);
-	       
-	           // Select 'Yes' option in Response choice of listed Controls
-		       try {
-		    	   assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[6]/cw-s-response-choices/div/div/label[3]");
-		           clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[6]/cw-s-response-choices/div/div/label[3]");
-			       Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-			   }catch(Exception e)
-			   {
-			       e.printStackTrace();
-			       Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-			   }
-			   Thread.sleep(3000);
-			   //Thread.sleep(3000);
-	       
-	           //Click on RiskLikehood drop-down
-	           try {
-	        	   assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	           clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	           Reporter.log("Click on RiskLikehood drop-down | ");
-            }catch(Exception e)
-		       {
-		           e.printStackTrace();
-		           Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
-		       }
-	           Thread.sleep(8000);
-	           //Thread.sleep(3000);
-	       
-	           //Select 'Moderate' option from Likehood drop-down
-	           try {
-	        	   assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[4]/a");
-	 	           clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[4]/a");
-	 	           Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
-            }catch(Exception e)
-		       {
-		           e.printStackTrace();
-		           Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
-		       }
-	           Thread.sleep(3000);
-	          Thread.sleep(3000);
-	        
-	           // Click on RiskImpact drop-down
-	           try {
-	        	   assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	           clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	           Reporter.log("Click on RiskImpact drop-down | ");
-             }catch(Exception e)
-		        {
-		           e.printStackTrace();
-		           Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
-		        }
-	            Thread.sleep(8000);
-	           //Thread.sleep(3000);
-	       
-	           //Select 'Major' option from Impact drop-down
-	           try {
-	        	   assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[3]/a");
-	 	           clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[3]/a");
-	 	           Reporter.log("Select 'Major' option from Impact drop-down | ");
-            }catch(Exception e)
-		       {
-		          e.printStackTrace();
-		          Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
-		       }
-	           Thread.sleep(3000);
-	           Thread.sleep(3000);
-	       
-	           // Click on 'GoTo next Thread' button
-	           try {
-	        	   assertTextXpath("//*[@id='pVuln']");
-	               clickByXpath("//*[@id='pVuln']");
-	               Reporter.log("Sixth Page - Click on 'GoTo next Thread' button | ");
-            }catch(Exception e)
-		       {
-		          e.printStackTrace();
-		          Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
-		       }
-	           Thread.sleep(3000);
-	           Thread.sleep(3000);
-	       
-	           //7th page
-	           // Select 'Yes' option in Response choice of listed Controls
-		       try {
-		    	   assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
-		 	       clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
-		 	       Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-	           }catch(Exception e)
-			   {
-			        e.printStackTrace();
-			        Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-			   }
-		       Thread.sleep(3000);
-		       //Thread.sleep(3000);
-	       
-	           //Click on RiskLikehood drop-down
-	           try {
-	        	   assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	           clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	           Reporter.log("Click on RiskLikehood drop-down | ");
-            }catch(Exception e)
-		       {
-		           e.printStackTrace();
-		           Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
-		       }
-	           Thread.sleep(8000);
-	           //Thread.sleep(3000);
-	       
-	           //Select 'Moderate' option from Likehood drop-down
-	           try {
-	        	   assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[3]/a");
-	 	           clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[3]/a");
-	 	           Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
-            }catch(Exception e)
-		       {
-		            e.printStackTrace();
-		            Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
-		       }
-	           Thread.sleep(3000);
-	           Thread.sleep(3000);
-	       
-	           // Click on RiskImpact drop-down
-	           try {
-	        	   assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	           clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	           Reporter.log("Click on RiskImpact drop-down | ");
-            }catch(Exception e)
-		       {
-		           e.printStackTrace();
-		           Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
-		       }
-	           Thread.sleep(8000);
-	           //Thread.sleep(3000);
-	       
-	           //Select 'Major' option from Impact drop-down
-	           try {
-	        	   assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[3]/a");
-	 	           clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[3]/a");
-	 	           Reporter.log("Select 'Major' option from Impact drop-down | ");
-            }catch(Exception e)
-		       {
-		            e.printStackTrace();
-		            Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
-		        }
-	            Thread.sleep(3000);
-	            Thread.sleep(3000);
-	       
-	         /*   // Click on 'GoTo next Thread' button
-	            try {
-	            	assertTextXpath("//*[@id='pVuln']");
-	                clickByXpath("//*[@id='pVuln']");
-	                Reporter.log("Seventh Page - Click on 'GoTo next Thread' button | ");
-             }catch(Exception e)
-		        {
-		            e.printStackTrace();
-		            Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
-		        }
-	            Thread.sleep(3000);
-	            Thread.sleep(3000);
-	       
-	            //8th page
-	            // Select 'Yes' option in Response choice of listed Controls
-		        try {
-		        	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[3]");
-		 	        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[3]");
-		 	        Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-	            }catch(Exception e)
-			    {
-			         e.printStackTrace();
-			        Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-			    }
-		        Thread.sleep(3000);  
-		        //Thread.sleep(3000);
-	       
-	           //Click on RiskLikehood drop-down
-	           try {
-	        	   assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	           clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	           Reporter.log("Click on RiskLikehood drop-down | ");
-            }catch(Exception e)
-		       {
-		           e.printStackTrace();
-		           Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
-		        }
-	            Thread.sleep(8000);
-	            //Thread.sleep(3000);
-	       
-	            //Select 'Moderate' option from Likehood drop-down
-	            try {
-	            	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[6]/a");
-	 	            clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[6]/a");
-	 	            Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
-             }catch(Exception e)
-		        {
-		            e.printStackTrace();
-		            Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
-		        }
-	             Thread.sleep(3000);
-	            Thread.sleep(3000);
-	       
-	            // Click on RiskImpact drop-down
-	            try {
-	            	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	            clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	            Reporter.log("Click on RiskImpact drop-down | ");
-              }catch(Exception e)
-		        {
-		             e.printStackTrace();
-		             Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
-		         }
-	             Thread.sleep(8000);
-	             //Thread.sleep(3000);
-	       
-	            //Select 'Major' option from Impact drop-down
-	            try {
-	            	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[3]/a");
-	 	            clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[3]/a");
-	 	            Reporter.log("Select 'Major' option from Impact drop-down | ");
-             }catch(Exception e)
-		        {
-		             e.printStackTrace();
-		             Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
-		        }
-	            Thread.sleep(3000);
-	            Thread.sleep(3000);
-	       
-	            // Click on 'GoTo next Thread' button
-	            try {
-	    	        assertTextXpath("//*[@id='pVuln']");
-	                clickByXpath("//*[@id='pVuln']");
-	                Reporter.log("Eight Page - Click on 'GoTo next Thread' button | ");
-              }catch(Exception e)
-		         {
-		            e.printStackTrace();
-		            Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
-		         }
-	             Thread.sleep(3000);
-	             Thread.sleep(3000);
-	       
-	            //9th page
-	            // Select 'Yes' option in Response choice of listed Controls
-		       try {
-		    	    assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[3]");
-		 	        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[3]");
-		 	        Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-	           }catch(Exception e)
-			   {
-			        e.printStackTrace();
-			        Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-			   }
-		       Thread.sleep(3000);
-		       //Thread.sleep(3000);
-	       
-	          //Click on RiskLikehood drop-down
-	          try {
-	    	      assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	          clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	          Reporter.log("Click on RiskLikehood drop-down | ");
-           }catch(Exception e)
-		      {
-		          e.printStackTrace();
-		          Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
-		      }
-	          Thread.sleep(8000);
-	         // Thread.sleep(3000);
-	       
-	         //Select 'Moderate' option from Likehood drop-down
-	         try {
-	    	     assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[3]/a");
-	 	         clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[3]/a");
-	 	         Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
-          }catch(Exception e)
-		     {
-		         e.printStackTrace();
-		         Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
-		     }
-	         Thread.sleep(3000);
-	         Thread.sleep(3000);
-	       
-	         // Click on RiskImpact drop-down
-	         try {
-	    	     assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	         clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	         Reporter.log("Click on RiskImpact drop-down | ");
-         }catch(Exception e)
-		    {
-		         e.printStackTrace();
-		         Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
-		    }
-	        Thread.sleep(8000);
-	        //Thread.sleep(3000);
-	       
-	       //Select 'Major' option from Impact drop-down
-	       try {
-	    	   assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[6]/a");
-	 	       clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[6]/a");
-	 	       Reporter.log("Select 'Major' option from Impact drop-down | ");
-         }catch(Exception e)
-		    {
-		        e.printStackTrace();
-		        Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
-		    }
-	        Thread.sleep(3000);
-	        Thread.sleep(3000);
-	       
-	        // Click on 'GoTo next Thread' button
-	        try {
-	    	    assertTextXpath("//*[@id='pVuln']");
-	            clickByXpath("//*[@id='pVuln']");
-	            Reporter.log("Nine page - Click on 'GoTo next Thread' button | ");
-          }catch(Exception e)
-		    {
-		         e.printStackTrace();
-		         Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
-		    }
-	        Thread.sleep(3000);
-	        Thread.sleep(3000);
-	       
-	        //10th page
-	        // Select 'Yes' option in Response choice of listed Controls
-		    try {
-		        assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[3]");
-		 	    clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[3]");
-		 	    Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-	        }catch(Exception e)
-			{
-			    e.printStackTrace();
-			    Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-			}
-		    Thread.sleep(3000);  
-		    //Thread.sleep(3000);
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);  
 	     
-	        //Click on RiskLikehood drop-down
-	        try {
-	    	    assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	        Reporter.log("Click on RiskLikehood drop-down | ");
-         }catch(Exception e)
-		    {
+	  // Click on 'GoTo next Thread' button
+	     try {
+	     	assertTextXpath("//*[@id='pVuln']");
+	         clickByXpath("//*[@id='pVuln']");
+	         Reporter.log("Second Page - Click on 'GoTo next Thread' button | ");
+	     }catch(Exception e)
+		     {
 		        e.printStackTrace();
-		        Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
-		    }
-	        Thread.sleep(8000);
-	        //Thread.sleep(3000);
-	       
-	        //Select 'Moderate' option from Likehood drop-down
-	        try {
-	    	    assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[4]/a");
-	 	        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[4]/a");
-	 	        Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
-         }catch(Exception e)
-		    {
-		         e.printStackTrace();
-		         Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
-		    }
-	        Thread.sleep(3000);
-	        Thread.sleep(3000);
-	       
-	         // Click on RiskImpact drop-down
-	         try {
-	    	     assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	         clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	         Reporter.log("Click on RiskImpact drop-down | ");
-          }catch(Exception e)
-		     {
-		          e.printStackTrace();
-		          Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
+		        Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
 		     }
-	         Thread.sleep(8000);
-	         //Thread.sleep(3000);
-	       
-	         //Select 'Major' option from Impact drop-down
-	         try {
-	    	     assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
-	 	         clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
-	 	         Reporter.log("Select 'Major' option from Impact drop-down | ");
-          }catch(Exception e)
-		     {
-		         e.printStackTrace();
-		         Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
-		     }
-	         Thread.sleep(3000);
-	        Thread.sleep(3000);
-	       
-	         // Click on 'GoTo next Thread' button
-	         try {
-	    	      assertTextXpath("//*[@id='pVuln']");
-	              clickByXpath("//*[@id='pVuln']");
-	              Reporter.log("Tenth Page - Click on 'GoTo next Thread' button | ");
-           }catch(Exception e)
-		      {
-		          e.printStackTrace();
-		          Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
-		      }
-	          Thread.sleep(3000);
-	          Thread.sleep(3000);
-	       
-	          //11th page
-	          // Select 'Yes' option in Response choice of listed Controls
-		      try {
-		    	  assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
-		 	      clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
-		 	      Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
-	           }catch(Exception e)
-			   {
+	      Thread.sleep(3000);
+	      Thread.sleep(3000);
+	      
+	      //8rd page       
+	      
+	      // Select 'Yes' option in Response choice of listed Controls
+		     try {
+		    	 assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[2]");
+		 	     clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[2]");
+		 	     Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	       }catch(Exception e)
+			  {
 			      e.printStackTrace();
 			      Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
 			   }
 		       Thread.sleep(3000);
 		       //Thread.sleep(3000);
-	       
-	           //Click on RiskLikehood drop-down
-	           try {
-	    	       assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	           clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	           Reporter.log("Click on RiskLikehood drop-down | ");
-             }catch(Exception e)
-		        {
-		           e.printStackTrace();
-		           Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
-		        }
-	            Thread.sleep(8000);
-	            //Thread.sleep(3000);
-	       
-	            //Select 'Moderate' option from Likehood drop-down
-	            try {
-	    	        assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
-	 	            clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
-	 	            Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
-              }catch(Exception e)
-		        {
-		             e.printStackTrace();
-		             Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
-		        }
-	            Thread.sleep(3000);
-	            Thread.sleep(3000);
-	       
-	            // Click on RiskImpact drop-down
-	            try {
-	    	        assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	            clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	            Reporter.log("Click on RiskImpact drop-down | ");
-             }catch(Exception e)
-		        {
-		            e.printStackTrace();
-		            Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
-		        }
-	            Thread.sleep(8000);
-	           // Thread.sleep(3000);
-	       
-	            //Select 'Major' option from Impact drop-down
-	            try {
-	    	        assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[3]/a");
-	 	            clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[3]/a");
-	 	            Reporter.log("Select 'Major' option from Impact drop-down | ");
-             }catch(Exception e)
-		        {
-		            e.printStackTrace();
-		            Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
-		         }
-	             Thread.sleep(3000);
-	             Thread.sleep(3000);
-	       
-	            // Click on 'GoTo next Thread' button
-	            try {
-	    	        assertTextXpath("//*[@id='pVuln']");
-	                clickByXpath("//*[@id='pVuln']");
-	                Reporter.log("11th page - Click on 'GoTo next Thread' button | ");
-              }catch(Exception e)
-		        {
-		            e.printStackTrace();
-		            Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
-		         }
-	             Thread.sleep(3000);
-	             Thread.sleep(3000);
-	       
-	             //12th page
-	             // Select 'Yes' option in Response choice of listed Controls
-		         try {
-		    	     assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
-		 	         clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[6]/cw-s-response-choices/div/div/label[1]");
-		 	         Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+		       
+	    
+		    // Select 'Yes' option in Response choice of listed Controls
+		    try {
+		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[5]/cw-s-response-choices/div/div/label[1]");
+		        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[5]/cw-s-response-choices/div/div/label[1]");
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	 }catch(Exception e)
+		    {
+		    e.printStackTrace();
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+	     }
+		    Thread.sleep(3000);
+		    //Thread.sleep(3000);
+	    
+	 // Select 'Yes' option in Response choice of listed Controls
+		    try {
+		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[5]/cw-s-response-choices/div/div/label[3]");
+		        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[5]/cw-s-response-choices/div/div/label[3]");
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+		    }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+		    }
+		    Thread.sleep(3000);
+		    //Thread.sleep(3000);
+	    
+	     // Select 'Yes' option in Response choice of listed Controls
+	     try {
+	     	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[5]/cw-s-response-choices/div/div/label[1]");
+	         clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[5]/cw-s-response-choices/div/div/label[1]");
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+		    }catch(Exception e)
+	     {
+	         e.printStackTrace();
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+		    }
+	 Thread.sleep(3000);
+	 //Thread.sleep(3000);
+	    
+	 // Select 'Yes' option in Response choice of listed Controls
+	 try {
+	 	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[5]/td[5]/cw-s-response-choices/div/div/label[3]");
+	         clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[5]/td[5]/cw-s-response-choices/div/div/label[3]");
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	  }catch(Exception e)
+	  {
+	     e.printStackTrace();
+	     Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+	 }
+	 Thread.sleep(3000);
+	 //Thread.sleep(3000);
+
+	 // Select 'Yes' option in Response choice of listed Controls
+	     try {
+	     	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[6]/td[5]/cw-s-response-choices/div/div/label[2]");
+	         clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[6]/td[5]/cw-s-response-choices/div/div/label[2]");
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	     }catch(Exception e)
+	     {
+	         e.printStackTrace();
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+	     }
+		    //Thread.sleep(8000);
+		    Thread.sleep(3000);
+	    	       
+	     //Click on RiskLikehood drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskLikehood drop-down | ");
+	 }catch(Exception e)
+		    {
+		         e.printStackTrace();
+		         Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
+		    }
+	     Thread.sleep(8000);
+	     //Thread.sleep(3000);
+	    
+	     //Select 'Moderate' option from Likehood drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
+	 }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);
+	    
+	     // Click on RiskImpact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskImpact drop-down | ");
+	 }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(8000);
+	     //Thread.sleep(3000);
+	    
+	     //Select 'Major' option from Impact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Major' option from Impact drop-down | ");
+	 }catch(Exception e)
+		    {
+		         e.printStackTrace();
+		         Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);  
+	     
+	  // Click on 'GoTo next Thread' button
+	     try {
+	     	assertTextXpath("//*[@id='pVuln']");
+	         clickByXpath("//*[@id='pVuln']");
+	         Reporter.log("Second Page - Click on 'GoTo next Thread' button | ");
+	     }catch(Exception e)
+		     {
+		        e.printStackTrace();
+		        Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
+		     }
+	      Thread.sleep(3000);
+	      Thread.sleep(3000);
+	      
+	      //8rd page       
+	      
+	      // Select 'Yes' option in Response choice of listed Controls
+		     try {
+		    	 assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[2]");
+		 	     clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[2]");
+		 	     Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	       }catch(Exception e)
+			  {
+			      e.printStackTrace();
+			      Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+			   }
+		       Thread.sleep(3000);
+		       //Thread.sleep(3000);
+		       
+	    
+		    // Select 'Yes' option in Response choice of listed Controls
+		    try {
+		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[5]/cw-s-response-choices/div/div/label[1]");
+		        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[5]/cw-s-response-choices/div/div/label[1]");
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	 }catch(Exception e)
+		    {
+		    e.printStackTrace();
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+	     }
+		    Thread.sleep(3000);
+		    //Thread.sleep(3000);
+	    
+	 // Select 'Yes' option in Response choice of listed Controls
+		    try {
+		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[5]/cw-s-response-choices/div/div/label[3]");
+		        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[5]/cw-s-response-choices/div/div/label[3]");
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+		    }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+		    }
+		    Thread.sleep(3000);
+		    //Thread.sleep(3000);
+	    
+	     // Select 'Yes' option in Response choice of listed Controls
+	     try {
+	     	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[5]/cw-s-response-choices/div/div/label[1]");
+	         clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[5]/cw-s-response-choices/div/div/label[1]");
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+		    }catch(Exception e)
+	     {
+	         e.printStackTrace();
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+		    }
+	 Thread.sleep(3000);
+	 //Thread.sleep(3000);
+	    
+	    	       
+	     //Click on RiskLikehood drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskLikehood drop-down | ");
+	 }catch(Exception e)
+		    {
+		         e.printStackTrace();
+		         Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
+		    }
+	     Thread.sleep(8000);
+	     //Thread.sleep(3000);
+	    
+	     //Select 'Moderate' option from Likehood drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
+	 }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);
+	    
+	     // Click on RiskImpact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskImpact drop-down | ");
+	 }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(8000);
+	     //Thread.sleep(3000);
+	    
+	     //Select 'Major' option from Impact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Major' option from Impact drop-down | ");
+	 }catch(Exception e)
+		    {
+		         e.printStackTrace();
+		         Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);  
+	     
+	  // Click on 'GoTo next Thread' button
+	     try {
+	     	assertTextXpath("//*[@id='pVuln']");
+	         clickByXpath("//*[@id='pVuln']");
+	         Reporter.log("Second Page - Click on 'GoTo next Thread' button | ");
+	     }catch(Exception e)
+		     {
+		        e.printStackTrace();
+		        Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
+		     }
+	      Thread.sleep(3000);
+	      Thread.sleep(3000);
+	      
+	      //8rd page       
+	      
+	      // Select 'Yes' option in Response choice of listed Controls
+		     try {
+		    	 assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[2]");
+		 	     clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[2]");
+		 	     Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	       }catch(Exception e)
+			  {
+			      e.printStackTrace();
+			      Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+			   }
+		       Thread.sleep(3000);
+		       //Thread.sleep(3000);
+		       
+	    	       
+	     //Click on RiskLikehood drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskLikehood drop-down | ");
+	 }catch(Exception e)
+		    {
+		         e.printStackTrace();
+		         Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
+		    }
+	     Thread.sleep(8000);
+	     //Thread.sleep(3000);
+	    
+	     //Select 'Moderate' option from Likehood drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
+	 }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);
+	    
+	     // Click on RiskImpact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskImpact drop-down | ");
+	 }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(8000);
+	     //Thread.sleep(3000);
+	    
+	     //Select 'Major' option from Impact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Major' option from Impact drop-down | ");
+	 }catch(Exception e)
+		    {
+		         e.printStackTrace();
+		         Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);  
+	     
+	  // Click on 'GoTo next Thread' button
+	     try {
+	     	assertTextXpath("//*[@id='pVuln']");
+	         clickByXpath("//*[@id='pVuln']");
+	         Reporter.log("Second Page - Click on 'GoTo next Thread' button | ");
+	     }catch(Exception e)
+		     {
+		        e.printStackTrace();
+		        Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
+		     }
+	      Thread.sleep(3000);
+	      Thread.sleep(3000);
+	      
+	      //8rd page       
+	      
+	      // Select 'Yes' option in Response choice of listed Controls
+		     try {
+		    	 assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[2]");
+		 	     clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[2]");
+		 	     Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	       }catch(Exception e)
+			  {
+			      e.printStackTrace();
+			      Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+			   }
+		       Thread.sleep(3000);
+		       //Thread.sleep(3000);
+		       
+	    
+		    // Select 'Yes' option in Response choice of listed Controls
+		    try {
+		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[5]/cw-s-response-choices/div/div/label[1]");
+		        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[5]/cw-s-response-choices/div/div/label[1]");
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	 }catch(Exception e)
+		    {
+		    e.printStackTrace();
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+	     }
+		    Thread.sleep(3000);
+		    //Thread.sleep(3000);
+	    
+	 // Select 'Yes' option in Response choice of listed Controls
+		    try {
+		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[5]/cw-s-response-choices/div/div/label[3]");
+		        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[5]/cw-s-response-choices/div/div/label[3]");
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+		    }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+		    }
+		    Thread.sleep(3000);
+		    //Thread.sleep(3000);
+	    
+	     // Select 'Yes' option in Response choice of listed Controls
+	     try {
+	     	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[5]/cw-s-response-choices/div/div/label[1]");
+	         clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[5]/cw-s-response-choices/div/div/label[1]");
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+		    }catch(Exception e)
+	     {
+	         e.printStackTrace();
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+		    }
+	 Thread.sleep(3000);
+	 //Thread.sleep(3000);
+	    
+	 // Select 'Yes' option in Response choice of listed Controls
+	 try {
+	 	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[5]/td[5]/cw-s-response-choices/div/div/label[3]");
+	         clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[5]/td[5]/cw-s-response-choices/div/div/label[3]");
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	  }catch(Exception e)
+	  {
+	     e.printStackTrace();
+	     Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+	 }
+	 Thread.sleep(3000);
+	 //Thread.sleep(3000);
+	    	       
+	     //Click on RiskLikehood drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskLikehood drop-down | ");
+	 }catch(Exception e)
+		    {
+		         e.printStackTrace();
+		         Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
+		    }
+	     Thread.sleep(8000);
+	     //Thread.sleep(3000);
+	    
+	     //Select 'Moderate' option from Likehood drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
+	 }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);
+	    
+	     // Click on RiskImpact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskImpact drop-down | ");
+	 }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(8000);
+	     //Thread.sleep(3000);
+	    
+	     //Select 'Major' option from Impact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Major' option from Impact drop-down | ");
+	 }catch(Exception e)
+		    {
+		         e.printStackTrace();
+		         Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);  
+	     
+	  // Click on 'GoTo next Thread' button
+	     try {
+	     	assertTextXpath("//*[@id='pVuln']");
+	         clickByXpath("//*[@id='pVuln']");
+	         Reporter.log("Second Page - Click on 'GoTo next Thread' button | ");
+	     }catch(Exception e)
+		     {
+		        e.printStackTrace();
+		        Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
+		     }
+	      Thread.sleep(3000);
+	      Thread.sleep(3000);
+	      
+	      //8rd page       
+	      
+	      // Select 'Yes' option in Response choice of listed Controls
+		     try {
+		    	 assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[2]");
+		 	     clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[2]");
+		 	     Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	       }catch(Exception e)
+			  {
+			      e.printStackTrace();
+			      Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+			   }
+		       Thread.sleep(3000);
+		       //Thread.sleep(3000);
+		      
+	    	       
+	     //Click on RiskLikehood drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskLikehood drop-down | ");
+	 }catch(Exception e)
+		    {
+		         e.printStackTrace();
+		         Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
+		    }
+	     Thread.sleep(8000);
+	     //Thread.sleep(3000);
+	    
+	     //Select 'Moderate' option from Likehood drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
+	 }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);
+	    
+	     // Click on RiskImpact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskImpact drop-down | ");
+	 }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(8000);
+	     //Thread.sleep(3000);
+	    
+	     //Select 'Major' option from Impact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Major' option from Impact drop-down | ");
+	 }catch(Exception e)
+		    {
+		         e.printStackTrace();
+		         Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);  
+	     
+	  // Click on 'GoTo next Thread' button
+	     try {
+	     	assertTextXpath("//*[@id='pVuln']");
+	         clickByXpath("//*[@id='pVuln']");
+	         Reporter.log("Second Page - Click on 'GoTo next Thread' button | ");
+	     }catch(Exception e)
+		     {
+		        e.printStackTrace();
+		        Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
+		     }
+	      Thread.sleep(3000);
+	      Thread.sleep(3000);
+	      
+	      //8rd page       
+	      
+	      // Select 'Yes' option in Response choice of listed Controls
+		     try {
+		    	 assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[2]");
+		 	     clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[2]");
+		 	     Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	       }catch(Exception e)
+			  {
+			      e.printStackTrace();
+			      Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+			   }
+		       Thread.sleep(3000);
+		       //Thread.sleep(3000);
+		       
+	    
+		    // Select 'Yes' option in Response choice of listed Controls
+		    try {
+		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[5]/cw-s-response-choices/div/div/label[1]");
+		        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[5]/cw-s-response-choices/div/div/label[1]");
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	 }catch(Exception e)
+		    {
+		    e.printStackTrace();
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+	     }
+		    Thread.sleep(3000);
+		    //Thread.sleep(3000);
+	    
+	 // Select 'Yes' option in Response choice of listed Controls
+		    try {
+		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[5]/cw-s-response-choices/div/div/label[3]");
+		        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[5]/cw-s-response-choices/div/div/label[3]");
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+		    }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+		    }
+		    Thread.sleep(3000);
+		    //Thread.sleep(3000);
+	    
+	     // Select 'Yes' option in Response choice of listed Controls
+	     try {
+	     	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[5]/cw-s-response-choices/div/div/label[1]");
+	         clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[5]/cw-s-response-choices/div/div/label[1]");
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+		    }catch(Exception e)
+	     {
+	         e.printStackTrace();
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+		    }
+	 Thread.sleep(3000);
+	 //Thread.sleep(3000);
+	    
+	    	       
+	     //Click on RiskLikehood drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskLikehood drop-down | ");
+	 }catch(Exception e)
+		    {
+		         e.printStackTrace();
+		         Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
+		    }
+	     Thread.sleep(8000);
+	     //Thread.sleep(3000);
+	    
+	     //Select 'Moderate' option from Likehood drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
+	 }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);
+	    
+	     // Click on RiskImpact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskImpact drop-down | ");
+	 }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(8000);
+	     //Thread.sleep(3000);
+	    
+	     //Select 'Major' option from Impact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Major' option from Impact drop-down | ");
+	 }catch(Exception e)
+		    {
+		         e.printStackTrace();
+		         Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);  
+	     
+	  // Click on 'GoTo next Thread' button
+	     try {
+	     	assertTextXpath("//*[@id='pVuln']");
+	         clickByXpath("//*[@id='pVuln']");
+	         Reporter.log("Second Page - Click on 'GoTo next Thread' button | ");
+	     }catch(Exception e)
+		     {
+		        e.printStackTrace();
+		        Reporter.log("Click on 'GoTo next Thread' button doesn't reached | ");
+		     }
+	      Thread.sleep(3000);
+	      Thread.sleep(3000);
+	      
+	      //8rd page       
+	      
+	      // Select 'Yes' option in Response choice of listed Controls
+		     try {
+		    	 assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[2]");
+		 	     clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[1]/td[5]/cw-s-response-choices/div/div/label[2]");
+		 	     Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	       }catch(Exception e)
+			  {
+			      e.printStackTrace();
+			      Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+			   }
+		       Thread.sleep(3000);
+		       //Thread.sleep(3000);
+		       
+	    
+		    // Select 'Yes' option in Response choice of listed Controls
+		    try {
+		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[5]/cw-s-response-choices/div/div/label[1]");
+		        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[2]/td[5]/cw-s-response-choices/div/div/label[1]");
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+	 }catch(Exception e)
+		    {
+		    e.printStackTrace();
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+	     }
+		    Thread.sleep(3000);
+		    //Thread.sleep(3000);
+	    
+	 // Select 'Yes' option in Response choice of listed Controls
+		    try {
+		    	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[5]/cw-s-response-choices/div/div/label[3]");
+		        clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[3]/td[5]/cw-s-response-choices/div/div/label[3]");
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+		    }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+		    }
+		    Thread.sleep(3000);
+		    //Thread.sleep(3000);
+	    
+	     // Select 'Yes' option in Response choice of listed Controls
+	     try {
+	     	assertTextXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[5]/cw-s-response-choices/div/div/label[1]");
+	         clickByXpath("//*[@id='riskQuestionsControls']/tbody/tr[4]/td[5]/cw-s-response-choices/div/div/label[1]");
+	         Reporter.log("Select 'Yes' option in Response choice of listed Controls | ");
+		    }catch(Exception e)
+	     {
+	         e.printStackTrace();
+		        Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
+		    }
+	 Thread.sleep(3000);
+	 //Thread.sleep(3000);
+	    
+	    	       
+	     //Click on RiskLikehood drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskLikehood drop-down | ");
+	 }catch(Exception e)
+		    {
+		         e.printStackTrace();
+		         Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
+		    }
+	     Thread.sleep(8000);
+	     //Thread.sleep(3000);
+	    
+	     //Select 'Moderate' option from Likehood drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
+	 }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);
+	    
+	     // Click on RiskImpact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
+		        Reporter.log("Click on RiskImpact drop-down | ");
+	 }catch(Exception e)
+		    {
+		        e.printStackTrace();
+		        Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(8000);
+	     //Thread.sleep(3000);
+	    
+	     //Select 'Major' option from Impact drop-down
+	     try {
+	     	assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
+		        Reporter.log("Select 'Major' option from Impact drop-down | ");
+	 }catch(Exception e)
+		    {
+		         e.printStackTrace();
+		         Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
+		    }
+	     Thread.sleep(3000);
+	     Thread.sleep(3000);  
+	     
+	     // Click on 'save' button
+         try {
+	          assertTextXpath("//*[@id='pMedia']");
+             clickByXpath("//*[@id='pMedia']");
+             Reporter.log("Select save button | ");
+        }catch(Exception e)
+	          {
+	              e.printStackTrace();
+	              Reporter.log("click on save button doesn't work | ");
+	           }
+          Thread.sleep(3000);
+          Thread.sleep(3000);
+          //Thread.sleep(3000);	
+          
+       // Select Risk Questionnaire list sub-module under Risk Determination Module
+	   	        try {
+	   	        	assertTextLink("Risk Questionnaire List");
+	   	            clickBylinktext("Risk Questionnaire List");
+	   	            Reporter.log("Select Risk Questionnaire List | ");
 	             }catch(Exception e)
-			     {
-			          e.printStackTrace();
-			         Reporter.log("Select 'Yes' option in Response choice of listed Controls doesn't work | ");
-			     }
-		         Thread.sleep(3000);
-		         //Thread.sleep(3000);
-	       
-	             //Click on RiskLikehood drop-down
-	             try {
-	    	         assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	             clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/button");
-	 	             Reporter.log("Click on RiskLikehood drop-down | ");
-               }catch(Exception e)
-		         {
-		             e.printStackTrace();
-		             Reporter.log("Click on RiskLikehood drop-down doesn't work | ");
-		         }
-	             Thread.sleep(8000);
-	             //Thread.sleep(3000);
-	       
-	             //Select 'Moderate' option from Likehood drop-down
-	             try {
-	    	         assertTextXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[4]/a");
-	 	             clickByXpath("//*[@id='riskLikelihoodSelect']/cw-risk-choices/div/ul/li[4]/a");
-	 	             Reporter.log("Select 'Moderate' option from Likehood drop-down | ");
-               }catch(Exception e)
-		          {
-		              e.printStackTrace();
-		              Reporter.log("Select 'Moderate' option from Likehood drop-down doesn't reached | ");
-		          }
-	              Thread.sleep(3000);
-	              Thread.sleep(3000);
-	       
-	              // Click on RiskImpact drop-down
-	              try {
-	    	          assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	              clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/button");
-	 	              Reporter.log("Click on RiskImpact drop-down | ");
-               }catch(Exception e)
-		          {
-		               e.printStackTrace();
-		               Reporter.log("Click on RiskImpact drop-down doesn't reached | ");
-		          }
-	              Thread.sleep(8000);
-	             
-	       
-	              //Select 'Major' option from Impact drop-down
-	              try {
-	    	          assertTextXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
-	 	              clickByXpath("//*[@id='riskImpactSelect']/cw-risk-choices/div/ul/li[5]/a");
-	 	              Reporter.log("Select 'Major' option from Impact drop-down | ");
-               }catch(Exception e)
-		          {
-		              e.printStackTrace();
-		              Reporter.log("Select 'Major' option from Impact drop-down doesn't reached | ");
-		           }
-	               Thread.sleep(3000);
-	               Thread.sleep(3000);*/
-	       
-	              // Click on 'save' button
-	              try {
-	    	          assertTextXpath("//*[@id='pMedia']");
-	                  clickByXpath("//*[@id='pMedia']");
-	                  Reporter.log("Select save button | ");
-               }catch(Exception e)
-		          {
-		              e.printStackTrace();
-		              Reporter.log("click on save button doesn't work | ");
-		           }
-	               Thread.sleep(3000);
-	               Thread.sleep(3000);
-	               //Thread.sleep(3000);	
-	               
-	            // Select Risk Questionnaire list sub-module under Risk Determination Module
-		   	        try {
-		   	        	assertTextLink("Risk Questionnaire List");
-		   	            clickBylinktext("Risk Questionnaire List");
-		   	            Reporter.log("Select Risk Questionnaire List | ");
-		             }catch(Exception e)
-		   		    {
-		   		        e.printStackTrace();
-		   		        Reporter.log("Select Risk Questionnaire List doesn't reached | ");
-		   		    }
-		   	        Thread.sleep(8000);
-		   	        //Thread.sleep(2000);
-		   	        //Thread.sleep(3000);
-		   	        
-		   	        // Click on Leave Page 
-		   	        clickByXpath("html/body/div[4]/div/div/div[3]/button[2]");
-		   	        Thread.sleep(3000);
-		   	        Thread.sleep(3000);
-		   	       //Thread.sleep(3000);     			 			      	     
+	   		    {
+	   		        e.printStackTrace();
+	   		        Reporter.log("Select Risk Questionnaire List doesn't reached | ");
+	   		    }
+	   	        Thread.sleep(8000);
+	   	        //Thread.sleep(2000);
+	   	        //Thread.sleep(3000);
+	   	        
+	   	        // Click on Leave Page 
+	   	        clickByXpath("html/body/div[4]/div/div/div[3]/button[2]");
+	   	        Thread.sleep(3000);
+	   	        Thread.sleep(3000);
+	   	       //Thread.sleep(3000);     	
+				      	     
 	  }   
 	  
-	  @Test(priority=51, enabled =true)
+	  @Test(priority=106, enabled =true)
 	  public void AllFields_RiskQuestionnaireList() throws InterruptedException, IOException {
       
 		  Thread.sleep(3000);
@@ -3299,7 +3037,7 @@ public class RiskDeterminationTestcase extends WrapperClass {
  	 Thread.sleep(3000);
   }
 	  
-	@Test(priority=52, enabled =true)
+	@Test(priority=107, enabled =true)
 	  public void QuickFilter_RiskQuestionnaireList() throws InterruptedException, IOException {
 		
 		//Click on Media/Asset drop-down
@@ -3315,14 +3053,8 @@ public class RiskDeterminationTestcase extends WrapperClass {
   	     Thread.sleep(8000);    
 	
 	}
-
-	@Test(priority=53, enabled =false)
-	public void TC147and148() throws InterruptedException, IOException {
-		
-		// New/Updated Quick Filter is removed from that page
-	}
 	
-	@Test(priority=54, enabled =true)
+	@Test(priority=108, enabled =true)
 	public void Filters_RiskQuestionnaireList() throws InterruptedException, IOException {
 		
 		Thread.sleep(2000);
@@ -3469,7 +3201,7 @@ public class RiskDeterminationTestcase extends WrapperClass {
   		Thread.sleep(3000);
 		
 	}
-	@Test(priority=55, enabled =true)
+	@Test(priority=109, enabled =true)
 	  public void Export_RiskQuestionnaireList() throws InterruptedException, IOException {
 		
 		Thread.sleep(3000);
@@ -3508,7 +3240,7 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		  Thread.sleep(8000);
 		  Thread.sleep(8000);
 	}
-	@Test(priority=56, enabled =true)
+	@Test(priority=110, enabled =true)
 	  public void ProgressBar_ColumnHeaders_RiskQuestionnaireList() throws InterruptedException, IOException {
 		
 		
@@ -3558,13 +3290,8 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		Thread.sleep(3000);	
 		
 	}
-	@Test(priority=57, enabled =false)
-	  public void TC153() throws InterruptedException, IOException {
-		
-		// Default Sorting
-		
-	}
-	@Test(priority=58, enabled =true)
+	
+	@Test(priority=111, enabled =true)
 	  public void RiskAnalyst_RiskQuestionnaireList() throws InterruptedException, IOException {
 		
 		// Select the Risk Analyst drop-down		
@@ -3574,7 +3301,7 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		Thread.sleep(3000);
 	}
 	
-	@Test(priority=59, enabled =true)
+	@Test(priority=112, enabled =false)
 	  public void ReviewButton_RiskQuestionnaireList() throws InterruptedException, IOException {
 		   
 		Thread.sleep(3000);
@@ -3721,8 +3448,8 @@ public class RiskDeterminationTestcase extends WrapperClass {
 		    			 			      	     
   }   
 	
-	@Test(priority=60, enabled =false)
-	  public void Multi_Selector_() throws InterruptedException, IOException {
+	@Test(priority=113, enabled =false)
+	  public void Multi_Selector() throws InterruptedException, IOException {
 		
 		    // Click on Multi Selector Checkbox
 	        clickByXpath("//div/input");
@@ -3739,14 +3466,7 @@ public class RiskDeterminationTestcase extends WrapperClass {
 	        Thread.sleep(3000);
 	}
 	
-	@Test(priority=61, enabled =false)
-	  public void TC164() throws InterruptedException, IOException {
-		
-		//Auto loading functionality
-		
-	}
-	
-	 @Test (priority=62, enabled = true)
+	 @Test (priority=114, enabled = true)
 		public void Sorting_RiskdeterminationList() throws IOException, InterruptedException {
 
  	   //Thread.sleep(8000);
