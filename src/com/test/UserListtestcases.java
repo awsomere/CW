@@ -1,5 +1,7 @@
 package com.test;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
@@ -83,7 +85,7 @@ public class UserListtestcases extends WrapperClass{
 			   Thread.sleep(2000);
 			   
 			   // Click on Page header Title
-			   assertEquals("//h2", "User List");
+			   AssertJUnit.assertEquals("//h2", "User List");
 			   Reporter.log("Click on Page header Title | ");
 			   Thread.sleep(2000);
 			   mouseHoverByXpath("//h2");
@@ -95,7 +97,7 @@ public class UserListtestcases extends WrapperClass{
 				   
 			   Thread.sleep(6000);
 			   // Click on Page breadcrumb
-			   assertEquals("//ol", "Manage Account User Management User List");
+			   AssertJUnit.assertEquals("//ol", "Manage Account User Management User List");
 			   Reporter.log("Click on Page breadcrumb | ");
 			   Thread.sleep(2000);
 			   mouseHoverByXpath("//ol");
@@ -144,17 +146,17 @@ public class UserListtestcases extends WrapperClass{
 			   
 			   Thread.sleep(6000); 
 			// Click on Page breadcrumb			 
-			   assertEquals("//*[@id='user-management_wrapper']/div[1]/div[1]/div/a[1]/span", "New");
+			   AssertJUnit.assertEquals("//*[@id='user-management_wrapper']/div[1]/div[1]/div/a[1]/span", "New");
 			   Reporter.log("Click on Page breadcrumb | ");
 			   Thread.sleep(2000);
 			   
 			// Click on Page breadcrumb
-			   assertEquals("//*[@id='user-management_wrapper']/div[1]/div[1]/div/a[2]/span", "Edit");
+			   AssertJUnit.assertEquals("//*[@id='user-management_wrapper']/div[1]/div[1]/div/a[2]/span", "Edit");
 			   Reporter.log("Click on Page breadcrumb | ");
 			   Thread.sleep(2000);
 			   
 			// Click on Page breadcrumb
-			   assertEquals("//*[@id='user-management_wrapper']/div[1]/div[1]/div/a[3]/span", "Delete");
+			   AssertJUnit.assertEquals("//*[@id='user-management_wrapper']/div[1]/div[1]/div/a[3]/span", "Delete");
 			   Reporter.log("Click on Page breadcrumb | ");
 			   Thread.sleep(2000);
 			   
@@ -188,7 +190,7 @@ public class UserListtestcases extends WrapperClass{
 			   Thread.sleep(2000);
 			   
 			   // Click on Page header Title
-			   assertEquals("//h2", "Create User");
+			   AssertJUnit.assertEquals("//h2", "Create User");
 			   Reporter.log("Click on Page header Title | ");
 			   Thread.sleep(2000);
 			   mouseHoverByXpath("//h2");
@@ -200,7 +202,7 @@ public class UserListtestcases extends WrapperClass{
 				   
 			   Thread.sleep(6000);
 			   // Click on Page breadcrumb
-			   assertEquals("//ol", "Manage Account User Management User List Create User");
+			   AssertJUnit.assertEquals("//ol", "Manage Account User Management User List Create User");
 			   Reporter.log("Click on Page breadcrumb | ");
 			   Thread.sleep(2000);
 			   mouseHoverByXpath("//ol");

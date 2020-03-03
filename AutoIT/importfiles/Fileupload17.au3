@@ -1,3 +1,3 @@
 ControlFocus("Open","","Edit1")
-ControlSetText("Open","","Edit1","C:\Users\User\eclipse-workspace\ClearWater\AutoIT\AutoITfiles\ContractorsConsultantsMedia.xlsx")
+ControlSetText("Open","","Edit1","C:\Automation\eclipse-workspace\ClearWater\AutoIT\AutoITfiles\ContractorsConsultantsMedia.xlsx")
 ControlClick("Open","","Button1")

@@ -18,8 +18,8 @@ public class Login extends WrapperClass {
 				//LaunchBrowser 		
 				launchBroswer(browser,Url);
 				Reporter.log("Broser Launched successfully | ");
-				Thread.sleep(5000);
-				Thread.sleep(5000);
+				Thread.sleep(2000);
+				//Thread.sleep(2000);
 							    
 				//Enter EmailID in Textbox
 				assertTextXpath("//*[@id='lEmail']");
@@ -31,9 +31,9 @@ public class Login extends WrapperClass {
 				assertTextXpath("//*[@id='lPass']");
 				sendvaluebyxpath("//*[@id='lPass']", password);
 				Reporter.log("Enter Password successfully | ");
-				Thread.sleep(8000);
-				Thread.sleep(8000);
-				Thread.sleep(8000);
+				Thread.sleep(2000);
+				//Thread.sleep(8000);
+				//Thread.sleep(8000);
 				
 			
 				//Click on SignIN button
@@ -47,7 +47,7 @@ public class Login extends WrapperClass {
 					  Reporter.log("SignIN doesn't work | ");
 					}
 				Thread.sleep(3000);
-				Thread.sleep(3000);
+				//Thread.sleep(3000);
 				//Thread.sleep(5000);
 				//Thread.sleep(5000);
 			

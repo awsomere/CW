@@ -29,7 +29,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
@@ -56,6 +55,14 @@ public class WrapperClass {
 	String name = null;
 	String title =null;
 	String time = null;
+	String ParentResponse = null;
+	String ChildResponse = null;
+	String ParentResponse1 = null;
+	String ChildResponse1 = null;
+	String ParentResponse2 = null;
+	String ChildResponse2 = null;
+	String ParentResponse3 = null;
+	String ChildResponse3 = null;	
 	
 	public static String downloadPath = "C:\\Users\\User\\eclipse-workspace\\ClearWater\\WebDriverDownloads";
 	/**
@@ -582,6 +589,115 @@ public class WrapperClass {
 //		}
 	}
 	
+	public void ParentResponseColor(String xpath){
+		   
+		WebElement element4= driver.findElement(By.xpath(xpath));
+		ParentResponse = element4.getCssValue("background-color");
+		Reporter.log(ParentResponse);
+			
+		}
+		
+		public void ChildResponseColor(String xpath){
+			
+							
+			WebElement element5= driver.findElement(By.xpath(xpath));
+			ChildResponse = element5.getCssValue("background-color");
+			Reporter.log(ChildResponse);		
+		}
+	
+	public void CompareResponseColor(String ParentResponseColor,String ChildResponseColor){
+		   try {
+	    Assert.assertEquals(ParentResponse,ChildResponse);
+	    //Reporter.log("Parent entity details get Cascaded in Child entity | ");
+	    Reporter.log("Same Response. Cascaded Successfully");
+			} catch (Exception e) {
+				Reporter.log("Not Same Response. Cascading Failed");
+				
+			  }
+			
+		}
+	
+	public void ParentResponseColor1(String xpath){
+		   
+		WebElement element4= driver.findElement(By.xpath(xpath));
+		ParentResponse1 = element4.getCssValue("background-color");
+		Reporter.log(ParentResponse1);
+			
+		}
+		
+		public void ChildResponseColor1(String xpath){
+			
+							
+			WebElement element5= driver.findElement(By.xpath(xpath));
+			ChildResponse1 = element5.getCssValue("background-color");
+			Reporter.log(ChildResponse1);		
+		}
+	
+	public void CompareResponseColor1(String ParentResponseColor1,String ChildResponseColor1){
+		   try {
+	    Assert.assertEquals(ParentResponse1,ChildResponse1);
+	    //Reporter.log("Parent entity details get Cascaded in Child entity | ");
+	    Reporter.log("Same Response. Cascaded Successfully");
+			} catch (Exception e) {
+				Reporter.log("Not Same Response. Cascading Failed");
+				
+			  }		
+	}
+	public void ParentResponseColor2(String xpath){
+		   
+		WebElement element4= driver.findElement(By.xpath(xpath));
+		ParentResponse2 = element4.getCssValue("background-color");
+		Reporter.log(ParentResponse2);
+			
+		}
+		
+		public void ChildResponseColor2(String xpath){
+			
+							
+			WebElement element5= driver.findElement(By.xpath(xpath));
+			ChildResponse2 = element5.getCssValue("background-color");
+			Reporter.log(ChildResponse2);		
+		}
+	
+	public void CompareResponseColor2(String ParentResponseColor2,String ChildResponseColor2){
+		   try {
+	    Assert.assertEquals(ParentResponse2,ChildResponse2);
+	    //Reporter.log("Parent entity details get Cascaded in Child entity | ");
+	    Reporter.log("Same Response. Cascaded Successfully");
+			} catch (Exception e) {
+				Reporter.log("Not Same Response. Cascading Failed");
+				
+			  }
+			
+		}
+	
+	public void ParentResponseColor3(String xpath){
+		   
+		WebElement element4= driver.findElement(By.xpath(xpath));
+		ParentResponse3 = element4.getCssValue("background-color");
+		Reporter.log(ParentResponse3);
+			
+		}
+		
+		public void ChildResponseColor3(String xpath){
+			
+							
+			WebElement element5= driver.findElement(By.xpath(xpath));
+			ChildResponse3 = element5.getCssValue("background-color");
+			Reporter.log(ChildResponse3);		
+		}
+	
+	public void CompareResponseColor3(String ParentResponseColor3,String ChildResponseColor3){
+		   try {
+	    Assert.assertEquals(ParentResponse3,ChildResponse3);
+	    //Reporter.log("Parent entity details get Cascaded in Child entity | ");
+	    Reporter.log("Same Response. Cascaded Successfully");
+			} catch (Exception e) {
+				Reporter.log("Not Same Response. Cascading Failed");
+				
+			  }
+			
+		}
 	public void clickwaitByXpath(String xpath) {
 		try {
 			WebElement w =driver.findElement(By.xpath(xpath));
@@ -1339,6 +1455,17 @@ public void assertEquals(String xpath, String Value){
  // Assert.assertEquals(text, refvalue);
 
   }
+
+public void assertEqual(String cssSelector, String Value){
+//  try {
+  WebElement element = driver.findElement(By.xpath(cssSelector));
+  refvalue = element.getText();
+  System.out.println(refvalue);
+  Assert.assertEquals(refvalue, Value);
+  
+ // Assert.assertEquals(text, refvalue);
+
+  }
 	   public void partnumber(String xpath){
 		   try {
 		   WebElement element = driver.findElement(By.xpath(xpath));
@@ -1568,7 +1695,7 @@ public void assertEquals(String xpath, String Value){
 	
 	public String[][] getlogin() throws IOException {
 		// Create an input stream
-		FileInputStream fis = new FileInputStream(new File(".\\Testdata\\Fixes.xlsx"));
+		FileInputStream fis = new FileInputStream(new File(".\\Testdata\\Production.xlsx"));
 
 		// Open the excel work sheet
 		XSSFWorkbook wb = new XSSFWorkbook(fis);

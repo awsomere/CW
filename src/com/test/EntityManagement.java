@@ -1,5 +1,6 @@
 package com.test;
 
+import org.testng.annotations.Test;
 import java.io.IOException;
 import org.testng.Reporter;
 import org.testng.annotations.*;

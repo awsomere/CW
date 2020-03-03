@@ -1,19 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="com.test.AddAsset">
+      <class name="com.test.ComponentGroupUpdate">
         <methods>
-          <include name="MediaAssetGroups"/>
-          <include name="AssetInventoryListSort"/>
-          <include name="NewAddedAsset"/>
-          <include name="ImportAsset"/>
-          <include name="DownloadAssetInventoryTemplate"/>
-          <include name="AddFormAsset"/>
-          <include name="EditAssetAndDeletedAsset"/>
+          <include name="IRMA10670_AddAssetToThisGroup_Save_ComponentGroups"/>
+          <include name="IRMA10589_AssetToThisGroup_Save_ComponentGroups"/>
+          <include name="IRMA10459_Clear_AddAssetToThisGroup_ComponentGroups"/>
+          <include name="IRMA10670_AssetToThisGroup_Save_ComponentGroups"/>
+          <include name="IRMA8978_DeletePhysicalLocation_Componentgroups"/>
+          <include name="IRMA9446_GroupingExpert_AssetInventoryList"/>
+          <include name="IRMA9483_CopyGroupToEntity_Copy_GroupingWizard"/>
+          <include name="ChkListedFields_GroupWizard_ComponentGroups"/>
+          <include name="IRMA10623_AddAssetToThisGroup_Search_ComponentGroups"/>
+          <include name="Navigate_CopyGroupToEntity_GroupingWizard"/>
+          <include name="CopyGroupToEntity_Cancel_GroupingWizard"/>
+          <include name="DiscardChanges_ComponentGroupDetails"/>
+          <include name="PanelBar_ComponentGroups"/>
+          <include name="IRMA10537_AssetToThisGroup_Save_ComponentGroups"/>
+          <include name="EditComponentGroup_GroupingWizard"/>
+          <include name="Clear_ComponentGroups"/>
+          <include name="Chk_CopyGroupToEntity_GroupingWizard"/>
+          <include name="IRMA8493_CopyRiskDeterminationInfo_GroupingWizard"/>
+          <include name="PageHearder_ComponentGroups"/>
+          <include name="ChangedComponentGroups_ComponentGroups"/>
+          <include name="TriangleIcon_ComponentGroups"/>
+          <include name="AddNewGroup_CancelButton_ComponentGroup_GroupingWizard"/>
+          <include name="Search_GroupWizard_ComponentGroups"/>
+          <include name="IRMA10416_AssetToThisGroup_Cancel_ComponentGroups"/>
+          <include name="EditIcon_ComponentGroupDetails_GroupingWizard"/>
+          <include name="UpdatedComponentGroupPopup_GroupingWizard"/>
+          <include name="AddNewGroup_BlankTickIcon_GroupingWizard"/>
+          <include name="SelectAll_GroupWizard_ComponentGroups"/>
+          <include name="SelectNone_GroupWizard_ComponentGroups"/>
+          <include name="AddNewGroup_Duplicate_GroupingWizard"/>
+          <include name="IRMA10589_CopyTODropdown_GroupingWizard"/>
+          <include name="MoveTODropdown_GroupingWizard"/>
+          <include name="NavigateEntity_GroupingWizard"/>
+          <include name="NavigationPage_ComponentGroups"/>
+          <include name="PhysicalLocationDropDown_ComponentGroups"/>
+          <include name="AddNewGroup_GroupingWizard"/>
+          <include name="GlobalExpand_GroupingWizard"/>
+          <include name="IRMA9046_AddNewGroupReflectedOrNOT_ComponentGroup"/>
+          <include name="IRMA10571_IRMA10466_AddAssetToThisGroup_Search_ComponentGroups"/>
+          <include name="IRMA10629_AddAssetToThisGroup_Search_ComponentGroups"/>
+          <include name="IRMA10538_IRMA10563_checkShowonlydefault_AddAssetToThisGroup_ComponentGroups"/>
         </methods>
-      </class> <!-- com.test.AddAsset -->
+      </class> <!-- com.test.ComponentGroupUpdate -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

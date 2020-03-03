@@ -32,10 +32,10 @@
                     </text>
       <g style="stroke:black;stroke-width:1" transform="translate(450,150)">
          <g style="fill:red" transform="rotate(-0) translate(15, -7)">
-            <path d="M 0 0 h 130 A 130,130 0,0,0 83.09172289783304,-99.97882568759111 z"/>
+            <path d="M 0 0 h 130 A 130,130 0,0,0 84.16023488601532,-99.08105199245077 z"/>
          </g>
-         <g style="fill:green" transform="rotate(-50.27027027027027)">
-            <path d="M 0 0 h 130 A 130,130 0,1,0 83.09159220748205,99.97893430330966 z"/>
+         <g style="fill:green" transform="rotate(-49.6551724137931)">
+            <path d="M 0 0 h 130 A 130,130 0,1,0 84.16010536921481,99.08116200490719 z"/>
          </g>
       </g>
    </svg>

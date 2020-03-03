@@ -1,5 +1,7 @@
 package com.test;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -138,23 +140,23 @@ public class TestLinkTestcases extends WrapperClass{
   	 Thread.sleep(6000);
   	 
   	 //Check the Tab
-  	 assertEquals("//*[@id='tab_selector_0']/a/ul/li[2]/span", "Basics");
+  	 AssertJUnit.assertEquals("//*[@id='tab_selector_0']/a/ul/li[2]/span", "Basics");
   	 Thread.sleep(2000);
   	 
   	//Check the Tab
-  	 assertEquals("//*[@id='tab_selector_1']/a/ul/li[2]/span", "Component Types");
+  	 AssertJUnit.assertEquals("//*[@id='tab_selector_1']/a/ul/li[2]/span", "Component Types");
   	 Thread.sleep(2000);
   	 
   	//Check the Tab
-  	 assertEquals("//*[@id='tab_selector_2']/a/ul/li[2]/span", "Importance");
+  	 AssertJUnit.assertEquals("//*[@id='tab_selector_2']/a/ul/li[2]/span", "Importance");
   	 Thread.sleep(2000);
   	 
   	//Check the Tab
-  	 assertEquals("//*[@id='tab_selector_3']/a/ul/li[2]/span", "Details");
+  	 AssertJUnit.assertEquals("//*[@id='tab_selector_3']/a/ul/li[2]/span", "Details");
   	 Thread.sleep(3000);
   	 		 
   	//Check the Tab
-  	 assertEquals("//*[@id='tab_selector_4']/a/ul/li[2]/span", "Component Groups");
+  	 AssertJUnit.assertEquals("//*[@id='tab_selector_4']/a/ul/li[2]/span", "Component Groups");
   	 Thread.sleep(2000);
   	 
   	 
@@ -402,11 +404,11 @@ public class TestLinkTestcases extends WrapperClass{
   	   Thread.sleep(5000);
   	   
   	 //Check the Tab
-  	  assertEquals("//*[@id='bo_selector_chosen']/div/ul/li[1]", "Edit freeform data...");
+  	  AssertJUnit.assertEquals("//*[@id='bo_selector_chosen']/div/ul/li[1]", "Edit freeform data...");
   	 Thread.sleep(2000);
   	 
   	//Check the Tab
-  	  assertEquals("//*[@id='bo_selector_chosen']/div/ul/li[2]", "New Business Owner...");
+  	  AssertJUnit.assertEquals("//*[@id='bo_selector_chosen']/div/ul/li[2]", "New Business Owner...");
   	 Thread.sleep(2000);
   	 
   	//Check the Tab
@@ -426,11 +428,11 @@ public class TestLinkTestcases extends WrapperClass{
   	   Thread.sleep(8000);
   	   
   	 //Check the Tab
-       assertEquals("html/body/div[6]/div/div/div[2]/div/div/label[1]", "Use freeform data:");
+       AssertJUnit.assertEquals("html/body/div[6]/div/div/div[2]/div/div/label[1]", "Use freeform data:");
   	 Thread.sleep(1000); 
   	 
   	//Check the Tab
-  	  assertEquals("html/body/div[6]/div/div/div[2]/div/div/label[2]", "Create a new user:");
+  	  AssertJUnit.assertEquals("html/body/div[6]/div/div/div[2]/div/div/label[2]", "Create a new user:");
   	 Thread.sleep(1000);
   	   
   	//CLick on Create a New User: Radio Button
@@ -539,24 +541,24 @@ public class TestLinkTestcases extends WrapperClass{
       Thread.sleep(8000);*/
       
     //Check the Modules
-      assertEquals("//assets-form-grouping-expert/div/h4/strong", "Set Component Properties");
+      AssertJUnit.assertEquals("//assets-form-grouping-expert/div/h4/strong", "Set Component Properties");
       Reporter.log("Element are Displayed Or Present");
       Thread.sleep(1000);
       
     //Check the Modules
-      assertEquals("//span/h4/strong", "Suggested Group(s)");
+      AssertJUnit.assertEquals("//span/h4/strong", "Suggested Group(s)");
       Thread.sleep(1000);
       
     //Check the Modules
-      assertEquals("//assets-form-selected-groups/div/div/div/h4/strong", "Selected Group(s)");
+      AssertJUnit.assertEquals("//assets-form-selected-groups/div/div/div/h4/strong", "Selected Group(s)");
       Thread.sleep(1000);
       
       //Check the Modules
-      assertEquals("//assets-form-suggested-group/div/div[2]/button", "Create a new group instead...");
+      AssertJUnit.assertEquals("//assets-form-suggested-group/div/div[2]/button", "Create a new group instead...");
       Thread.sleep(1000);
       
     //Check the Modules
-      assertEquals("//assets-form-selected-groups/div/div/div[3]/button", "Another Group...");
+      AssertJUnit.assertEquals("//assets-form-selected-groups/div/div/div[3]/button", "Another Group...");
       Thread.sleep(1000);
       
       //Click on Clear label 
@@ -735,7 +737,7 @@ public class TestLinkTestcases extends WrapperClass{
   				  
   			Thread.sleep(6000); 
   			//Check the Modules
-  			assertEquals("//assets-form-create-group/div/h4", "Create a new group:");
+  			AssertJUnit.assertEquals("//assets-form-create-group/div/h4", "Create a new group:");
   			Thread.sleep(4000);
   		    
   		     //Enter the values in Location Name Textbox
@@ -1069,7 +1071,7 @@ public class TestLinkTestcases extends WrapperClass{
   	   Thread.sleep(1000);
   	   
   	   // Click on Page header Title
-  	   assertEquals("//h2", "Asset Inventory List");
+  	   AssertJUnit.assertEquals("//h2", "Asset Inventory List");
   	   Reporter.log("Click on Page header Title | ");
   	   Thread.sleep(1000);
   	   mouseHoverByXpath("//h2");
@@ -1081,7 +1083,7 @@ public class TestLinkTestcases extends WrapperClass{
   		   
   	   Thread.sleep(6000);
   	   // Click on Page breadcrumb
-  	   assertEquals("//ol", "Assets Asset Inventory List");
+  	   AssertJUnit.assertEquals("//ol", "Assets Asset Inventory List");
   	   //assertEquals("//ol", "Assets Asset Inventory List");
   	   Reporter.log("Click on Page breadcrumb | ");
   	   Thread.sleep(2000);
@@ -1158,7 +1160,7 @@ public class TestLinkTestcases extends WrapperClass{
   		   
   	   Thread.sleep(6000);
   	   // Click on Page breadcrumb
-  	   assertEquals("//ol", "Assets Asset Inventory List Create Asset");
+  	   AssertJUnit.assertEquals("//ol", "Assets Asset Inventory List Create Asset");
   	   Reporter.log("Click on Page breadcrumb | ");
   	   Thread.sleep(1000);
   	   mouseHoverByXpath("//ol");
@@ -2127,57 +2129,57 @@ public class TestLinkTestcases extends WrapperClass{
   	  Thread.sleep(6000);
   	   
   	// Check ColumnHeader
-  	   assertEquals("//*[@id='assets']/thead/tr/th[1]", "Id");
+  	   AssertJUnit.assertEquals("//*[@id='assets']/thead/tr/th[1]", "Id");
   	   Reporter.log("Check ColumnHeader | ");
   	   Thread.sleep(3000);
   	   
   	// Check ColumnHeader
-  	   assertEquals("//*[@id='assets']/thead/tr/th[2]", "Asset name");
+  	   AssertJUnit.assertEquals("//*[@id='assets']/thead/tr/th[2]", "Asset name");
   	   Reporter.log("Check ColumnHeader | ");
   	   Thread.sleep(3000);
   	   
   	// Check ColumnHeader
-  	   assertEquals("//*[@id='assets']/thead/tr/th[3]", "Asset description");
+  	   AssertJUnit.assertEquals("//*[@id='assets']/thead/tr/th[3]", "Asset description");
   	   Reporter.log("Check ColumnHeader | ");
   	   Thread.sleep(3000);
   	   
   	// Check ColumnHeader
-  	   assertEquals("//*[@id='assets']/thead/tr/th[4]", "# records");
+  	   AssertJUnit.assertEquals("//*[@id='assets']/thead/tr/th[4]", "# records");
   	   Reporter.log("Check ColumnHeader | ");
   	   Thread.sleep(3000);
   	   
   	// Check ColumnHeader
-  	   assertEquals("//*[@id='assets']/thead/tr/th[5]", "Owner");
+  	   AssertJUnit.assertEquals("//*[@id='assets']/thead/tr/th[5]", "Owner");
   	   Reporter.log("Check ColumnHeader | ");
   	   Thread.sleep(3000);
   	   
   	// Check ColumnHeader
-  	   assertEquals("//*[@id='assets']/thead/tr/th[6]", "Inherited from");
+  	   AssertJUnit.assertEquals("//*[@id='assets']/thead/tr/th[6]", "Inherited from");
   	   Reporter.log("Check ColumnHeader | ");
   	   Thread.sleep(3000);
   	   
   	// Check ColumnHeader
-  	   assertEquals("//*[@id='assets']/thead/tr/th[7]", "Created");
+  	   AssertJUnit.assertEquals("//*[@id='assets']/thead/tr/th[7]", "Created");
   	   Reporter.log("Check ColumnHeader | ");
   	   Thread.sleep(3000);
   	   
   	// Check ColumnHeader
-  	   assertEquals("//*[@id='assets']/thead/tr/th[8]", "Modified");
+  	   AssertJUnit.assertEquals("//*[@id='assets']/thead/tr/th[8]", "Modified");
   	   Reporter.log("Check ColumnHeader | ");
   	   Thread.sleep(3000);
   	   
   	// Check ColumnHeader
-  	   assertEquals("//*[@id='assets']/thead/tr/th[9]", "Created By");
+  	   AssertJUnit.assertEquals("//*[@id='assets']/thead/tr/th[9]", "Created By");
   	   Reporter.log("Check ColumnHeader | ");
   	   Thread.sleep(3000);   
   	   
   	// Check ColumnHeader
-  	   assertEquals("//*[@id='assets']/thead/tr/th[10]", "Updated By");
+  	   AssertJUnit.assertEquals("//*[@id='assets']/thead/tr/th[10]", "Updated By");
   	   Reporter.log("Check ColumnHeader | ");
   	   Thread.sleep(3000);
   	   
   	// Check ColumnHeader
-  	   assertEquals("//*[@id='assets']/thead/tr/th[11]", "Status");
+  	   AssertJUnit.assertEquals("//*[@id='assets']/thead/tr/th[11]", "Status");
   	   Reporter.log("Check ColumnHeader | ");
   	   Thread.sleep(3000);   
    } 

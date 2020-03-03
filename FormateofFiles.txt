@@ -1,19 +1,19 @@
       
-       <class name="com.test.Login"/>    
-     <class name="com.test.AssetInventoryList"/>  
-       <class name="com.test.ComponentGroupsTestcases"/>
-       <class name="com.test.RiskDeterminationTestcase"/>      
-       <class name="com.test.ControlsGlobalMediaTestcases"/>     
-       <class name="com.test.ControlReviewTestcases"/> 
-       <class name="com.test.RatingReviewTestcases"/> 
-       <class name="com.test.RiskResponseListNew"/>       
-       <class name="com.test.ControlsResponseReviewTestcases"/>     
-       <class name="com.test.ResidualRatingReviewTestcases"/>         
-       <class name="com.test.RiskReconciliationListTestcases"/>   
-        <class name="com.test.DocumentsTestcase"/> 
-        <class name="com.test.ReportsTestcases"/>     
-         <class name="com.test.FramingGovernanceTestcases"/> 
-        <class name="com.test.DashBoardTestcases"/>    
+  <class name="com.test.Login"/>
+	<class name="com.test.AssetListImportUpdated"/>
+	<class name="com.test.ComponentGroupUpdate"/>
+	<class name="com.test.ControlsGlobalUpdated"/>
+	<class name="com.test.PendingGroupChangesUpdate"/>
+	<class name="com.test.RQLUpdated"/>
+	<class name="com.test.ControlReviewUpdated"/>
+	<class name="com.test.RatingReviewUpdated"/>
+	<class name="com.test.RRLUpdated"/>
+	<class name="com.test.ControlsResponseReviewUpdate"/>
+	<class name="com.test.RiskReconciliationListUpdated"/>
+	<class name="com.test.DocumentsUpdated"/>
+	<class name="com.test.ReportsUpdated"/>
+	<class name="com.test.FramingGovernanceUpdated"/>
+	<class name="com.test.DashBoardUpdated"/>   
 
 Overreview - https://www.screencast.com/t/dGgPGQucZc
 Login - https://www.screencast.com/t/FRx4fZP9

@@ -1,5 +1,7 @@
 package com.test;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
@@ -60,7 +62,7 @@ public class Activities extends WrapperClass {
 		   Thread.sleep(1000);
 		   
 		   // Click on Page header Title
-		   assertEquals("//h2", "Activities Manager");
+		   AssertJUnit.assertEquals("//h2", "Activities Manager");
 		   Reporter.log("Click on Page header Title | ");
 		   Thread.sleep(1000);
 		   mouseHoverByXpath("//h2");
@@ -72,7 +74,7 @@ public class Activities extends WrapperClass {
 			   
 		   Thread.sleep(6000);
 		   // Click on Page breadcrumb
-		   assertEquals("//ol", "Activities Activities Manager");
+		   AssertJUnit.assertEquals("//ol", "Activities Activities Manager");
 		   //assertEquals("//ol", "Assets Asset Inventory List");
 		   Reporter.log("Click on Page breadcrumb | ");
 		   Thread.sleep(2000);
